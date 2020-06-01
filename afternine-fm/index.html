@@ -8,30 +8,27 @@
     <title>After Nine Fm</title>
     <!--bootstrap css-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--fontawesome css-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <!--style css-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--responsive css-->
     <link href="assets/css/responsive.css" rel="stylesheet">
-    <!-- date time js -->
     <script src="assets/js/date-time.js"></script>
-
 </head>
 <body class="fullheight">
-    <div class="preloader">
-        <div class="preloading">After Nine</div>
-    </div>
     <section class="player-wrapper">
-        
         <!-- Header section -->
         <header class="header-section">
             <div class="container">
                 <div class="row  justify-content-between align-items-end">
                     <div class="col col-auto">
-                        <div class="logo"><a href="#">After Nine</a></div>
-                    </div>
-                    <div class="col col-sm-auto">
+                        <h6>LIVE</h6>
                         <p class="datetime"><span id="date_time"></span></p>
                         <script type="text/javascript">window.onload = date_time('date_time');</script>
+                    </div>
+                    <div class="col col-sm-auto">
+                        <div class="logo"><a href="#">AFTERNINE.FM</a></div>
                     </div>
                 </div>
             </div>
@@ -42,70 +39,47 @@
         <div class="player-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <div class="player-table">
-                            <a href="https://soundcloud.com/joshua-dring/sets/aftersix" class="sc-player">Listen</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="blob-container">
-                            <svg style="display: none; height: 1px; width: 1px;" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                              <defs>
-                                <filter id="goo">
-                                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
-                                                                                 0 1 0 0 0
-                                                                                 0 0 1 0 0
-                                                                                 0 0 0 18 -7" result="goo" />
-                                  <feBlend in="SourceGraphic" in2="goo" />
-                                </filter>
-                              </defs>
-                            </svg>
-
-                            <div id="blob_wrap"></div>
-                        </div>
+                    <div class="col">
+                        <a href="https://soundcloud.com/user-284273614/sets/bollywood" class="sc-player">Listen</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Player end-->
-
         <footer class="footer-section">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col col-auto">
                         <div class="footer-links">
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Sources</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">SOURCES</a></li>
+                                <li><a href="#">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <p class="datetime"><span id="date_time_footer"></span></p>
-                        <script type="text/javascript">window.onload = date_time('date_time_footer');</script>
+                    <div class="col col-sm-auto">
+                        <p class="copyright"><a href="index.html">AFTERNINE.FM</a> | © 2020. ALL RIGHTS RESERVED.</p>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
     
-
-
-
-    <!--Jquery js-->
+    
+</body>
+	<!--Jquery js-->
 	<script src="assets/js/jquery.min.js"></script>
     <!--propper js-->
     <script src="assets/js/propper-1.12.3.js"></script>
     <!--bootstrap js-->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
     <!--player js-->
     <script src="assets/js/player.js"></script>
     <!--main js-->
     <script src="assets/js/main.js"></script>
-    <!--blob js-->
-    <script src="assets/js/blob.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="61px" height="62px" viewBox="0 0 61 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>Pause Button</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD---1680w-x-948h" transform="translate(-143.000000, -585.000000)">
-            <g id="Pause-Button" transform="translate(143.000000, 586.000000)">
-                <circle id="Oval" stroke="#FFFFFF" fill="#FFFFFF" cx="30.5" cy="30" r="30"></circle>
-                <line x1="23.5" y1="20.2325581" x2="23.5" y2="39.7674419" id="Line" stroke="#000000" stroke-width="4" stroke-linecap="square"></line>
-                <line x1="36.5" y1="20.2325581" x2="36.5" y2="39.7674419" id="Line-Copy" stroke="#000000" stroke-width="4" stroke-linecap="square"></line>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="94px" height="94px" viewBox="0 0 94 94" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Pause-Button" transform="translate(2 2)">
+    <path d="M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90Z" id="Oval" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M0.5 0.453488L0.5 38.5465" transform="translate(34 26)" id="Line" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="square" />
+    <path d="M0.5 0.453488L0.5 38.5465" transform="translate(54 26)" id="Line-Copy" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="square" />
+  </g>
 </svg>

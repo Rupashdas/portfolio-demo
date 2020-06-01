@@ -505,12 +505,13 @@
             $player = $('<div class="sc-player loading"></div>').data('sc-player', {
                 id: playerId
             }),
-            $dnone = $('<div class="d-none"></div>').appendTo($player),
-            $live = $('<h6 class="live"><div class="ring-container"><div class="ringring"></div></div> Live</h6>').appendTo($player),
-            $heading = $('<h1 class="heading">Complex Radio, Radically simple</h1>').appendTo($player),
-            $listwrap = $('<div class="traclist-wrap"></div>').appendTo($dnone),
-            $controls = $('<div class="sc-controls"></div>').appendTo($player),
-            $artworks = $('<ol class="sc-artwork-list"></ol>').appendTo($dnone);
+            $row = $('<div class="row"></div>').appendTo($player),
+            $col8 = $('<div class="col-lg-7"></div>').appendTo($row),
+            $controls = $('<div class="sc-controls"></div>').appendTo($col8),
+            $listwrap = $('<div class="traclist-wrap"></div>').appendTo($col8),
+            $heading = $('<h2>Next up...</h2>').appendTo($listwrap),
+            $col4 = $('<div class="col-lg-5"></div>').appendTo($row),
+            $artworks = $('<ol class="sc-artwork-list"></ol>').appendTo($col4);
 
 
         // add the classes of the source node to the player itself
@@ -625,7 +626,7 @@
         },
         autoPlay: false,
         continuePlayback: true,
-        randomize: false,
+        randomize: true,
         loadArtworks: 5,
         // the default Api key should be replaced by your own one
         // get it here https://soundcloud.com/you/apps/new

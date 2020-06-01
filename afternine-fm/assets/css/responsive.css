@@ -2,16 +2,54 @@
 	.container{
 		max-width: 1400px;
 	}
-	.blob-container{
-		height: 553px;
-		width: 553px;
+	.sc-trackslist {
+	    max-height: 300px;
 	}
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-	
+	.sc-controls {
+	    margin-bottom: 60px;
+	}
+	.sc-artwork-list li img{
+		min-height: inherit;
+	}
+	.sc-trackslist {
+	    max-height: 150px;
+	}
 }
 /* Tablet & Mobile Layout: 991px. */
 @media only screen and (max-width: 991px) {
+
+	.sc-trackslist{
+		max-height: 200px;
+	}
+	.sc-artwork-list li.active > div{
+		position: static;
+		transform: none;
+		text-align: center;
+	    font-weight: 500;
+	    width: 100%;
+	}
+	.sc-artwork-list li img{
+		min-height: inherit;
+	}
+	.sc-player {
+	    padding-top: 0px;
+	}
+	.sc-controls {
+	    margin-bottom: 60px;
+	}
+	ol.sc-artwork-list {
+	    text-align: center;
+	}
+    .traclist-wrap {
+	    margin-bottom: 60px;
+	}
+
+	.sc-artwork-list li img {
+	    width: auto;
+	    min-height: auto;
+	}
 
 	.fullheight .header-section,
 	.fullheight .footer-section {
@@ -21,35 +59,15 @@
 	body.fullheight .player-wrapper {
 	    height: auto;
 	}
-	.header-section .datetime {
-	    display: none;
-	}
-	.footer-section .datetime {
-	    display: block;
-	}
-
-	.blob-container {
-	    margin: 50px 0;
-	}
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
-	.heading {
-	    font-size: 30px;
-	}
-    .logo a{
-    	font-size: 26px;
-    }
-    .live{
-    	font-size: 18px;
-    }
-	.footer-section .row .col-auto {
-	    flex-basis: 100%;
+ 
+	footer.footer-section .col {
 	    text-align: center;
+	    width: 100%;
 	}
-	.blob-container{
-		min-height: 375px;
-	}
+    
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
@@ -57,10 +75,49 @@
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (max-width: 576px) { 
+	.header-section .row > .col:first-child {
+	    order: 2;
+	}
 
+	.header-section .row > .col:last-child {
+	    order: 1;
+	}
+	.logo a {
+	    font-size: 26px;
+	}
 
+	.header-section h6 {
+	    font-size: 18px;
+	}
+	.button-wrap a img {
+	    height: 70px;
+	    width: 70px;
+	}
+	.sc-artwork-list li img {
+	    width: 377px;
+	}
 }
 /* Wide Mobile Layout: 480px. */
 @media only screen and (max-width: 345px) { 
+	.logo a{
+		font-size: 24px;
+	}
+	.sc-trackslist li a{
+		font-size: 16px;
+	}
+	.sc-trackslist li {
+	    padding: 10px 0 10px 30px;
+	    max-width: 290px;
+	    overflow:hidden;
+	}
+	.sc-artwork-list li img {
+	    width: 377px;
+	}
 
+	.sc-trackslist li:before {
+	    height: 20px;
+	    width: 20px;
+	    background-size: contain;
+	    background-position: center;
+	}
 }
