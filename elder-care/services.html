@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--========== Title =========-->
+        <title>Services</title>
+
+        <!--================== Bootstrap css ==================-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--================== google fonts css ==================-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+        <!--================== Owl Carousel css ==================-->
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+
+        <!--================== Font Awesome ==================-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--================== Nice select css ==================-->
+        <link href="assets/css/nice-select.css" rel="stylesheet">
+        
+        <!--================== Modal video css ==================-->
+        <link href="assets/css/modal-video.min.css" rel="stylesheet">
+
+        <!--================== Style css ==================-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!--================== Resoonsive ==================-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <!-- service page fixed widget -->
+        <div class="service-widget">
+            <span class="widget-close">&times;</span>
+            <p>Please advise which insurance are you interested to buy for your Elder?</p>
+            <div class="suggestions">
+                <a href="#">Travel</a>
+                <a href="#">Vehicle</a>
+                <a href="#">Global Health</a>
+                <a href="#">Home and household</a>
+                <a href="#">Cyber</a>
+            </div>
+        </div>
+        <!-- service page fixed widget end-->
+        <!--Sign up Modal -->
+        <div class="modal signup-modal fade" id="signUpModal" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                         <h1>Sign up for Elder Care</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form action="#" class="signup-form">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="fname">First name</label>
+                                        <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="lname">Last name</label>
+                                        <input type="text" class="form-control" id="lname" placeholder="Enter last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="signUpUsername">Username</label>
+                                        <input type="text" class="form-control" id="signUpUsername" placeholder="Username">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="signUpPassword">Password</label>
+                                        <input type="password" class="form-control" id="signUpPassword" placeholder="Username">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="conSignUpPassword">Confirm Password</label>
+                                        <input type="password" class="form-control" id="conSignUpPassword" placeholder="Username">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="signUpEmail">Email ID</label>
+                                        <input type="email" class="form-control" id="signUpEmail" placeholder="example@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <p class="single-check">
+                                            <label class="checkWrap" for="ocEmail"> Send me occasional emails about the Eldercare community.
+                                                <input type="checkbox" id="ocEmail"><span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <p class="single-check">
+                                            <label class="checkWrap" for="agrements"> I agree to the <a href="#">Terms of Use</a>.
+                                                <input type="checkbox" id="agrements"><span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group text-center">
+                                        <input type="text" class="boxed-btn fill-blue" value="Sign up">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+        <!--================== Header section ==================-->
+        <div class="header-section">
+            <div class="container">
+                <div class="header-area">
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-6">
+                            <nav class="navbar navbar-expand-lg main-menu navbar-light">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link " href="services.html">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pricing.html">Pricing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="blog.html">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Connect</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-right">
+                            <div class="site-login">
+                                <button id="login" class="boxed-btn dropdown-toggle"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</button>
+                                <button type="button" id="signup" class="boxed-btn fill-blue" data-toggle="modal" data-target="#signUpModal">Sign up</button>
+                                <div class="dropdown-login dropdown-menu" aria-labelledby="login">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="signin-toggle">
+                                                <input type="checkbox" id="remember" class="toggle-check">
+                                                <span class="round-btn"></span>
+                                            </span>
+                                            <label for="remember">Remember me</label>
+                                        </div>
+                                        <div class="form-group submit-wrap">
+                                            <a href="#">Forget Password</a>
+                                            <input type="submit" class="form-control boxed-btn" value="Login">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== Header section end ==================-->
+
+        <!--================== Pricing section  ==================-->
+        <div class="section-padding services-section">
+            <div class="container">
+                <div class="pricing-border">
+                    <div class="row">
+                        <div class="col">
+                            <div class="page-title">
+                                <h1 id="tabTitle">Services</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="nav flex-column nav-pills" id="servicesTab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" data-title="Assisting independent living" id="independent-liviing-tab" data-toggle="pill" href="#independent-liviing" role="tab" aria-controls="independent-liviing" aria-selected="true">
+                                    <img class="nav-icon white" src="assets/img/icon-3-white.png" alt="icon">
+                                    <img class="nav-icon theme" src="assets/img/icon-3.png" alt="icon">
+                                    Assisting independent <br>living 
+                                </a>
+                                <a class="nav-link" data-title="Medical Emergencies" id="medical-emergencies-tab" data-toggle="pill" href="#medical-emergencies" role="tab" aria-controls="medical-emergencies" aria-selected="false">
+                                    <img class="nav-icon white" src="assets/img/icon-1-white.png" alt="icon">
+                                    <img class="nav-icon theme" src="assets/img/icon-1.png" alt="icon">
+                                    Medical <br>Emergencies
+                                </a>
+                                <a class="nav-link"  data-title="Digitising medical records" id="digitising-medical-tab" data-toggle="pill" href="#digitising-medical" role="tab" aria-controls="digitising-medical" aria-selected="false">
+                                    <img class="nav-icon white" src="assets/img/icon-2-white.png" alt="icon">
+                                    <img class="nav-icon theme" src="assets/img/icon-2.png" alt="icon">
+                                    Digitising <br>medical records</a>
+                                <a class="nav-link" data-title="Insurance" id="insurance-tab" data-toggle="pill" href="#insurance" role="tab" aria-controls="insurance" aria-selected="false">
+                                    <img class="nav-icon white" src="assets/img/icon-4-white.png" alt="icon">
+                                    <img class="nav-icon theme" src="assets/img/icon-4.png" alt="icon">
+                                    Insurance 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tab-content" id="servicesTabContent">
+                                <div class="tab-pane fade show active" id="independent-liviing" role="tabpanel" aria-labelledby="independent-liviing-tab">
+                                    <p>Elder Care will call your parents thrice a week to check on their well being. Pre-prepared questions which cover common medical and independent living matters will be asked. If they require handling, will be attended to immediately.  </p>
+                                    <p>Our trained Elder Care Officers (ECOs) who undergo constant training and most are ex-army personnel will visit them once a week. </p>
+                                    <p>On the day of their visit they will assist in whatever help is required by the Elder. </p>
+                                    <p>This could include chaperoning them for a medical check-up. Thereafter Elder Care International will be responsible for sourcing the report, updating your Elders’s record in our systems and informing you about the report. </p>
+                                    <p>During their visits to your home, ECOs will also capture basic health related readings like BP, Sugar level and body temperature. These will be updated in their records to which you will have full access. </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="medical-emergencies" role="tabpanel" aria-labelledby="medical-emergencies-tab">
+                                    <p>Medical emergencies can spring up anytime and anywhere. Whatever time and wherever they arise, ECOs will reach your Parent/Elder in the shortest possible time and ensure that your  Parent/Elder reaches the best* medical care.</p> 
+                                    <p>You may be 24 hours or more away, with no access to a relative or friend. Elder Care will be there* to be at your Elder/Parent’s side until the time the registered local guardian or you arrive. </p>
+                                    <p>Every step of the way every move of the ECO is time-stamped and thus automatically monitoring the time the ECO reached the Elder, the time they reach a hospital and the time the Elder is admitted to the hospital.</p>
+                                    <p>*ECOs will stay until local guardian or the next of kin arrive. Instances where the time exceeds 2 hours. Additional attendant-time charges will apply on 3 hourly basis.</p> 
+                                    <p>You, living abroad, will be informed of the care being given on every step of the way.</p> 
+
+                                </div>
+                                <div class="tab-pane fade" id="digitising-medical" role="tabpanel" aria-labelledby="digitising-medical-tab">
+                                    <p>Elder Care will call your parents thrice a week to check on their well being. Pre-prepared questions which cover common medical and independent living matters will be asked. If they require handling, will be attended to immediately.  </p>
+                                    <p>Our trained Elder Care Officers (ECOs) who undergo constant training and most are ex-army personnel will visit them once a week.</p>
+                                    <p>On the day of their visit they will assist in whatever help is required by the Elder.</p>
+                                    <p>This could include chaperoning them for a medical check-up. Thereafter Elder Care International will be responsible for sourcing the report, updating your Elders’s record in our systems and informing you about the report. </p>
+                                    <p>During their visits to your home, ECOs will also capture basic health related readings like BP, Sugar level and body temperature. These will be updated in their records to which you will have full access.</p>
+                                </div>
+                                <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab">
+                                    <p>In case of a medical emergency expenses in a foreign land and hospitalisation can be prohibitively expensive. Travel insurance plans covers your parents for all medical eventualities at a small cost. E.g. </p>
+                                    <p>It costs very little but if the need were to arise it saves a lot. </p>
+                                    <p>Travel insurance for your parent or Elders traveling to your resident country be it Singapore, USA, UK, Dubai or anywhere else in the world gives you the mental peace of mind.</p>
+                                    <ul>
+                                        <li><span class="listbar">-</span> Covers expenses of hospitalisation, loss of baggage and other incidental expenses.</li>
+                                        <li><span class="listbar">-</span> Covers trip cancelation, trip curtailment and even burglary of your home for the duration of your parent’s trip to you</li>
+                                        <li><span class="listbar">-</span> Quick disbursement of claims.</li>
+                                        <li><span class="listbar">-</span> In addition to toll free numbers to report your emergency you get in touch with the Elder Care team</li>
+                                    </ul>
+                                    <p>In case of medical emergencies in countries like UAE, Africa, Asia, UK, Schengen, Antarctica  and Europe (click for full list) they are provided medical care there itself.</p>  
+                                    <p>For countries like the USA and Canada  (click for full list) they are flown back to India.</p> 
+                                    <p>You can buy global travel insurance as low as 2.5 SGD per day for a coverage of 5 0,000 USD for a period of 30 days (Including US & Canada). Please visit our partner here or fill the required details in the attached form for us to help you in choosing the best plan available. </p>
+
+                                    <h6>Other insurances we can help you with you include:</h6>
+                                    <ul>
+                                        <li><b>Vehicle of your Elder living in India</b> - They need not worry about buying or renewing automobile insurance. You can buy directly from the US, UK, Singapore, Dubai or anywhere else. Just click here or fill this form and our team will be able to help.</li>
+                                         <li><b>Global Health Insurance</b> - To take care of any untoward situations anywhere across the world secure “Global Health Insurance Policy” while your Elders are traveling anywhere across the world. Just click here or fill this form and our team will be able to help.</li>
+                                        <li><b>Home and Household Insurance</b> - Home and Household Insurance Policy can be purchased for your Elder’s home and/or its contents to stay protected from risks of losses or damages that may be caused to them by any unforeseen events.  Just click here or fill this form and our team will be able to help.</li>
+                                        <li><b>Cyber Insurance</b> - With an increase in internet penetration, social media and digital banking transactions, we are unknowingly exposed to various cyber-attacks. These can range from misuse of your financial information to data theft, cyber stalking etc. These new-age risk factors can have huge negative impact. Our cyber safe insurance policy ensures that you get optimum protection against potential cyber threats and risks. Just click here or fill this form and our team will be able to help. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== Pricing section end ==================-->
+
+        <!--================== Newsletter Section ==================-->
+        <div class="newsletter-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="newsletter-wrap">
+                            <h3>Subscribe to our newsletter to get the latest news</h3>
+                            <div class="news-letter-form">
+                                <form action="#" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Your email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <input type="submit" value="submit" class="newsletter-submit form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== Newsletter Section end ==================-->
+
+        <!--================== Footer section ==================-->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="site-meta">
+                            <div class="logo">
+                                <img src="assets/img/log--white.png" alt="logo">
+                            </div>
+                            <div class="desc">
+                               <h6> Elder care  Ltd.</h6>
+                                <p>Unit No. 301, Corporate Park, Off Western Express, Goregaon East, 400063.</p>
+                                <p>Email: <a href="mailto:hello@eldercare.com">hello@eldercare.com</a></p>
+                                <p>Phone: 1800 000 000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-4">
+                        <div class="footer-menu">
+                            <h6>Company</h6>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Connect</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="social-links">
+                            <h6 class="text-uppercase">Social</h6>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section text-center">
+               <div class="row">
+                   <div class="col">
+                        <a href="#">Conditions of Use & Sale </a>
+                        <a href="#">Privacy Notice</a>
+                        <span>© 2018-2020, <a href="https://eldercare.com">Eldercare.com</a>, Inc. or its affiliates</span>      
+                   </div>
+               </div>
+            </div>
+        </footer>
+        <!--================== Footer section end ==================-->
+        
+
+        <!--================== Jquery js ==================-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/popper.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!--================== Nice select js ==================-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+
+        <!--================== Modal video js ==================-->
+        <script src="assets/js/jquery-modal-video.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

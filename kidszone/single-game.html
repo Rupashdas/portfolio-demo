@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--========== Title =========-->
+        <title>Game name</title>
+
+        <!--================== Bootstrap css ==================-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--================== Font Awesome ==================-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--================== Style css ==================-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        
+        <div class="overlay"></div>
+        <!-- Header Section -->
+        <header class="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="menu-wrap revise-menu">
+                            <div class="menu-toggle">
+                                <span class="bar"></span>
+                            </div>
+                            <div class="main-menu">
+                                <div class="access-wrap">
+                                    <div class="close-btn">
+                                        <img src="assets/img/close.png" alt="Close">
+                                    </div>
+                                    <a href="login.html">Login / Logout</a>
+                                </div>
+                                <ul class="menu-lists">
+                                    <li><a href="#"><img src="assets/img/profile.png" alt="Profile"> Profile</a></li>
+                                    <li><a href="category.html"><img src="assets/img/category.png" alt="category"> Categories</a></li>
+                                    <li><a href="faq.html"><img src="assets/img/help.png" alt="help"> FAQ</a></li>
+                                    <li><a href="#"><img src="assets/img/language.png" alt="language"> Language</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section end-->
+
+        <div class="game-section" style='height: 400px; margin: 5px; background: #ddd'>
+            <!-- <iframe frameborder="0" scrolling="no" height="100%" width="100%" src=""></iframe> -->
+        </div>
+
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="banner">
+                                        <img src="assets/img/welcome-splash.png" alt="Welcome Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h3 class="welcome-msg">Access my Account</h3>
+                                    <div class="form-wrap">
+                                        <form id="loginForm" name="numberForm" method="post" onsubmit="return numberCheck();">
+                                            <div class="input-field-wrap">
+                                                <label for="pin" class="input-label">Enter your mobile phone number</label>
+                                                <p class="input-field">
+                                                    <img src="assets/img/smartphone.png" alt="smartphone image">
+                                                    <input id="pin" type="text" name="number" autofocus>
+                                                </p>
+                                                <span class="error" id="errornumber"></span>
+                                            </div>
+                                            <button class="kidszone-btn">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-up">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eart volutpat. Ut wisi enim ad</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginOtpModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="banner">
+                                        <img src="assets/img/welcome-splash.png" alt="Welcome Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h3 class="welcome-msg">Access my Account</h3>
+                                    <div class="form-wrap">
+                                        <form name="otpcheck" method="POST" onsubmit="return pinValidation();" action="validated.html">
+                                            <div class="input-field-wrap">
+                                                <label for="pin" class="input-label">Enter the pin you received</label>
+                                                <p class="input-field">
+                                                    <img src="assets/img/locked.png" alt="Locked image">
+                                                    <input id="pin" type="text" name="otpnumber" autofocus>
+                                                </p>
+                                                <span class="error" id="error"></span>
+                                            </div>
+                                            <button class="kidszone-btn">login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        
+        <!--================== Jquery js ==================-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/main.js"></script>
+
+
+        <script type="text/javascript">
+            //Login validation
+            function numberCheck(){
+                var numberSelector = document.numberForm.number;
+                if(numberSelector.value == ''){
+                    document.getElementById("errornumber").innerHTML = 'Please Fill Out This Form';
+                    return false;
+                }
+                return false;
+            }
+            //Login validation
+            function pinValidation(){
+                var otpselector  = document.otpcheck.otpnumber;
+                if(otpselector.value  == ""){
+                    document.getElementById("error").innerHTML = 'Please Enter the correct pin';
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

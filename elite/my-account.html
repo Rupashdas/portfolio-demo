@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Welcome to elite</title>
+        <!--====== favicon======-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+        <!--====== bootstrap css======-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--====== Font awesome css======-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+        <!--====== Magnific popup css======-->
+        <link href="assets/css/magnificPopup.css" rel="stylesheet">
+
+        <!--====== Animate popup css======-->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+
+        <!--======Owl carousel css======-->
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+
+        <!--====== SlickNav css======-->
+        <link href="assets/css/slicknav.min.css" rel="stylesheet">
+
+        <!--====== theme css======-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!--====== responsive css======-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--=================== Header Section ===================-->
+        <div class="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-3">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-9">
+                        <nav class="main-menu">
+                            <ul id="slick-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="">Competitions <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="draws.html">Live Draws</a></li>
+                                        <li><a href="active-competition.html">Active Competitions</a></li>
+                                        <li><a href="welcome.html">Elite Club</a></li>
+                                        <li><a href="winners-podium.html">Winner Podium</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="how-to-play.html">How to play</a></li>
+                                <li><a href="faqs.html">Faqs</a></li>
+                                <li><a href="#">Account <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="my-account.html">My Account</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav id="mobile-menu"></nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=================== Header Section End ===================-->
+
+         <!--===================  monthly prize slider area start ===================-->
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="nav-tab">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" data-toggle="tab" href="#account-info" >
+                                    <img src="assets/img/user.png" alt="">Account Detail
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#ticket" >
+                                    <img src="assets/img/ticket.png" alt="">My Tickets
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="nav-link" data-toggle="tab" href="#card" >
+                                    <img src="assets/img/card.png" alt="">Manage Cards
+                                </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html" >
+                                    <img src="assets/img/logout.png" alt="">Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="account-info"  role="tabpanel" aria-labelledby="account-info">
+                               <div class="tab-content-wrap">
+                                   <div class="form-box">
+                                        <form action="login_submit" method="get" accept-charset="utf-8">
+                                            <h4 class="form-title">Account Informations</h4>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-user"></i>
+                                                   <input type="text" placeholder="Full Name">
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-envelope"></i>
+                                                   <input type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-phone"></i>
+                                                    <input type="tel" autocomplete="on" placeholder="Phone Number">
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <textarea name="address" id="address" cols="30" rows="3" placeholder="Address"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-envelope"></i>
+                                                    <input type="text" placeholder="Post Code">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <form action="login_submit" method="get" accept-charset="utf-8">
+                                            <h4 class="form-title">Change Password</h4>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-user"></i>
+                                                   <input type="password" placeholder="Current Password">
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                    <i class="fa fa-envelope"></i>
+                                                   <input type="password" placeholder="New Password">
+                                                </div>
+                                            </div>
+                                            <div class="input-field">
+                                                <div class="input-wrap">
+                                                   <input type="submit" value="Save Changes">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <h4 class="form-title">My Subscriptions</h4>
+                                        <div class="unsubscribe-box">
+                                            Elite Club - Active
+                                            <a href="#">Unsubscribe</a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="tab-pane fade" id="ticket"  role="tabpanel" aria-labelledby="ticket">
+                               <div class="tab-content-wrap">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item ">
+                                            <a href="#ticket-active" data-toggle="tab" class="nav-link active show">Active</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#ticket-past" data-toggle="tab" class="nav-link">Past</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#ticket-elite-club" data-toggle="tab" class="nav-link">Elite Club</a>
+                                        </li>
+                                    </ul> 
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="ticket-active" role="tabpanel" aria-labelledby="ticket-active">
+                                           <a href="draw-details.html" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Bugatti Veyron</h6>
+                                                   <p class="active">View Live Draw Now!</p>
+                                                   <span class="styled-number">60</span>
+                                               </div>
+                                           </a>
+                                           <a href="draw-details.html" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Bugatti Veyron</h6>
+                                                   <p class="active">View Live Draw Now!</p>
+                                                   <span class="styled-number">21</span>
+                                               </div>
+                                           </a>
+                                           <a href="draw-details.html" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Lamborgini Huracan</h6>
+                                                   <p>View Live Draw Now!</p>
+                                                   <span class="styled-number">231</span>
+                                               </div>
+                                           </a>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="ticket-past" aria-labelledby="ticket-past">
+                                            <a href="#" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Bugatti Veyron</h6>
+                                                   <p>Winner: #100 Better Luck Next Time</p>
+                                                   <span class="styled-number">63</span>
+                                               </div>
+                                           </a>
+                                           <a href="#" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Bugatti Veyron</h6>
+                                                   <p>Winner: Yes, you are the Boss!</p>
+                                                   <span class="styled-number">21</span>
+                                               </div>
+                                           </a>
+                                           <a href="#" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Lamborgini Huracan</h6>
+                                                   <p>Winner: #100 Better Luck Next Time</p>
+                                                   <span class="styled-number">231</span>
+                                               </div>
+                                           </a>
+                                           <a href="#" class="single-card-item">
+                                               <div class="ticket-thumbnail">
+                                                    <img src="assets/img/card-item.png" alt="">
+                                                   <span>£13</span>
+                                               </div>
+                                               <div class="cart-content">
+                                                   <h6>Lamborgini Huracan</h6>
+                                                   <p>Winner: #100 Better Luck Next Time</p>
+                                                   <span class="styled-number">231</span>
+                                               </div>
+                                           </a>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="ticket-elite-club" aria-labelledby="ticket-elite-club">
+                                           <h4 class="form-title style-2">Elite Club - <span>August 2018</span></h4>
+                                           <div class="boxed-elite-club">
+                                               <div class="row">
+                                                   <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>1st - German PanzerTank</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>2nd - Lamborgini Aventador</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>3rd - Vogatti Veyron</p>
+                                                        </div>
+                                                    </div>
+                                                   <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>4rt - Toyota  Supra</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>5th - Kawasaki Ninja 250R</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>6th - Macbook Pro</p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                           <div class="row">
+                                               <div class="col-lg-12 text-center">
+                                                   <div class="colored-clock">
+                                                        <h6>Live Draw In : </h6>
+                                                       <span class="clock"></span>
+                                                   </div>    
+                                               </div>
+                                           </div>
+                                           <h4 class="form-title style-2">Elite Club - <span>July 2018</span></h4>
+                                           <div class="boxed-elite-club">
+                                               <div class="row">
+                                                   <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>1st - German Panzer Tank</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>1st - Lamborgini</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>3rd - Bugatti Veyron</p>
+                                                        </div>
+                                                   </div>
+                                                   <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>4th - Toyota Supra</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>5th Kawsaki Ninja 250R</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                       <div class="single-winner">
+                                                            <div class="img-thumb">£50</div>
+                                                            <p>6th - Macbook Pro</p>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="card"  role="tabpanel" aria-labelledby="card">
+                                <div class="payment-card-wrap">
+                                    <h4 class="form-title">Manage Cards</h4>
+                                    <div class="single-card-item">
+                                       <div class="ticket-thumbnail">
+                                            <img src="assets/img/visa.png" alt="">
+                                       </div>
+                                       <div class="cart-content">
+                                           <h6>Visa</h6>
+                                           <p class="card-number">4164 - xxxx - xxxx - 9999</p>
+                                           <p class="expired-date">01-02-2019</p>
+                                           <a href="#" class="styled-number"><i class="fa fa-trash"></i></a>
+                                        </div>
+                                   </div>
+                                    <div class="single-card-item">
+                                       <div class="ticket-thumbnail">
+                                            <img src="assets/img/mastercard.png" alt="">
+                                       </div>
+                                       <div class="cart-content">
+                                           <h6>Bugatti Veyron</h6>
+                                           <p class="card-number">4164 - xxxx - xxxx - 9999</p>
+                                           <p class="expired-date">01-02-2019</p>
+                                           <a href="#" class="styled-number"><i class="fa fa-trash"></i></a>
+                                       </div>
+                                   </div>
+                                   <div class="input-field">
+                                        <div class="input-wrap">
+                                           <input type="submit" value="Add Cart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+         <!--=================== copyright area start ===================-->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="payment-cards">
+                           Payment Methods:
+                            <div class="cards">
+                                <img src="assets/img/visa.png" alt="">
+                                <img src="assets/img/mastercard.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            Copyright &copy; 2018 <a href="#">Elite Competitions</a> | <a href="#">Term & Conditions</a> | <a href="#">Help Video</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="social-links">
+                            <a href=""><i class="fa fa-youtube"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!--=================== copyright area end ===================-->
+        
+        
+        
+        
+
+         <!--===============Jquery js================--> 
+        <script src="assets/js/jquery.min.js"></script>
+        
+        <!--===============Bootstrap js================--> 
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!--===============Magnific Popup js================--> 
+        <script src="assets/js/magnificPopup.min.js"></script>
+
+        <!--===============Owl Carousel js================--> 
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+        <!--===============slicknav js================--> 
+        <script src="assets/js/jquery.slicknav.min.js"></script>
+
+        <!--===============countdown js================--> 
+        <script src="assets/js/jquery.countdown.min.js"></script>
+
+         <!--===============Main js================--> 
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--========== Title =========-->
+        <title>Pricing</title>
+
+        <!--================== Bootstrap css ==================-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--================== Font Awesome ==================-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!--================== fonts css ==================-->
+        <link href="assets/css/fonts.css" rel="stylesheet">
+
+        <!--================== animate css ==================-->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+
+        <!--================== tagify css ==================-->
+        <link href="assets/css/tagify.css" rel="stylesheet">
+
+        <!--================== owl-carousel css ==================-->
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+
+        <!--================== nice select css ==================-->
+        <link href="assets/css/nice-select.css" rel="stylesheet">
+
+        <!--================== Style css ==================-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!--================== Resoonsive ==================-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- =========== Preloader css =========== -->
+        <div class="preloader-wrap">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- =========== Preloader css =========== -->
+
+
+        <!-- =========== sign form popup =========== -->
+        <div class="modal fade signup-popup" id="signUpPopup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="steps">
+                           <span class="step-ball"></span>
+                           <span class="step-ball"></span>
+                           <span class="step-ball grey"></span>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/close.png" alt="close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="popup-signup-wrap">
+                            <div class="section-title">
+                                <h2><img src="assets/img/bot.png" alt="icon"> Howdvy! We are setting up your account.</h2>
+                                <p>Please enter your e-mail to get access to your account. Once you’ve completed your sign-up, our bots will start searching for your competitors prices. </p>
+                            </div> 
+                            <div class="row justify-content-center">
+                                 <div class="col-md-8">
+                                     <div class="popup-signup-form">
+                                        <form action="" method="post" id="signup">
+                                            <div class="row">
+                                                <div class="col-md-9 col-sm-8">
+                                                    <input type="email" id="popupEmail" placeholder="Your e-mail address">
+                                                    <p class="status"></p>
+                                                </div>
+                                                <div class="col-sm-4 col-md-3">
+                                                    <button type="submit" id="priceCheckSubmit" class="btn boxed-btn">
+                                                        Start <i class="fa fa-angle-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                 </div>
+                             </div> 
+                        </div>
+                        <div class="signup-success">
+                            <h3>Whoo, you are all set!</h3>
+                            <p class="mt-5">Please check your inbox to verify your account. Happy monitoring! </p>
+                            <a href="index.html" class="mt-5 boxed-btn link">Go to login page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== sign form popup end =========== -->
+
+        <!-- =========== Header Section start =========== -->
+        <header class="header wow fadeIn" data-wow-delay="0s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Pricesearch">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8 text-right">
+                        <div class="header-right">
+                            <div class="main-menu">
+                                <nav class="navbar navbar-light navbar-expand-lg">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarToggler">
+                                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                            <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+                                            <li class="nav-item current-menu-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                                            <li class="nav-item"><a href="text.html" class="nav-link">Story</a></li>
+                                            <li class="nav-item menu-item-has-children"><a href="#" class="nav-link">Resources</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="contact.html">Help Center</a></li>
+                                                    <li><a href="guides-archive.html">Guides</a></li>
+                                                    <li><a href="faq.html">F.A.Q</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="colored-box-wrap">
+                            <button type="button" class="btn dropdown-toggle boxed-btn" id="coloredBoxDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start <i class="fa fa-angle-down"></i></button>
+                            <div class="colored-box dropdown-menu color-white" aria-labelledby="coloredBoxDropdown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-trial-box">
+                                            <h5>Free webinar</h5>
+                                            <p>Schedule a free live webinar to see if Pricesearch fit your needs. </p>
+                                            <a href="#" >Schedule webinar <img src="assets/img/arrow-left.png" alt="arrow"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-trial-box">
+                                            <h5>Free trial</h5>
+                                            <p>Try Pricesearch for free. 14 days of happiness. No creditcard required. </p>
+                                            <a href="#"  role="button" data-toggle="modal" data-target="#signUpPopup">Start free trial <img src="assets/img/arrow-left.png" alt="arrow"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-icon">
+                <a class="dropdown-toggle" href="#" role="button" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/globe-icon.png" alt="lang">
+                </a>
+                <div class="dropdown-menu lang-menu" aria-labelledby="lang">
+                    <a class="english" href="#">English</a>
+                    <a class="espanol" href="#">Español</a>
+                </div>
+            </div>
+        </header>
+        <!-- =========== Header Section End =========== -->
+
+        <!-- =========== Pricing =========== -->
+        <div class="pricing-table">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 wow fadeIn" data-wow-delay=".3s">
+                        <div class="section-title text-center pricing-title">
+                            <p class="section-tagline">Pricing</p>
+                            <h1>How we search and match your products.</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center wow fadeIn" data-wow-delay=".6s">
+                        <div class="table-title">
+                            <span>Annually</span> <span class="offer">(Save 20%)</span>
+                            <span class="price-toggle">
+                                <input type="checkbox" class="toggle-check" />
+                                <span class="round-btn"></span>
+                            </span>
+                            <span class="color-grey">Monthly</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+
+                        <!-- price tab -->
+                        <div class="packege-tab">
+
+                            <!-- annually tab -->
+                            <div class="tab-panel" id="annually" >
+                                <div class="row">
+                                    <!-- single pricing -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".3s">
+                                       <div class="single-price-table text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-1.png" alt="icon">
+                                            </div>
+                                            <h3>Starter</h3>
+                                            <p class="pricing-count">€ 230,-</p>
+                                            <p class="per-month">per year</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>500 products</li>
+                                                    <li>25 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Administrator profile</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end-->
+
+                                   <!-- single pricing -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".6s">
+                                       <div class="single-price-table active text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-2.png" alt="icon">
+                                            </div>
+                                            <h3>Standard</h3>
+                                            <p class="pricing-count">€ 940,-</p>
+                                            <p class="per-month">per year</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>5.000 products</li>
+                                                    <li>50 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Administrator profile</li>
+                                                    <li>Phone support</li>
+                                                    <li>Extra user: € 9,95</li>
+                                                    <li>Reports</li>
+                                                    <li>API</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end-->
+
+                                   <!-- single pricing -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".9s">
+                                       <div class="single-price-table text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-3.png" alt="icon">
+                                            </div>
+                                            <h3>Professional</h3>
+                                            <p class="pricing-count">€ 2390,-</p>
+                                            <p class="per-month">per year</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>50.000 products</li>
+                                                    <li>250 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Full price history</li>
+                                                    <li>Phone support</li>
+                                                    <li>Extra user: € 9,95</li>
+                                                    <li>Reports</li>
+                                                    <li>API</li>
+                                                    <li>Dynamic pricing</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end-->
+                               </div>
+                            </div>
+                            <!-- annually tab end -->
+
+
+
+                            <!-- Monthly tab  -->
+                            <div class="tab-panel active" id="monthly">
+                               <div class="row">
+                                    <!-- single pricing -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".3s">
+                                       <div class="single-price-table text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-1.png" alt="icon">
+                                            </div>
+                                            <h3>Starter</h3>
+                                            <p class="pricing-count">€ 24,-</p>
+                                            <p class="per-month">per month</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>500 products</li>
+                                                    <li>25 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Administrator profile</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".6s">
+                                       <div class="single-price-table active text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-2.png" alt="icon">
+                                            </div>
+                                            <h3>Standard</h3>
+                                            <p class="pricing-count">€ 98,-</p>
+                                            <p class="per-month">per month</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>5.000 products</li>
+                                                    <li>50 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Administrator profile</li>
+                                                    <li>Phone support</li>
+                                                    <li>Extra user: € 9,95</li>
+                                                    <li>Reports</li>
+                                                    <li>API</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end-->
+
+                                   <!-- single pricing -->
+                                   <div class="col-md-4 wow flipInY" data-wow-delay=".9s">
+                                       <div class="single-price-table text-center">
+                                            <div class="pricing-icon"> 
+                                                <img src="assets/img/pricing-icon-3.png" alt="icon">
+                                            </div>
+                                            <h3>Professional</h3>
+                                            <p class="pricing-count">€ 249,-</p>
+                                            <p class="per-month">per month</p>
+                                            <div class="pricing-lists">
+                                                <ul>
+                                                    <li>50.000 products</li>
+                                                    <li>250 competitors</li>
+                                                    <li>Unlimited data storage</li>
+                                                    <li>Full price history</li>
+                                                    <li>Full price history</li>
+                                                    <li>Phone support</li>
+                                                    <li>Extra user: € 9,95</li>
+                                                    <li>Reports</li>
+                                                    <li>API</li>
+                                                    <li>Dynamic pricing</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" role="button" data-toggle="modal" data-target="#signUpPopup" class="boxed-btn link">Start free trial</a>
+                                            <p class="price-credit">No creditcard required.</p>
+                                       </div>
+                                   </div>
+                                   <!-- single pricing end-->
+                               </div>
+                            </div>
+                            <!-- Monthly tab  -->
+
+
+                        </div>
+                         <!-- price tab End -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== Pricing end=========== -->
+
+
+        <!-- =========== pricing Contact Section =========== -->
+        <div class="contact-section shape-bg-2 pb-300">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row justify-content-center">
+                            <div class="col text-center wow fadeIn" data-wow-delay=".3s">
+                                <div class="section-title">
+                                    <h3>Need more users?</h3>
+                                    <p>One user included. You can easily add more users in your dashboard for € 9,95 per month. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row responsive-order">
+                            <div class="col-md-6">
+                                <div class="contact-form-wrap">
+                                    <h3 class=" wow fadeIn" data-wow-delay=".3s">Talk to a real human? </h3>
+                                    <p class=" wow fadeInUp" data-wow-delay=".3s">Pricesearch isn’t bots and bits only. You can get in touch with one of our real humans, by just dropping some lines in our contact form below!</p>
+                                    <div class="contact-form">
+                                         <form action="#">
+                                             <div class="form-group wow fadeInUp" data-wow-delay=".3s">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" required>
+                                            </div>
+                                             <div class="form-group wow fadeInUp" data-wow-delay=".6s">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" id="email" required>
+                                            </div>
+                                            <div class="form-group wow fadeInUp" data-wow-delay=".9s">
+                                                <label for="message">Message</label>
+                                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                            </div>
+                                            <div class="form-group wow fadeIn" data-wow-delay="1s">
+                                               <button type="submit" class="boxed-btn">Submit</button>
+                                            </div>
+                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInRight" data-wow-delay=".3s">
+                                <div class="zigzag-imgs">
+                                    <div class="zigzag-img zigzag-img-1">
+                                        <img src="assets/img/john-doe.png" alt="john doe">
+                                    </div>
+                                    <div class="zigzag-bg-shape zigzag-bg-1"></div>
+                                    <div class="zigzag-img zigzag-img-2">
+                                        <img src="assets/img/Johan-de-Wit-vierkant.png" alt="Johan de Wit vierkant">
+                                    </div>
+                                    <div class="zigzag-bg-shape zigzag-bg-2"></div>
+                                    <div class="zigzag-img zigzag-img-3">
+                                        <img src="assets/img/over-secity.png" alt="over secity">
+                                    </div>
+                                    <div class="zigzag-bg-shape zigzag-bg-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===========Pricing Contact Section End=========== -->
+        
+        <!-- =========== Footer section  =========== -->
+        <footer class="footer mt-255">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="colored-signup-box color-white text-center">
+                            <h2>Start your free trial today.</h2>
+                            <div class="signup-form-wrap">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="input-field"><input type="email" placeholder="Email address"></div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button type="submit" class="btn boxed-btn white-bg">Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="signup-form-caption">No creditcard required.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Product</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="features.html">Features</a></li>
+                                            <li><a href="#">How it works</a></li>
+                                            <li><a href="#">Story</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="#">Integrations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Learn</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="Blog.html">Blog</a></li>
+                                            <li><a href="guides.html">Guides</a></li>
+                                            <li><a href="#">Knowledge base</a></li>
+                                            <li><a href="faq.html">F.A.Q.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Company</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="features.html">About us</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Terms & Privacy</a></li>
+                                            <li><a href="pricing.html">Partner program</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <div class="social-links">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <p>Proudly developed in the Netherlands <img src="assets/img/footer-icon.png" alt="icon"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- =========== Footer section End =========== -->
+
+       <!--================== Jquery js ==================-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--================== waypoints js ==================-->
+        <script src="assets/js/waypoints.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/popper.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!--================== waypoints js ==================-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+
+        <!--================== wow js ==================-->
+        <script src="assets/js/wow.min.js"></script>
+
+        <!--================== tagify js ==================-->
+        <script src="assets/js/jQuery.tagify.min.js"></script>
+
+        <!--================== nice select js ==================-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

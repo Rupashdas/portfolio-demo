@@ -1,0 +1,826 @@
+/*
+===================================================
+               Site details
+===================================================
+    template name: Tax Relief Pros
+    author: Rupash das
+    Author uri: https://devrupash.com
+*/
+
+/*
+===================================================
+               Talbe of css
+===================================================
+    1.1 Base css
+    1.2 Header css
+    1.3 Background images css
+    1.4 feature section css
+    1.5 Solution section css
+    1.6 Client section css
+    1.7 Testimonial section css
+    1.8 FAQ section css
+    1.9 Call to action section css
+    1.10 Preloader css
+*/
+
+/*
+===================================================
+                1.1 Base css
+===================================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Livvic:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../fonts/LucidaGrande.eot');
+    src: url('../fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaGrande.woff2') format('woff2'),
+        url('../fonts/LucidaGrande.woff') format('woff'),
+        url('../fonts/LucidaGrande.ttf') format('truetype'),
+        url('../fonts/LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+a{
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
+    color: #6D7783;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Livvic', sans-serif;
+    color: #222A41;
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#222A41;
+}
+body {
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    color:#6D7783;
+    line-height: 1.7;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@-webkit-keyframes upDown{
+    0%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes upDown{
+    0%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+.subtitle {
+    color: #222a41;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-wrap h2 {
+    font-size: 34px;
+}
+
+.title-wrap {
+    margin-bottom: 60px;
+}
+
+/*
+===================================================
+                1.2 Header css
+===================================================
+*/
+
+.header-section .navbar {
+    padding: 0;
+}
+
+.logo img {
+    max-width: 170px;
+}
+
+.header-section {
+    background-color: #fff;
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.header-section.sticky {
+    padding: 6px 0;
+    -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+}
+
+.header-section .navbar .nav-link {
+    font-size: 17px;
+    color: #393939;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 22px;
+}
+
+.navbar .nav-link:hover {
+    color: #3b43f2;
+}
+
+.bordered-btn {
+    display: inline-block;
+    background-color: #3b43f2;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 80px;
+    border: 1px solid #3b43f2;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 0px 14px 30px rgba(69,158,255,0.2);
+            box-shadow: 0px 14px 30px rgba(69,158,255,0.2);
+}
+
+.bordered-btn:hover {
+    background-color: transparent;
+    color: #3b43f2;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.header-section .navbar .nav-link.bordered-btn {
+    background: transparent;
+    color: #3b43f2;
+    -webkit-box-shadow: none;
+            box-shadow: none
+}
+
+.header-section .navbar .nav-link.bordered-btn:hover {color: #fff;background-color: #3b43f2;}
+.single-item span {
+    font-size: 15px;
+}
+
+.client-section {
+    padding: 100px 0 50px;
+}
+
+.header-section .navbar-toggler-icon {
+    position: relative;
+    z-index: 1;
+    height: 2px;
+    width: 20px;
+    display: inline-block;
+    background-color: #3b43f2;
+}
+
+.header-section .navbar-toggler-icon:before, .header-section .navbar-toggler-icon:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    content: "";
+    background-color: #3b43f2;
+}
+
+.header-section .navbar-toggler-icon:after {
+    top: auto;
+    bottom: -5px;
+}
+
+.header-section button.navbar-toggler {
+    border: 1px solid #3b43f2;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 4px 8px 8px 8px;
+}
+
+/*
+===================================================
+                1.3 Background images css
+===================================================
+*/
+.banner-bg{
+    background-image: url('../img/banner-bg.png');
+}
+.banner-secion {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 250px;
+    padding-top: 100px;
+    background-position: center;
+}
+.banner-content h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.banner-content {
+    color: #fff;
+}
+.banner-content p {
+    font-size: 18px;
+    padding-right: 90px;
+    margin-bottom: 25px;
+}
+
+.banner-content .bordered-btn {
+    background-color: #fff;
+    color: #3b43f2;
+    border-color: #fff;
+}
+
+.banner-content .bordered-btn:hover {
+    background-color: #3b43f2;
+    color: #fff;
+}
+.banner-img {
+    width: 125%;
+    margin-left: -25%;
+}
+.banner-img img, .feature-bg, .clients-bg, .contact-img img{
+    -webkit-animation-name: upDown;
+            animation-name: upDown;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+}
+.work-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px 50px;
+    -webkit-box-shadow: 0px 20px 80px rgba(0,0,0,0.1);
+            box-shadow: 0px 20px 80px rgba(0,0,0,0.1);
+    margin-top: -200px;
+}
+
+.subtitle {
+    color: #222a41;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-wrap h2 {
+    font-size: 34px;
+}
+
+.title-wrap {
+    margin-bottom: 60px;
+}
+
+.site-card {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 30px;
+}
+
+.icon img {
+    max-height: 80px;
+}
+
+.icon {
+    margin-bottom: 15px;
+}
+
+.site-card h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.site-card:hover .card-number,
+.site-card:hover h4 {
+    color: #3b43f2;
+}
+
+
+
+
+
+
+
+/*
+===================================================
+                1.4 feature section css
+===================================================
+*/
+
+.feature-section {
+    position: relative;
+    z-index: 1;
+    padding: 225px 0 100px 0;
+}
+
+.feature-section .site-card {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    padding: 49px 23px;
+    margin-bottom: 30px;
+}
+
+.site-card p {
+    margin: 0;
+}
+.feature-bg {
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 0;
+    max-width: initial;
+    width: 60%;
+}
+.card-number {
+    position: absolute;
+    top: 15px;
+    right: 23px;
+    font-weight: 900;
+    color: #CBCBE0;
+    font-size: 34px;
+    line-height: 34px;
+}
+
+.feature-section .col-md-6:nth-child(3) .site-card, 
+.feature-section .col-md-6:nth-child(1) .site-card {
+    margin-top: -100px
+}
+.content-wrap {
+    padding: 60px 50px;
+}
+
+.content-wrap p {
+    font-size: 15px;
+}
+
+
+
+.dotted-bg {
+    background-image: url(../img/feature-dot.png);
+    height: 180px;
+    width: 150px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 130px;
+    right: 0;
+    z-index: -1;
+}
+/*
+===================================================
+                1.5 Solution section css
+===================================================
+*/
+.solution-section {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+}
+
+.solution-section:after, .footer-section:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background: rgb(59,141,242);
+    background: -o-linear-gradient(252deg, rgba(59,141,242,1) 0%, rgba(34,41,178,1) 100%);
+    background: linear-gradient(198deg, rgba(59,141,242,1) 0%, rgba(34,41,178,1) 100%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .05;
+}
+.solution-section h1 {
+    font-family: Lucida Grande;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 34px;
+}
+
+.single-item {
+    margin-bottom: 20px;
+}
+
+.single-item span {
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+.single-item img {
+    width: 24px;
+}
+
+/*
+===================================================
+                1.6 Client section css
+===================================================
+*/
+
+.clients-bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    max-width: 500px
+}
+.client-section {
+    padding: 150px 0;
+}
+
+.client-bg {
+    padding: 40px 0 80px 10px;
+}
+
+.partner-imgs a {
+    display: inline-block;
+    margin: 15px;
+    -webkit-box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+            box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+}
+
+.client-bg .partner-imgs:nth-child(2) {padding-left: 100px;}
+
+.client-section .title-wrap {
+    margin-bottom: 6px;
+}
+
+.client-section .content-wrap > p {
+    margin-bottom: 35px;
+}
+
+.client-section .content-wrap {
+    padding-top: 70px;
+}
+
+/*
+===================================================
+                1.7 Testimonial section css
+===================================================
+*/
+
+.testimonial-slider.owl-carousel .owl-item img {
+    width: auto;
+}
+.testimonial-slider.owl-carousel .owl-stage-outer {
+    overflow: inherit;
+}
+.testimonial-section {
+    overflow-x: hidden;
+}
+.testimonial-section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.testimonial-section:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #3B43F2;
+    z-index: -1;
+    border-radius: 100px 100px 0 0;
+}
+.testimonial-section .title-wrap h2, .testimonial-section .title-wrap .subtitle {
+    color: #fff;
+}
+
+.client-info h6 {font-weight: 600;}
+
+.single-testimonial {
+    text-align: center;
+    background-color: #fff;
+    color: #242424;
+    padding: 40px 40px 0px 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
+            box-shadow: 0px 20px 40px rgba(0,0,0,0.2);
+}
+
+.testimonial-icon img {
+    margin: 0 auto;
+    max-width: 50px;
+}
+
+.single-testimonial > p {
+    color: #6d7783;
+    margin-bottom: 0;
+}
+
+.testimonial-icon {
+    margin-bottom: 15px;
+}
+
+.client-info img {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 20px 40px rgba(49,88,114,0.25);
+            box-shadow: 0px 20px 40px rgba(49,88,114,0.25);
+    float: left;
+    margin-right: 27px;
+}
+
+.client-info {
+    overflow: hidden;
+    padding: 30px 30px 40px 30px;
+    text-align: left;
+}
+
+.client-info p {
+    color: #6d7783;
+}
+
+.client-info span {padding: 12px 0;display: inline-block;}
+
+.client-info h6, .client-info p {
+    margin: 0;
+}
+
+.testimonial-slider .owl-nav {
+    text-align: right;
+    position: absolute;
+    bottom: -60px;
+    z-index: 99;
+    left: 0;
+    width: 1140px;
+}
+
+.testimonial-slider {
+    margin-bottom: 120px;
+}
+
+.testimonial-slider .owl-nav button {margin-left: 30px;}
+
+.testimonial-slider .owl-nav button:focus, .accordion .card button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.logo-slider .single-logo img {
+    width: auto;
+    margin: 0 auto;
+}
+
+.single-logo {
+    text-align: center;
+}
+
+
+
+
+/*
+===================================================
+                1.8 FAQ section css
+===================================================
+*/
+
+.faq-section {
+    padding: 90px 0;
+}
+
+.faq-section .title-wrap h2 {
+    font-size: 60px;
+}
+
+.accordion .card button {
+    color: #293340;
+    padding: 0;
+    background-color: transparent;    
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.accordion .card {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    border-radius: 0;
+    border: none;
+}
+
+.accordion .card .card-header {
+    border: none;
+    background-color: #fff;
+}
+
+.accordion .card-body {
+    font-size: 15px;
+}
+.accordion .card button:hover{
+    color: #3B43F2;
+}
+.accordion .card button {
+    position: relative;
+    z-index: 1;
+}
+
+.accordion .card button:after {
+    position: absolute;
+    font-family: fontAwesome;
+    content: "\f107";
+    top: 0;
+    right: 0;
+    color: #459eff;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 25px;
+    line-height: 32px;
+}
+
+.accordion .card button.collapsed:after {-webkit-transform: rotate(0);-ms-transform: rotate(0);transform: rotate(0);}
+
+
+/*
+===================================================
+                1.9 Call to action section css
+===================================================
+*/
+
+.contact-img {
+    width: 125%;
+    max-width: initial;
+    margin-left: -25%;
+}
+.cta-section .title-wrap h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.cta-section .content-wrap {
+    padding-top: 85px;
+}
+
+.cta-section .title-wrap {
+    margin-bottom: 50px;
+}
+
+.cta-section .content-wrap > p {
+    margin-bottom: 60px;
+}
+
+.cta-section {
+    padding: 20px 0 100px;
+}
+
+/*
+===================================================
+                1.9 Call to action section css
+===================================================
+*/
+.footer-section{
+    position: relative;
+    z-index: 1
+}
+footer.footer-section {
+    padding: 70px 0 40px;
+}
+
+.footer-section .logo {
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+.site-about > p {
+    font-size: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #3b43f2;
+    padding: 10px 5px;
+    margin-left: 4px;
+}
+
+.social-links {
+    font-size: 13px;
+}
+
+.social-links a:hover {
+    color: #6D7783;
+}
+
+.footer-menu h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu ul a {
+    display: block;
+    padding: 4px 0px;
+    font-size: 15px;
+}
+
+
+/*
+===================================================
+                1.10 Preloader css
+===================================================
+*/
+
+.preloader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3b43f2;
+    z-index: 999;
+}
+
+.box {
+    height: 100%;
+}
+
+.box {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .8);
+}
+.box .spinner {
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    border: 5px solid #F58A52;
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+    animation: spinner3 800ms ease infinite;
+}
+@keyframes spinner3 {
+    to {
+        transform: rotate(360deg);
+    }
+}

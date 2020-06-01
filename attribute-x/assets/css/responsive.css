@@ -1,0 +1,257 @@
+@media only screen and (min-width: 1200px) {
+	footer .widgets .quick-links {
+		padding-left: 50px;
+	}
+}
+
+/* Maximum Width 1199px */
+@media only screen and (max-width: 1199px) {
+	section#banner .banner-content h4 {
+	}
+	footer .widgets .wid-logo {
+		margin-bottom: 100px;
+	}
+}
+/* Max width 991px*/
+@media only screen and (max-width: 991px) {
+	header .logo-menu .container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header .logo-menu nav ul li a {
+		padding: 25px 10px;
+	}
+	section#banner .banner-content {
+		margin-top: 0;
+	}
+	.banner-img {
+		margin-top: 80px;
+		text-align: center;
+	}
+	section#contact .contact-wrap .contact-form {
+		margin-top: 80px;
+	}
+	#c-overview .overview-top .overview-top-left {
+		margin-bottom: 50px;
+	}
+	#c-overview .overview-top .overview-top-right .counter-items {
+		margin-top: 40px;
+	}
+	#digital-transformation ul {
+		margin: 55px 0;
+	}
+	#we-are-best .we-best-vdo .best-video a + .video-items {
+		flex-wrap: wrap;
+	}
+	#we-are-best .we-best-vdo .best-video a + .video-items .single-item {
+		width: 40%;
+		margin-bottom: 20px;
+	}
+	#experience .container {
+		flex-wrap: wrap;
+	}
+	#experience .container .exp-left {
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#experience .container .exp-right {
+		width: 100%;
+	}
+}
+
+/* Minimum Width 768px & Maximum Width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	header .logo-menu .container {
+	}
+
+	header .logo-menu .logo {
+		margin-top: 20px;
+	}
+	#services .service-items .single-service .service-details p {
+		padding-left: 30px;
+	}
+	#news .blog-wrap .blog-sidebar .blog-widget > div h4 {
+		font-size: 18px;
+	}
+}
+
+/* Maximum Width 767px. */
+@media only screen and (max-width: 767px) {
+	section#banner:after {
+		display: none;
+	}
+	header .logo-menu .container {
+		justify-content: space-between;
+	}
+	header .logo-menu .container {
+		justify-content: space-between;
+		max-width: 100%;
+		padding: 0;
+	}
+	header .logo-menu .toggle-menu {
+		display: block;
+	}
+	.logo-menu .logo {
+		margin-left: 15px;
+	}
+	header .logo-menu nav {
+		width: 100%;
+		background: #000;
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.5s;
+		padding-bottom: 0;
+	}
+	header .logo-menu nav.menu-open {
+		max-height: 400px;
+		padding-bottom: 15px;
+	}
+
+	header .logo-menu nav ul {
+		display: block;
+	}
+	header .logo-menu nav ul li.contact {
+		margin-left: 15px;
+		margin-top: 10px;
+	}
+	header .logo-menu nav ul li a {
+		padding: 10px 15px;
+		width: 100%;
+		color: #ccc;
+	}
+	header .logo-menu nav ul li:hover a {
+		background: #de2752;
+		color: #fff;
+	}
+
+	header .logo-menu nav ul li.contact a {
+		width: auto;
+		border-radius: 10px;
+	}
+	footer .widgets .subscribe {
+		margin: 50px 0;
+	}
+	footer .widgets .wid-logo {
+		margin-bottom: 60px;
+	}
+	#services .service-items .single-service h3 {
+		font-size: 20px;
+	}
+	#services .service-items .single-service h3 img {
+		margin-left: 10px;
+		max-width: 35px;
+	}
+	#services .service-items .single-service p:nth-child(2) {
+		font-size: 13.5px;
+	}
+	#services .service-items .single-service .service-details p {
+		font-size: 13.5px;
+	}
+	#call-2-action .container {
+		flex-wrap: wrap;
+	}
+	#call-2-action .cta-right {
+		margin: 15px auto 0;
+	}
+	#news .blog-wrap .blog-left,
+	#news .blog-wrap .blog-sidebar {
+		width: 100%;
+	}
+	.shape-bg, #news, #c-overview {
+	    background-size: auto;
+	    padding-bottom: 50px;
+	}
+	.section-title h2 span:last-child {
+	    font-size: 30px;
+	}
+	section#call-2-action {
+	    text-align: center;
+	}
+	#call-2-action .cta-left h4 {
+	    font-size: 30px;
+	}
+	.section-title h2 {
+	    margin-bottom: 30px;
+	}
+	#news nav ul li {
+	    flex-basis: 44%;
+	    margin-bottom: 20px;
+	}
+
+	#news nav ul {
+	    flex-wrap: wrap;
+	}
+
+	#news nav {
+	    margin-bottom: 50px;
+	}
+	.we-best-vdo > p {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#we-are-best .we-best-vdo .best-video {
+	    max-width: 100%;
+	}
+
+	#we-are-best .we-best-vdo .best-video a + .video-items {
+	    width: 100%;
+	    left: 0;
+	}
+	.help-item {
+	    margin-bottom: 15px;
+	}
+	section#contact, #digital-transformation, #how-we-help, #partners {
+	    padding: 50px 0;
+	}
+	#happy-clients .people-say-wrap {
+	    max-width: 100%;
+	}
+	#happy-clients .clients {
+	    margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	section#banner .banner-content h1 {
+		font-size: 40px;
+	}
+	section#banner .banner-content h4 {
+		font-size: 18px;
+	}
+	#services .service-items .single-service h3 img {
+		display: none;
+	}
+	#digital-transformation .section-title h2 span:last-child {
+		font-size: 28px;
+	}
+	#digital-transformation .section-title h2 span:first-child {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	header .header-top * {
+		width: 100%;
+		margin-left: 0 !important;
+	}
+	#c-overview .overview-bottom .overview-bottom-right p,
+	#c-overview .overview-top .overview-top-left p {
+		font-size: 23px;
+	}
+	#c-overview .overview-top .overview-top-right p {
+		font-size: 14px;
+	}
+	#c-overview .section-title h2 span:last-child {
+		font-size: 30px !important;
+	}
+	#c-overview .overview-top .overview-top-right .counter-items {
+		flex-wrap: wrap;
+	}
+	#c-overview .overview-top .overview-top-right .counter-items .counter-item {
+		margin-bottom: 15px;
+	}
+	#sub-contact .content p {
+		font-size: 30px;
+	}
+}

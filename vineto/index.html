@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vineto</title>
+    <!--bootstrap css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--fontawesome css-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--owl carousel css-->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <!--style css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--responsive css-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+    
+<body>
+    <!-- bewerten modal -->
+    <div class="modal fade" id="bewerten" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content bewerten-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body text-center">
+                    <h4>Bewerten</h4>
+                    <p>Scannen Sie den QR Code auf der Weinflasche. Oder geben Sie den 8-stelligen code ein.  </p>
+                    <form action="#">
+                        <input type="text" class="form-control">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- bewerten modal end-->
+
+   <!-- ============ Header Section start ============ -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/img/logo.png" alt="vineto">
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-auto">
+                    <div class="site-login-wrap">
+                       <div class="icons-wrap d-inline-block">
+                            <a href="#" class="cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                            <a href="#" class="cart">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                       </div>
+                       <div class="login-button d-inline-block dropdown-toggle" role="button" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Jhon doe <i class="fa fa-angle-down"></i>
+                           <span class="user-icon"><i class="fa fa-user-o"></i></span>
+                       </div>
+                       <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a href="#" class="d-block"><b>Status :</b> Online</a>
+                            <a href="#" class="d-block">Account setting</a>
+                            <a href="#" class="d-block">Feedback</a>
+                            <a href="#" class="d-block">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============ Header Section end ============ -->
+    
+    <!-- ============ Banner Section start ============ -->
+    <div class="banner-section banner-bg">
+        <div class="container">
+            <!-- product row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner-contents">
+                        <div class="banner-badge">
+                            <img class="badge-img" src="assets/img/banner-badge.png" alt="badge">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="product-cart">
+                                    <div class="product-header">
+                                        <h4>Tishbi Sauvignon</h4>
+                                        <span class="year">2008</span>
+                                    </div>
+                                    <div class="product-img">
+                                        <img src="assets/img/product-1.png" alt="Product">
+                                    </div>
+                                    <div class="product-footer">
+                                        <div class="country">
+                                            <img src="assets/img/icons/spain.png" alt="Spain">
+                                        </div>
+                                        <a href="#" class="product-btn">mehr</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="product-info-wrap">
+                                    <div class="product-info">
+                                        <p class="info-box">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span class="count-number d-block">2347</span>
+                                        </p>
+                                        <p class="info-box">
+                                            <i class="fa fa-star-o"></i>
+                                            <span class="count-number d-block">349</span>
+                                        </p>
+                                        <p class="info-box social">
+                                            <a href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="product-cart right">
+                                    <div class="product-header">
+                                        <h4>Tishbi Sauvignon</h4>
+                                        <span class="year text-right">2008</span>
+                                    </div>
+                                    <div class="product-img">
+                                        <img src="assets/img/product-2.png" alt="Product">
+                                    </div>
+                                    <div class="product-footer">
+                                        <div class="country">
+                                            <img src="assets/img/icons/italy.png" alt="Italy">
+                                        </div>
+                                        <a href="#" class="product-btn">mehr</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product row end-->
+
+            <!-- button row -->
+            <div class="row justify-content-center">
+                <div class="col-auto col">
+                    <div class="button-wrap">
+                        <a href="#" class="transparent boxed-btn" data-toggle="modal" data-target="#bewerten">Bewerten</a>
+                        <a href="#" class="boxed-btn">18,90 EUR</a>
+                    </div>
+                    <p class="button-text text-right">Paketpreis</p>
+                </div>
+            </div>
+            <!-- button row end-->
+        </div>
+    </div>
+    <!-- ============ Banner Section end ============ -->
+
+    <!-- ============ Service section  ============ -->
+    <div class="service-section service-bg">
+        <div class="container">
+            <h1 class="section-title text-center">WIE FUNKTIONERT’S</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="assets/img/icons/icon-1.png" alt="Icon">
+                        </div>
+                        <p>Paket mit zwei Weinen bestellen.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="assets/img/icons/icon-2.png" alt="Icon">
+                        </div>
+                        <p>Trinken :-) und anschließend bewerten.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="assets/img/icons/icon-3.png" alt="Icon">
+                        </div>
+                        <p>Für Deine Bewertung schenken wir Dir einen 5,- EUR Einkaufsgutschein.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ Service section end============ -->
+
+    <!-- ============ Product carousel section ============ -->
+    <div class="product-carousel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-auto">
+                    <img src="assets/img/carousel-badge.png" alt="" class="badge-img">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="product-carosel owl-carousel">
+                        <div class="single-product">
+                            <div class="star-rating">
+                                <i class="fa fa-star"></i> 8.8
+                            </div>
+                            <div class="product-name">
+                                <h6>Tishbi Sauvignon <span>2008</span></h6>
+                            </div>
+                            <div class="carousel-img-wrap">
+                                <img src="assets/img/product-1.png" alt="product">
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="boxed-btn">9,90 EUR</a>
+                            </div>
+                        </div>
+                        <div class="single-product">
+                            <div class="star-rating">
+                                <i class="fa fa-star"></i> 8.8
+                            </div>
+
+                            <div class="product-name">
+                                <h6>Tishbi Sauvignon <span>2008</span></h6>
+                            </div>
+                            <div class="carousel-img-wrap">
+                                <img src="assets/img/product-2.png" alt="product">
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="boxed-btn">9,90 EUR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ Product carousel section end============ -->
+
+    <!-- ============ Testimonial section start ============ -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="testimonial-section">
+                    <h1 class="section-title text-center">Testamonials</h1>
+                    <div class="testimonial-wrap text-center">
+                        <div class="single-testimonial">
+                            <div class="client-img">
+                                <img src="assets/img/client.jpg" alt="Client">
+                            </div>
+                            <p>Wir haben die beiden Weine mit unseren Freunden verkostet. Bei der Bewertung war es echt spannend zu sehen, wie unterschiedlich die Geschmäcker sind. War ein lustiger Abend und die Weinauswahl war echt super <img src="assets/img/icons/emoji.png" alt="img"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ Testimonial section end============ -->
+
+    <!-- ============ heart section ============ -->
+    <div class="heart-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="section-title text-center">HERZSTÜCK</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single-box">
+                                <div class="circle-img">
+                                    <img src="assets/img/Intersection-1.png" alt="img">
+                                </div>
+                                <p class="name">Manuell und Henry <span class="designation">(Weingut Bugeda)</span> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-box">
+                                <div class="circle-img">
+                                    <img src="assets/img/Intersection-2.png" alt="img">
+                                </div>
+                                <p class="name">Manuell und Henry <span class="designation">(Weingut Bugeda)</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p class="heart-bottom">Ohne Winzer keinen Wein. Wir von vineto, kennen nicht nur die Weine…… </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============ heart section end============ -->
+    <!-- ============ blank section ============ -->
+    <div style="height: 500px;"></div>
+    <!-- ============ blank section end ============ -->
+
+    
+    <!-- ============ footer section start ============ -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/img/footer-logo.png" alt="Vineto">
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-md-auto">
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-top"></div>
+                </div>
+                <div class="col col-auto">
+                    <p class="copyright">&copy; 2019 vineto</p>
+                </div>
+                <div class="col">
+                    <div class="footer-menu">
+                        <a href="#">Privacy</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============ footer section end ============ -->
+
+
+	<!--Jquery js-->
+	<script src="assets/js/jquery.min.js"></script>
+    <!--propper js-->
+    <script src="assets/js/propper-1.12.3.js"></script>
+    <!--owl carosel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--main js-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

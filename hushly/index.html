@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--====== title ======-->
+    <title>Hushly</title>
+
+    <!--====== bootstrap css ======-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--====== font-awesome css ======-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--====== style css ======-->
+    <link href="assets/css/jquery.range.css" rel="stylesheet">
+    <!--====== jquery-ui css ======-->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!--====== style css ======-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--====== responsive css ======-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--====== hero section started here======-->
+<div class="hero-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hero-left">
+                    <h1>317 boliger i hovedstaden du aldrig har set før</h1>
+                    <p>10% af boligmarkedet er skjult, hvor boliger sælges som skuffesalg
+                        og denne tendens er stigende - specielt i de større byer, hvor der
+                        er rift om de attraktive boliger. Nu har vi samlet ejendomsmæglernes
+                        skuffesalg og gjort dem synlige for dig som boligsøgende.</p>
+                    <a href="#" class="bordered-btn">Se boliger</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="map" >
+                    <img src="assets/img/map-1.jpg" alt="map">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== hero section end here======-->
+
+<!--====== tab section started here======-->
+<div class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Nav tabs -->
+                <div class="nav-links-wrap">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabOne">Alle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabTwo">København K</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabThree">Nørrebro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabFour">Vesterbro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabFive">Østerbro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabSix">Frederiksberg</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tabOne">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabTwo">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabThree">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabFour">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabFive">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabSix">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villa
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Fritidsbolig
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Ejerlejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Villalejlighed
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <p class="single-check">
+                                            <label class="checkWrap"> Rækkehus
+                                                <input type="checkbox">
+                                                <span class="checkmarkArrow"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slider-area">
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Kontant pris
+                                        </h4>
+                                        <div class="Kontant-pris"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Areal
+                                        </h4>
+                                        <div class="Areal"></div>
+                                    </div>
+                                    <div class="single-slide">
+                                        <h4 class="slide-title">
+                                            Antal værelser
+                                        </h4>
+                                        <div class="Antal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="result-wrap">
+                                    <div class="total">
+                                        <h1><span class="total-amount">1.121</span> <span class="tag">boliger</span></h1>
+                                        <a href="#" class="bordered-btn">Se Boliger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== tab section end here======-->
+
+
+<!--====== call to action area start here======-->
+<div class="section-padding pdt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="cta-area">
+                    <img class="text-center" src="assets/img/daimond.PNG" alt="Daimond">
+                    <h1>Boliger du aldrig havde fundet</h1>
+                    <p class="tagline">før nu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== call to action area start here======-->
+
+<!--====== gallary area start here======-->
+<div class="section-padding  pdt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="gallary-info">
+                    <h1>Slut med<br> uigennemskuelige <br> køberkartoteker</h1>
+                    <p>Nu har vi samlet alle ejendomsmæglernes skuffesalg så drømmeboligen ikke går forbi dig i din boligsøgning.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="gallary-wrap">
+                    <div class="single-apartment">
+                        <img src="assets/img/building-3.jpg" alt="">
+                        <p class="apartment-price">4.595.000 <span class="price-tag">94 m2 / 4V</span></p>
+                    </div>
+                    <div class="single-apartment">
+                        <img src="assets/img/building-2.jpg" alt="">
+                        <p class="apartment-price">5.200.000 <span class="price-tag">99 m2 / 4V</span></p>
+                    </div>
+                    <div class="single-apartment">
+                        <img src="assets/img/building-1.jpg" alt="">
+                        <p class="apartment-price">3.210.000 <span class="price-tag">86 m2 / 3V</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== gallary area start here======-->
+
+<!--====== blog area started here======-->
+<div class="section-padding  pdt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="single-blog">
+                    <div class="blog-thumbnail thumb-1"></div>
+                    <div class="single-blog-text">
+                        <h1>Ejendomsmæglerens skuffesalg, online</h1>
+                        <p>Hidtil var skuffesalg, boliger som lå i ejendomsmæglerens
+                            skuffe indtil den rigtige køber dukkede op. Nu er de
+                            med billeder, pris og m2. Adressen er dog i udgangspunktet .</p>
+                    </div>
+                </div>
+                <div class="single-blog">
+                    <div class="single-blog-text">
+                        <h1>Book fremvising, simpelt</h1>
+                        <p>Når du har oprettet en profil kan du nemt browse rundt imellem
+                            alle de hemmelige boliger på Hushly. Da adressen er skjult må du
+                            sammenholde beskrivelse, pris, antal værsler og m2 med en cirka
+                            beliggenhed for at vurdere om du vil booke en fremvisning.</p>
+                    </div>
+                    <div class="blog-thumbnail thumb-2"></div>
+                </div>
+                <div class="single-blog">
+                    <div class="blog-thumbnail thumb-3"></div>
+                    <div class="single-blog-text">
+                        <h1>Hvad koster det at være med på Hushly?</h1>
+                        <p>Da ejendomsmægleren og sælgeren som regel ikke ønsker unødige fremvisninger
+                            til skuffesalg tager vi et beløb for at være medlem og for at booke fremvisninger.
+                            Det er kun for at sikre at dem som melder sig til Hushly
+                            er seriøse omkring deres boligsøgning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== blog area end here======-->
+
+<!--====== pricing section start here ======-->
+<div class="section-padding pdt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="single-pricing-box">
+                    <h4>Free</h4>
+                    <div class="pricing-box-price">
+                        <p class="pricing-amount"></p>
+                    </div>
+                    <div class="pricing-box-content">
+                        <ul>
+                            <li><a href="#">Se alle hemmelige boliger på kort</a></li>
+                            <li><a href="#">Se forhåndsvisning af hemmelige </a></li>
+                          </ul>
+                    </div>
+                    <a href="" class="bordered-btn">Vælg medlemskab</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-pricing-box">
+                    <h4>Basic</h4>
+                    <div class="pricing-box-price">
+                        <p class="pricing-amount">99, <span><span class="underline">pr</span> md</span></p>
+                    </div>
+                    <div class="pricing-box-content">
+                        <ul>
+                            <li><a href="#">39,- pr. booked boligfremvising</a></li>
+                            <li><a href="#">Se alle hemmelige boliger på kort</a></li>
+                            <li><a href="#">Se forhåndsvisning af hemmelige boliger</a></li>
+                            <li><a href="#">Se fuld beskrivelse af boliger</a></li>
+                        </ul>
+                    </div>
+                    <a href="##" class="bordered-btn">Vælg medlemskab</a>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-pricing-box">
+                    <h4>Premium</h4>
+                    <div class="pricing-box-price">
+                        <p class="pricing-amount">249, <span><span class="underline">pr</span> md</span></p>
+                    </div>
+                    <div class="pricing-box-content">
+                        <ul>
+                            <li><a href="#">Se alle hemmelige boliger på kort</a></li>
+                            <li><a href="#"> Se forhåndsvisning af hemmelige boliger</a></li>
+                            <li><a href="#">Se fuld beskrivelse</a></li>
+                            <li><a href="#">Gratis bookning af </a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bordered-btn">Vælg medlemskab</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--====== pricing section end here ======-->
+
+<!--====== footer section start here ======-->
+<footer class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Footer</h1>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--====== footer section end here ======-->
+
+<!--====== jQuery js ======-->
+<script src="assets/js/jquery.min.js"></script>
+<!--====== jQuery ui js ======-->
+<script src="assets/js/jquery-ui.min.js.css"></script>
+<!--====== Price range js ======-->
+<script src="assets/js/jquery.range-min.js"></script>
+<!--====== Price range js ======-->
+<script src="assets/js/nicescroll.min.js"></script>
+<!--====== bootstrap js ======-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--====== Popper js ======-->
+<script src="assets/js/popper.min.js"></script>
+<!--====== main js ======-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

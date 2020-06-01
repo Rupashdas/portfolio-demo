@@ -1,0 +1,1046 @@
+/*==============================================================
+Template Name: Edutune School
+Template URI: 
+Description: Responsive Edutune Template  
+Author URI:
+version:
+===============================================================*/
+/* =========================================
+CSS Index
+* Base CSS
+* Search Bar CSS
+* background images CSS
+* Header CSS
+* Main Menu CSS
+* hero area CSS
+* service CSS
+* course details CSS
+* call to action CSS
+* Section title CSS
+* Notice  & events CSS
+* Footer  CSS
+* about CSS
+* courses CSS
+* single course CSS
+* map CSS
+* single blog CSS
+* Contact CSS
+* Co  Activities CSSS
+* FAQ CSS
+===========================================*/
+/*==========================================
+Base CSS
+===========================================*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700');
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+  outline: 0 solid
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.fix {
+  overflow: hidden
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 15px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+html,
+body {
+  height: 100%
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.9;
+  color: #676767;
+  font-size: 16px;
+  background-color: #f9fffd
+}
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #313131;
+}
+a:hover {
+  text-decoration: none
+}
+.section-padding{
+  padding: 100px 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input[type="name"], input[type="email"], input[type="number"], input[type="tel"], input[type="text"], textarea, button[type="submit"] {
+  background-color: #fff;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+  font-weight: 300;
+}
+.height-100{
+  height: 100px
+}
+.height-50{
+  height: 50px;
+}
+.boxed-btn {
+  font-size: 14px;
+  background: #00cf7f;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+a.boxed-btn:hover {
+  color: #fff;
+  background: #333;
+  border-color: #333;
+}
+.inline-btn {
+  line-height: 1;
+  display: inline-block;
+  padding: 15px 0;
+}
+.inline-btn:hover {
+  color: #00cf7f;
+}
+.inline-btn:hover i.fa {
+  padding-left: 5px;
+}
+.inline-btn i.fa {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.padding-top-0{
+  padding-top: 0;
+}
+/*==========================================
+Search Bar CSS
+===========================================*/
+.search-box {
+  background: #00cf7f;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transform: scale(.8);
+          transform: scale(.8);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.search-box-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.search-box-inner .logo a{
+  background: #333;
+  display: block;
+  padding: 16px;
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  border: 1px solid #fff;
+}
+.close-search:hover{
+  background-color: #Fff;
+  color: #00cf7f;
+  box-shadow: -6px 0 15px #333;
+}
+.search-box input {
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+.search-box .boxed-btn {
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 15px 30px;
+  margin-left: 20px;
+}
+.search-box .boxed-btn:hover{
+  border-color: #000;
+}
+.close-search {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  width: 10%;
+  border-left: 1px solid #fff;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  font-size: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 9;
+}
+.search-box.active {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: none;
+          transform: none;
+}
+/*==========================================
+background images CSS
+===========================================*/
+.feature-bg-1{background-image: url(../img/service-bg.jpg);}
+.feature-bg-2, .news-bg-3{background-image: url(../img/service-bg-2.jpg);}
+.cta-area{background-image: url(../img/cta-bg.jpg);}
+.cta-area.about-cta{background-image: url(../img/about-cta.jpg);}
+.news-bg-1{background-image: url(../img/news-bg-1.jpg);}
+.news-bg-2{background-image: url(../img/news-bg-2.jpg);}
+.hero-area{background-image: url(../img/hero-bg.jpg);}
+.hero-area.breadcrumb-about{background-image: url(../img/about-hero-bg.jpg);}
+.history-details-img{background-image: url(../img/history-details.jpg);}
+.courses-bg-1{background-image: url(../img/course-1.jpg);}
+.courses-bg-2{background-image: url(../img/course-2.jpg);}
+.courses-bg-3{background-image: url(../img/course-3.jpg);}
+.courses-bg-4{background-image: url(../img/course-4.jpg);}
+.courses-bg-5{background-image: url(../img/course-5.jpg);}
+.courses-bg-6{background-image: url(../img/course-6.jpg);}
+.courses-bg-7{background-image: url(../img/course-7.jpg);}
+.courses-bg-8{background-image: url(../img/course-8.jpg);}
+.courses-bg-9{background-image: url(../img/course-9.jpg);}
+.news-bg-4{background-image: url(../img/news-bg-3.jpg);}
+.blog-bg-3{background-image: url(../img/blog-bg-3.jpg);}
+.blog-bg-4{background-image: url(../img/blog-bg-4.jpg);}
+.blog-bg-5{background-image: url(../img/blog-bg-5.jpg);}
+.blog-bg-6{background-image: url(../img/blog-bg-6.jpg);}
+.video-area{background-image: url(../img/video-bg.jpg);}
+.activity-1{background-image: url(../img/co-activies-1.jpg);}
+.activity-2{background-image: url(../img/co-activies-2.jpg);}
+.activity-3{background-image: url(../img/co-activies-3.jpg);}
+.activity-4{background-image: url(../img/co-activies-4.jpg);}
+.activity-5{background-image: url(../img/co-activies-5.jpg);}
+.activity-6{background-image: url(../img/co-activies-6.jpg);}
+/*==========================================
+Header CSS
+===========================================*/
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu li {
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline-block;
+  position: relative;
+}
+.header-area {
+  background: #00cf7f;
+  padding: 15px 0;
+}
+.main-menu li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+.logo {
+  padding: 7px 0;
+}
+.header-area.header-absolute {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  z-index: 3;
+}
+.header-area.header-absolute li a:hover, .section-padding.hero-area a:hover{
+  color: #00cf7f;
+}
+.header-area .navbar-toggler {
+  color: #fff;
+  background-color: #00cf7f;
+}
+.header-area .navbar-expand-lg{
+	text-align: right;
+	margin: 6px 0;
+}
+/*==========================================
+Main menu CSS
+===========================================*/
+.main-menu li a:hover {
+  color: #666;
+}
+.main-menu li ul {
+  position: absolute;
+  background-color: #00cf7f;
+  width: 200px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  left: 0;
+  top: 70px;
+  text-align: left;
+  z-index: 9;
+}
+.main-menu li li {
+  display: block;
+  border-bottom: 1px solid #00a656;
+  border-top: 1px solid #2dfcac;
+}
+.main-menu li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  top: 50px;
+}
+.main-menu li:nth-child(7) ul {
+  left: auto;
+  right: 0;
+}
+.main-menu li li:hover {
+  background-color: #00a656;
+}
+.main-menu li a:hover li a {
+  color: #fff;
+}
+.header-area.header-absolute li li a:hover {
+  color: #fff;
+}
+.main-menu li li:first-child {
+  border-top: none;
+}
+.main-menu li li:last-child {
+  border-bottom: none;
+}
+/*==========================================
+hero area CSS
+===========================================*/
+.hero-area {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #00cf7f;
+  z-index: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+}
+.hero-area:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  content: "";
+  z-index: -1;
+  opacity: .5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.admission-form {
+  background: #fff;
+  padding: 50px;
+}
+.admission-form .boxed-btn, .contact-form .boxed-btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.admission-form .boxed-btn{
+  width: 100%;
+}
+.admission-form .form-group:last-child {
+  margin-bottom: 0;
+}
+.admission-form h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.hero-text h1 {
+  font-size: 48px;
+  color: #fff;
+}
+.hero-area.breadcrumb-about {
+  display: block;
+  height: auto;
+}
+.hero-area h2 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.hero-area, .hero-area a {
+  color: #fff;
+}
+.hero-area  i.fa {
+  padding: 0 11px;
+}
+/*==========================================
+service CSS
+===========================================*/
+.feature-img {
+  background-size: cover;
+  background-position: center;
+  background-color: #00cf7f;
+  height: 300px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+.bordered-box {
+  border: 1px solid #f4f4f4;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.service-description {
+  padding: 30px 20px;
+}
+.service-description h4 {
+  color: #00cf7f;
+  font-size: 20px
+}
+.service-description p {
+  margin-bottom: 0;
+}
+.notice-lists {
+  border: 1px solid #f4f4f4;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px
+}
+.notice-lists ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notice-lists li {
+  position: relative;
+  border-bottom: 1px solid #ecfaff;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 9px 30px;
+}
+.courses .notice-lists li {
+  padding: 22px 30px;
+}
+.notice-lists li:last-child{
+  border-bottom: none;
+}
+.notice-lists h4 {
+  font-size: 20px;
+}
+.notice-lists li a{
+  display: block;
+}
+.notice-lists li a:hover{
+  color: #00cf7f;
+}
+.notice-lists li a:hover span{
+  color: initial;
+}
+.notice-lists li a span{
+  font-size: 90%;
+}
+/*==========================================
+course details CSS
+===========================================*/
+.course-details {
+  padding: 20px 0;
+}
+.course-details h1 {
+  font-size: 36px;
+}
+.green-clr, .content-text-box .green-clr {
+  color: #00cf7f;
+}
+.course-details .boxed-btn {
+}
+.course-details p {
+  margin: 30px 0;
+}
+.single-item {
+  color: #676767;
+  background-color: #d7fffb;
+  height: 170px;
+  width: 170px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 30px;
+}
+.single-item i.fa {
+  font-size: 45px;
+  color: #32b7aa;
+}
+.single-item p {
+  margin: 0;
+}
+.col-lg-4:nth-child(2) .single-item {
+  background-color: #ffd6dd;
+}
+.col-lg-4:nth-child(3) .single-item {
+  background-color: #d6eeff;
+}
+.col-lg-4:nth-child(4) .single-item {
+  background-color: #d6ffee;
+}
+.col-lg-4:nth-child(5) .single-item {
+  background-color: #f5ffd6;
+}
+.col-lg-4:nth-child(6) .single-item {
+  background-color: #ffebd6;
+}
+.single-item:hover {
+  box-shadow: 0 0 9px #ddd;
+  color: #676767;
+}
+/*==========================================
+call to action CSS
+===========================================*/
+.cta-area, .video-area {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #00cf7f;
+}
+.cta-area:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  content: "";
+  z-index: -1;
+  opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+.cta-area h4{
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #fff;
+}
+.video-play-btn {
+  color: #fff;
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  background-color: #00cf7f;
+  line-height: 80px;
+  border-radius: 50%;
+  border: 1px solid #00cf7f;
+}
+.video-play-btn i.fa {
+  padding-left: 4px;
+}
+.video-play-btn i.fa {
+  padding-left: 4px;
+}
+.cta-area .video-play-btn {
+  margin-top: 30px;
+}
+.video-play-btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.cta-area {
+  padding: 70px 30px;
+}
+.cta-area, .cta-area h3 {
+  color: #fff;
+}
+.cta-area {
+  text-align: left;
+}
+.cta-area h3 {
+  font-size: 26px;
+}
+.cta-area .boxed-btn {
+  position: absolute;
+  background-color: #10b6a7;
+  border: 1px solid #10b6a7;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.boxed-btn.bg-2 {
+  background-color: #00cf7f;
+}
+.cta-area.about-cta:after {
+  background-color: #011614;
+  opacity: .7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+/*==========================================
+Section title CSS
+===========================================*/
+.section-title {
+    text-align: center;
+}
+.section-title h2 {
+  color: #00cf7f;
+  font-size: 36px;
+  margin-bottom: 75px;
+}
+.section-title h3 {
+  font-size: 26px;
+  margin-bottom: 37px;
+}
+.section-title p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.cta-area p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+/*==========================================
+Notice  & events CSS
+===========================================*/
+.date {
+  background: #00cf7f;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+  padding: 6px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border-radius: 5px;
+}
+.feature-img .date {
+  left: auto;
+  right: 20px;
+}
+.notice-lists.events-lists li {
+  padding: 16px 8px 14px 80px;
+}
+.notice-lists li:last-child{
+  border-bottom: none;
+}
+.news-feature-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: #00cf7f;
+  height: 390px;
+}
+.service-description p {
+  font-weight: 300;
+}
+/*==========================================
+Footer  CSS
+===========================================*/
+.footer-area, .copyright-area {
+  background-color: #011614;
+}
+.footer-area, .footer-area a, .copyright-area, .copyright-area a{
+  font-size: 14px;
+  color: #ffff;
+}
+.social-links a {
+  height: 40px;
+  width: 40px;
+  background-color: #374544;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.social-links a:hover {
+  background: #00cf7f;
+}
+.contact-info a:link:hover{
+  color: #00cf7f;
+}
+.footer-wid h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.footer-wid .logo {
+  padding: 10px 0;
+  padding-top: 0;
+  margin-bottom: 25px;
+}
+.footer-wid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-wid li {
+  display: block;
+}
+.footer-wid li a {
+  display: block;
+  padding: 3px 0;
+}
+.footer-wid li a:hover {
+  color: #00cf7f;
+}
+.contact-info i.fa {
+  position: absolute;
+  line-height: 1.9;
+  left: 0;
+  top: 0;
+}
+.contact-info {
+  position: relative;
+  padding-left: 25px;
+}
+.copyright-area{
+  padding: 10px 0;
+}
+.copyright-area a:hover{
+  color: #00cf7f;
+}
+/*==========================================
+about CSS
+===========================================*/
+.counter-box-wrapper {
+  margin-top: 80px;
+}
+.counter-box-wrapper .bordered-box {
+  padding: 20px;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.counter-box-wrapper .bordered-box:hover {
+  border-color: #00cf7f;
+}
+p.count {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+}
+.history-details-img {
+  height: 100%;
+  background-color: #00cf7f;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 94%;
+  border-radius: 5px;
+  margin-left: 18px;
+}
+.content-text-box {
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+.content-text-box p {
+  font-weight: 300;
+}
+.content-text-box h3 {
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+.content-text-box p:last-child {
+  margin-bottom: 0;
+}
+/*==========================================
+courses CSS
+===========================================*/
+.courses .inline-btn {
+  padding-bottom: 0;
+  color: #00cf7f;
+}
+.courses .inline-btn i.fa {
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.courses .inline-btn:hover i.fa {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.courses .inline-btn:hover {
+  color: #313131;
+}
+.courses .pagination {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.courses .page-item {
+  margin-right: 10px;
+}
+.courses .page-item a {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #f4f4f4;
+}
+.courses .page-item a:hover {
+  color: #fff;
+  background-color: #00cf7f;
+  border-color: #00cf7f;
+}
+.courses .service-description h4 {
+  color: #313131;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.courses .bordered-box:hover h4 {
+  color: #00cf7f;
+}
+/*==========================================
+single course CSS
+===========================================*/
+.content-text-box h5 {
+  color: #676767;
+  font-size: 18px;
+}
+.single-course .content-text-box {
+  padding-bottom: 0;
+}
+.single-course-img {
+  margin-top: 75px;
+}
+.single-course .content-text-box .boxed-btn {
+  margin-top: 15px;
+}
+.single-course-img img {
+  border-radius: 6px;
+}
+/*==========================================
+map CSS
+===========================================*/
+#map{
+  margin-top: 50px;
+  height: 225px;
+  width: 100%;
+}
+/*==========================================
+single blog CSS
+===========================================*/
+.content-text-box p {
+  font-weight: 300;
+}
+.courses .content-text-box h3 {
+  margin-bottom: 10px;
+}
+.contact-form {
+  margin-top: 60px;
+}
+.contact-form h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.contact-form .form-group {
+  margin-bottom: 30px;
+}
+.contact-form textarea {
+  height: 200px;
+  resize: none;
+}
+.social-share a {
+  display: inline-block;
+  height: 35px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 35px;
+  margin-left: 10px;
+}
+.social-share a:nth-child(1) {
+  background-color: #4867aa;
+}
+.social-share a:nth-child(2) {
+  background-color: #1da1f2;
+}
+.social-share a:nth-child(3) {
+  background-color: #cd2128;
+}
+.social-share a:nth-child(4) {
+  background-color: #dc4a38;
+}
+.social-share a:nth-child(5) {
+  background-color: #36465d;
+}
+.social-share a:hover {
+  background-color: #00cf7f;
+}
+/*==========================================
+Contact CSS
+===========================================*/
+.contact-area #map {
+  height: 100%;
+}
+.contact-area #map, .contact-area .contact-form {
+  margin-top: 0;
+}
+.contact-icon {
+  font-size: 35px;
+  color: #010101;
+  line-height: 1;
+}
+.single-contact-box h4 {
+  font-size: 18px;
+}
+.single-contact-box {
+  font-weight: 300;
+}
+.single-contact-box a:hover {
+  color: #010101;
+}
+.contact-area .contact-form textarea {
+  height: 145px;
+}
+/*==========================================
+Co  Activities CSS
+===========================================*/
+.co-activities .feature-img {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+}
+
+.co-activities .service-description {
+    line-height: 1.5;
+    padding: 20px 4px;
+    padding-left: 230px;
+}
+.co-activities .bordered-box {
+    position: relative;
+}
+/*==========================================
+FAQ CSS
+===========================================*/
+.faq-details h3 {
+    font-size: 20px;
+    color: #616161;
+    margin-bottom: 40px;
+}
+
+.faq-heading {;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    display: block;
+    color: #313131;
+}
+
+.faq-heading:before {
+    position: absolute;
+    top: 50%;
+    left: -55px;
+    height: 40px;
+    width: 40px;
+    content: "\f105 ";
+    background: #c5ffe9;
+    border-radius: 50%;
+    font-family: fontAwesome;
+    color: #14b769;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -20px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.single-faq-box {
+    padding-left: 55px;
+}
+.faq-content {
+    font-weight: 200;
+}
+
+.faq-heading:hover {
+    color: #313131;
+}
+
+.faq-heading[aria-expanded="true"]:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}

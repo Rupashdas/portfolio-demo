@@ -1,0 +1,16 @@
+/* =============== Color CSS  =================== */
+.single-service-box:hover .service-icon, .social-icons i.fa, .social-icons i.fa:hover, .menu-social-icon a:hover{
+    color: #2c3e50;
+}
+.contact-form input[type="submit"], .single-feature-item:hover .feature-icon, .single-works-item:hover, .progressbar-section:before, .single-team-box.active i.fa, .Switcher__control, .cta-area,  div#scrollTop, .Switcher::before {
+    background-color: #2c3e50;
+}
+.single-team-box img, .contact-form input[type="submit"], .section-padding.background-map-area .social-icons i.fa:hover   {
+    border-color: #2c3e50;
+}
+.homepage-hero-area:before{
+	background: -moz-linear-gradient(left, rgba(44,62,80,1) 0%, rgba(44,62,80,0.2) 50%, rgba(44,62,80,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(44,62,80,1) 0%,rgba(44,62,80,0.2) 50%,rgba(44,62,80,1) 100%);
+	background: linear-gradient(to right, rgba(44,62,80,1) 0%,rgba(44,62,80,0.2) 50%,rgba(44,62,80,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3e50', endColorstr='#2c3e50',GradientType=1 );
+}

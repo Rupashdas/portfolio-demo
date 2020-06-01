@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--==========Title==========-->
+		<title>Account</title>
+
+		<!--==========bootstrap css==========-->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!--==========fontawesome css==========-->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+		<!--==========nice select css==========-->
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+
+		<!--==========style css==========-->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<!--==========responsive css==========-->
+		<link href="assets/css/responsive.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--==========Header Section==========-->
+		<header class="header-section">
+			<div class="header-top">
+				<!--Header top bar start-->
+				<div class="container">
+					<div class="row">
+						<!--row start-->
+						<div class="col">
+							<div class="logo">
+								<a href="index.html">
+									<img src="assets/img/logo-white.png" alt="Logo" />
+								</a>
+							</div>
+						</div>
+						<div class="col">
+							<div class="h-top-middle text-center">
+								<p>Shop USA from <span>Nigeria</span></p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="user-login text-right">
+								<div class="login-btn">
+									<div class="user-icon">
+										<i class="fa fa-user-circle-o"></i>
+									</div>
+									<span
+										>Hello,Log In <span class="my-account">My account <img src="assets/img/icons/dropdown.png" alt="dropdown"/></span
+									></span>
+								</div>
+								<div class="cart">
+									<i class="fa fa-shopping-cart"></i>
+									<span class="cart-count">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--row end-->
+				</div>
+			</div>
+			<!--Header top bar end-->
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<!--Row Start-->
+						<div class="col-1">
+							<div class="menu-toggle">
+								<span class="bar-one"></span>
+								<span class="bar-two"></span>
+								<span class="bar-tree"></span>
+							</div>
+						</div>
+						<div class="col-11  d-flex align-items-center">
+							<div class="search-form-wrap">
+								<form action="index.html" id="search-form" class="header-search-form">
+									<select name="type">
+										<option value="All">All</option>
+										<option value="store one">Store 1</option>
+										<option value="store two">Store 2</option>
+										<option value="store three">Store 3</option>
+									</select>
+									<input type="search" placeholder="Enter item name, # or URL" />
+									<button type="submit">
+										<img src="assets/img/icons/arrow-right.png" alt="submit" />
+									</button>
+								</form>
+							</div>
+							<div class="menu-right">
+								<ul>
+									<li><a href="support.html">Support</a></li>
+									<li><a href="faq.html">FAQs</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--row end-->
+				</div>
+			</div>
+			<div class="header-dropdown-menu">
+				<div class="container">
+					<div class="dropdown-menu-wrap">
+						<div class="menu-box">
+							<div class="menu-shop">
+								<a href="product.html"><h4>Shop</h4></a>
+								<p>Buy from any brand easy checkout</p>
+							</div>
+							<div class="menu-consolidation">
+								<a href="consolidation.html"
+									><h4>CONSOLIDATION <span>(save up to 80%)</span></h4></a
+								>
+								<p>Consolidate multiple orders in one package</p>
+							</div>
+							<div class="menu-works">
+								<a href="consolidation.html"><h4>How it works</h4></a>
+								<p>search your product and buy it instantly. Easy!</p>
+							</div>
+							<div class="menu-calculator">
+								<a href="calculator.html" class="fix">
+									<img src="assets/img/icons/menu-calculator.jpg" alt="calculator-img" />
+									<p>
+										Calculate <br />
+										Shipping Costs
+									</p>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown-footer">
+							<ul>
+								<li><a href="#"> Prohibited Items</a></li>
+								<li><a href="faq.html"> Frequently Asked Questions</a></li>
+								<li><a href="converter.html"> Exchange Rates</a></li>
+								<li><a href="#"> Blog</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--==========Header Section end==========-->
+
+		<!--========== Guidlines section ==========-->
+		<section id="account">
+			<div class="account-bg d-flex align-items-center text-left">
+				<div class="container">
+					<h3>Welcome <i>First-Name</i> <span>Your account</span></h3>
+				</div>
+			</div>
+			<div class="account-wrap">
+				<div class="container">
+					<div class="account-tabs-wrap">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a data-toggle="tab" href="#my-order">
+									track me and check status
+									<span>My Orders</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a data-toggle="tab" href="#my-account">
+									Edit your personal details
+									<span>My Account</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="active" data-toggle="tab" href="#payment-info">
+									track me and check status
+									<span>Payment Info</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a  data-toggle="tab" href="#saved-items">
+									track me and check status
+									<span>Save Items</span>
+								</a>
+							</li>
+						</ul>
+						<div class="row">
+							<div class="col-xl-10 offset-xl-1">
+								<div class="tab-content">
+									<div class="tab-pane fade" id="my-order">
+										<div class="account-tab-content">
+											<h3>My Orders</h3>
+											<div class="tab-img-content">
+												<div class="my-order">
+													<div class="order-img">
+														<img src="assets/img/order-img.jpg" alt="order-img" />
+													</div>
+													<div class="order-content">
+														<h4>Solid State Logic Six Desktop Mixer Produce Like A Champ</h4>
+														<div class="walmart">walmart<span>#56697457</span></div>
+														<div class="order-buttons">
+															<a href="#"><span>Delivered</span> Dec 13, 2019</a>
+															<a href="#">Buy it again</a>
+														</div>
+													</div>
+												</div>
+												<div class="my-order">
+													<div class="order-img">
+														<img src="assets/img/order-img.jpg" alt="order-img" />
+													</div>
+													<div class="order-content">
+														<h4>Solid State Logic Six Desktop Mixer Produce Like A Champ</h4>
+														<div class="walmart">walmart<span>#56697457</span></div>
+														<div class="order-buttons">
+															<a href="#">Track Package</a>
+															<a href="#">Buy it again</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="my-account">
+										<div class="account-tab-content">
+											<h3>My Account</span></h3>
+											<div class="tab-img-content">
+												<div class="edit-my-content">
+													<a href="#" class="edit" data-toggle="modal" data-target="#account-edit-form">Edit</a>
+													<h4>First and Last name</h4>
+													<ul>
+														<li><span>Address:</span>3419 Suya Junction</li>
+														<li>Oshodi, Imo</li>
+														<li>Nigeria</li>
+														<li><span>Phone numer:</span> 2348023115055</li>
+														<li><span>Email:</span> adepitandaol@gmail.com</li>
+														<li>Change Password:</li>
+													</ul>
+												</div>
+												<div class="tab-img">
+													<img src="assets/img/icons/account-tab-img.png" alt="tab-img" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade show active" id="payment-info">
+										<div class="account-tab-content">
+											<h3>Welcome to <span>holders</span></h3>
+											<div class="tab-img-content fix">
+												<div class="tab-img">
+													<img src="assets/img/icons/account-tab-img.png" alt="tab-img" />
+												</div>
+												<div class="title-para">
+													<h4>Hello, <span>First and Last Name</span></h4>
+													<p>Check your order status, track your package, update your personal information, check your saved items right here on your dashboard.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="saved-items">
+										<div class="account-tab-content">
+											<h3>Welcome to <span>holders</span></h3>
+											<div class="tab-img-content fix">
+												<div class="tab-img">
+													<img src="assets/img/icons/account-tab-img.png" alt="tab-img" />
+												</div>
+												<div class="title-para">
+													<h4>Hello, <span>First and Last Name</span></h4>
+													<p>Check your order status, track your package, update your personal information, check your saved items right here on your dashboard.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--========== Guidlines section end ==========-->
+
+		<!--========== Footer section start ==========-->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-12">
+						<div class="logo">
+							<a href="index.html">
+								<img src="assets/img/logo-white.png" alt="Logo" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget">
+							<div class="contact-info">
+								<h6>Phone</h6>
+								<p><span>USA:</span> +1-210-730-5433</p>
+								<p><span>NGA:</span> +234-8023115055</p>
+							</div>
+							<div class="contact-info">
+								<h6>Location</h6>
+								<p>Houston Texas USA <br />Ogudu Lagos, Nigeria</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<ul>
+								<li><a href="#">How It Works</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Frequently Asked Questions</a></li>
+								<li><a href="#">Exchange Rates</a></li>
+								<li><a href="#">What you cannot ship</a></li>
+								<li><a href="#">Shipping Calculator</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">States We Serve</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<h6 class="menu-title">Legal</h6>
+							<ul>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="social-links">
+							<h6 class="menu-title">Socialize with us</h6>
+							<ul>
+								<li>
+									<a href="#"><img src="assets/img/icons/instagram.jpg" alt="Instagram"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/facebook.jpg" alt="Facebook"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/twitter.jpg" alt="Twiiter"/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+			</div>
+		</footer>
+		<!--========== Footer section end ==========-->
+
+		<!-- My Account Edit Modal -->
+		<div class="modal fade my-account-edit-form" id="account-edit-form">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Edit Name/Password & Address</h4>
+					</div>
+					<div class="modal-body">
+						<div class="change-info change-name">
+							<h5>Change name</h5>
+							<form action="#">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="current-name">Current Name</label>
+										<input type="text" id="current-name" />
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-6">
+												<label for="new-first-name">New First Name</label>
+												<input type="text" id="new-first-name" />
+											</div>
+											<div class="col-6">
+												<label for="new-last-name">New Last Name</label>
+												<input type="text" id="new-last-name" />
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button type="submit">Save changes</button>
+										<button>Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="change-info change-password">
+							<h5>Change Password</h5>
+							<form action="#">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="current-password">Current Password</label>
+										<input type="text" id="current-password" />
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-6">
+												<label for="new-password">New Password</label>
+												<input type="text" id="new-password" />
+											</div>
+											<div class="col-6">
+												<label for="confirm-password">Confirm New Password</label>
+												<input type="text" id="confirm-password" />
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button type="submit">Save changes</button>
+										<button>Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="change-info change-address">
+							<h5>Change Address</h5>
+							<form action="#">
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="new-address">New Address</label>
+										<input type="text" id="new-address" />
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<div class="col-6">
+												<label for="new-city">New City</label>
+												<input type="text" id="new-city" />
+											</div>
+											<div class="col-6">
+												<label for="new-state">New State</label>
+												<input type="text" id="new-state" />
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<label for="new-country">New Country</label>
+										<input type="text" id="new-country" />
+									</div>
+									<div class="col-12">
+										<button type="submit">Save changes</button>
+										<button>Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==========Jquery js==========-->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!--==========propper js==========-->
+		<script src="assets/js/propper-1.12.3.js"></script>
+
+		<!--==========nice select js==========-->
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+
+		<!--==========bootstrap js==========-->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--==========main js==========-->
+		<script src="assets/js/main.js"></script>
+
+		<script></script>
+	</body>
+</html>

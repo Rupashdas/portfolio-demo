@@ -1,0 +1,17 @@
+/* =============== Color CSS  =================== */
+.single-service-box:hover .service-icon, .social-icons i.fa, .social-icons i.fa:hover, .menu-social-icon a:hover{
+    color: #2ecc71;
+}
+.contact-form input[type="submit"], .single-feature-item:hover .feature-icon, .single-works-item:hover, .progressbar-section:before, .single-team-box.active i.fa, .cta-area,  div#scrollTop, .Switcher__control, .Switcher::before {
+    background-color: #2ecc71;
+}
+.single-team-box img, .contact-form input[type="submit"], .section-padding.background-map-area .social-icons i.fa:hover   {
+    border-color: #2ecc71;
+}
+
+.homepage-hero-area:before{
+	background: -moz-linear-gradient(left, rgba(46,204,113,1) 0%, rgba(46,204,113,0.2) 50%, rgba(46,204,113,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(46,204,113,1) 0%,rgba(46,204,113,0.2) 50%,rgba(46,204,113,1) 100%);
+	background: linear-gradient(to right, rgba(46,204,113,1) 0%,rgba(46,204,113,0.2) 50%,rgba(46,204,113,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ecc71', endColorstr='#2ecc71',GradientType=1 );
+}

@@ -1,0 +1,70 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+    
+}
+/* Tablet & Mobile Layout: 991px. */
+@media only screen and (max-width: 991px) {
+    .banner-contents > .row {
+	    margin-top: 0;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.info-box, .info-box.social {
+	    flex: 1 1 33%;
+	    margin: 0;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.product-info {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	.product-info-wrap {
+	    padding: 20px 0;
+	}
+
+	.info-box.social a {
+	    display: inline-block;
+	    padding: 10px;
+	}
+
+	.social-links {
+	    text-align: right;
+	}
+    .section-title {
+	    font-size: 55px;
+	}
+	.product-carousel .owl-nav button img {
+	    max-width: 50px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and  (max-width: 480px) { 
+	header.header-section .row > .col {
+	    flex-basis: 100%;
+	    text-align: center;
+	}
+	.footer-menu a {padding: 6px 4px;font-size: 12px;}
+
+	p.copyright {
+	    font-size: 12px;
+	}
+	.button-wrap .transparent.boxed-btn,.button-wrap .boxed-btn {
+	    display: block;
+	    margin-right: 0;
+	    margin-top: 15px;
+	}
+}

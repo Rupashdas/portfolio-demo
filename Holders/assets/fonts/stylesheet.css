@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Kon Tiki Aloha JF';
+    src: url('KonTikiAlohaJF.eot');
+    src: url('KonTikiAlohaJF.eot?#iefix') format('embedded-opentype'),
+        url('KonTikiAlohaJF.woff2') format('woff2'),
+        url('KonTikiAlohaJF.woff') format('woff'),
+        url('KonTikiAlohaJF.ttf') format('truetype'),
+        url('KonTikiAlohaJF.svg#KonTikiAlohaJF') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

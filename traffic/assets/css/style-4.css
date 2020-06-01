@@ -1,0 +1,98 @@
+
+html, body, .homepage-hero-area-4, .single-slide-item {
+    height: 100%;
+}
+body {
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+.slide-item-wrapper h2 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.website-check-form {
+    margin-top: 30px;
+}
+.website-check-form input {
+    background: #073b4c none repeat scroll 0 0;
+    border-color: #073b4c;
+}
+.boxed-btn, input[type="submit"], button[type="submit"] {
+    background: #06d6a0 none repeat scroll 0 0;
+}
+.section-padding .padding-top-80 > h3 {
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+.service-icon {
+    margin-bottom: 10px;
+}
+.video-play-btn {
+    background: #06d6a0 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 35px;    
+    line-height: 65px;
+    line-height: 70px;
+    margin-top: 20px;
+    padding-left: 5px;
+    position: relative;
+    width: 70px;
+}
+.single-service-box:hover {
+    border-color: #45BD98;
+}
+.single-service-box:hover a.service-readmore-btn, .single-service-box:hover h3, .single-service-box:hover .service-icon {
+    color: #45BD98;
+}
+.single-pricing-box:hover, .single-pricing-box:hover .pricing-heading{
+    border-color: #45BD98;
+}
+.pricing-count{
+    color: #45BD98;
+}
+.hero-form::after {
+    box-shadow: -7px -7px 0 #f8f8f8 inset;
+}
+.testimonial-carousel .owl-dots div.active {
+    background: #06D6A0 none repeat scroll 0 0;
+}
+.single-slide-item::after{
+    background: none;
+}
+.comments-area h3 {
+    margin-top: 10px;
+}
+.comments-area > p {
+    margin-bottom: 40px;
+}
+
+a.single-blog-box {
+    color: #999999;
+    min-height: 530px;
+    padding: 20px;
+    box-shadow: 0 5px 5px #f5f5f5;
+}
+a.single-blog-box:hover {
+    background: transparent;
+    border-color: #f5f5f5;
+    color: #999;
+}
+.single-blog-box h3 {
+    font-size: 18px;
+}
+.blog-thum-wrapper {
+    margin: -20px -20px 30px;
+}
+a.blog-readmore-btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 115px;
+    margin-top: 50px;
+}

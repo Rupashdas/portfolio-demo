@@ -1,0 +1,115 @@
+/* Minimum Width 992px */
+@media only screen and (min-width: 992px) {
+	.our-members {
+		width: 60%;
+	}
+}
+/* Max width 1199 px */
+@media only screen and (max-width: 1199px) {
+	.contact-form:after {
+		left: -40px;
+	}
+}
+/* Min width 768px and  Max width 991 px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.logo-menu {
+		justify-content: center;
+	}
+	.logo {
+		margin-top: 20px;
+	}
+	nav.main-menu ul li a {
+		padding: 23px 15px;
+	}
+}
+/* Max width 991 px */
+@media only screen and (max-width: 991px) {
+	.logo-menu {
+		flex-wrap: wrap;
+	}
+	.our-members .owl-nav button.owl-prev {
+		left: 0;
+	}
+	.our-members .owl-nav button.owl-next {
+		right: 0;
+	}
+	.contact-form:after {
+		display: none;
+	}
+}
+/* Max width 767 px */
+@media only screen and (max-width: 767px) {
+	.map-wrap {
+		margin-bottom: 50px;
+	}
+	header {
+		position: relative;
+	}
+    nav.main-menu {
+        position: absolute;
+        top: 100%;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+        background: #169FDD;
+        display: none;
+    }
+	nav.main-menu ul {
+		flex-wrap: wrap;
+	}
+	nav.main-menu ul li {
+		width: 100%;
+    }
+    nav.main-menu ul li a {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    nav.main-menu ul li:hover a {
+        color: #fff;
+        background: #057CB2;
+    }
+    .toggle-menu-wrap {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+    }
+    .toggle-menu {
+        position: absolute;
+        display: block;
+        right: 0px;
+        top: 50%;
+        text-align: center;
+        line-height: 32px;
+        font-size: 25px;
+        margin-top: -16px;
+        cursor: pointer;
+    }
+	.logo {
+		margin: 15px 0;
+    }
+    nav.footer-menu ul {
+        flex-wrap: wrap;
+    }
+    nav.footer-menu ul li {
+        margin: 5px 0;
+    }
+    #banner {
+        height: 80vh;
+    }
+    .banner-content {
+        padding: 50px 20px;
+        width: 100%;
+    }
+    .banner-content p {
+        font-size: 20px;
+    }
+}
+
+/* Max width 575px  */
+@media only screen and (max-width: 575px) {
+    .toggle-menu {
+        right: 15px;
+    }
+}
+

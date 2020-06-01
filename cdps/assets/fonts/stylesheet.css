@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('ArialMT.eot');
+    src: url('ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('ArialMT.woff2') format('woff2'),
+        url('ArialMT.woff') format('woff'),
+        url('ArialMT.ttf') format('truetype'),
+        url('ArialMT.svg#ArialMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldMT.eot');
+    src: url('Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('Arial-BoldMT.woff2') format('woff2'),
+        url('Arial-BoldMT.woff') format('woff'),
+        url('Arial-BoldMT.ttf') format('truetype'),
+        url('Arial-BoldMT.svg#Arial-BoldMT') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial MT Std';
+    src: url('ArialMTStd-Medium.eot');
+    src: url('ArialMTStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ArialMTStd-Medium.woff2') format('woff2'),
+        url('ArialMTStd-Medium.woff') format('woff'),
+        url('ArialMTStd-Medium.ttf') format('truetype'),
+        url('ArialMTStd-Medium.svg#ArialMTStd-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

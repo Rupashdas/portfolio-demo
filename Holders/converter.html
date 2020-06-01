@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--==========Title==========-->
+		<title>Converter</title>
+
+		<!--==========bootstrap css==========-->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!--==========fontawesome css==========-->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+		<!--==========nice select css==========-->
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+
+		<!--==========style css==========-->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<!--==========responsive css==========-->
+		<link href="assets/css/responsive.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--==========Header Section==========-->
+		<header class="header-section">
+			<div class="header-top">
+				<!--Header top bar start-->
+				<div class="container">
+					<div class="row">
+						<!--row start-->
+						<div class="col">
+							<div class="logo">
+								<a href="index.html">
+									<img src="assets/img/logo-white.png" alt="Logo" />
+								</a>
+							</div>
+						</div>
+						<div class="col">
+							<div class="h-top-middle text-center">
+								<p>Shop USA from <span>Nigeria</span></p>
+							</div>
+						</div>
+						<div class="col">
+							<div class="user-login text-right">
+								<div class="login-btn">
+									<div class="user-icon">
+										<i class="fa fa-user-circle-o"></i>
+									</div>
+									<span
+										>Hello,Log In <span class="my-account">My account <img src="assets/img/icons/dropdown.png" alt="dropdown"/></span
+									></span>
+								</div>
+								<div class="cart">
+									<i class="fa fa-shopping-cart"></i>
+									<span class="cart-count">15</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--row end-->
+				</div>
+			</div>
+			<!--Header top bar end-->
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<!--Row Start-->
+						<div class="col-1">
+							<div class="menu-toggle">
+								<span class="bar-one"></span>
+								<span class="bar-two"></span>
+								<span class="bar-tree"></span>
+							</div>
+						</div>
+						<div class="col-11  d-flex align-items-center">
+							<div class="search-form-wrap">
+								<form action="index.html" id="search-form" class="header-search-form">
+									<select name="type">
+										<option value="All">All</option>
+										<option value="store one">Store 1</option>
+										<option value="store two">Store 2</option>
+										<option value="store three">Store 3</option>
+									</select>
+									<input type="search" placeholder="Enter item name, # or URL" />
+									<button type="submit">
+										<img src="assets/img/icons/arrow-right.png" alt="submit" />
+									</button>
+								</form>
+							</div>
+							<div class="menu-right">
+								<ul>
+									<li><a href="support.html">Support</a></li>
+									<li><a href="faq.html">FAQs</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--row end-->
+				</div>
+			</div>
+			<div class="header-dropdown-menu">
+				<div class="container">
+					<div class="dropdown-menu-wrap">
+						<div class="menu-box">
+							<div class="menu-shop">
+								<a href="product.html"><h4>Shop</h4></a>
+								<p>Buy from any brand easy checkout</p>
+							</div>
+							<div class="menu-consolidation">
+								<a href="consolidation.html"><h4>CONSOLIDATION <span>(save up to 80%)</span></h4></a>
+								<p>Consolidate multiple orders in one package</p>
+							</div>
+							<div class="menu-works">
+								<a href="consolidation.html"><h4>How it works</h4></a>
+								<p>search your product and buy it instantly. Easy!</p>
+							</div>
+							<div class="menu-calculator">
+								<a href="calculator.html" class="fix">
+									<img src="assets/img/icons/menu-calculator.jpg" alt="calculator-img" />
+									<p>
+										Calculate <br />
+										Shipping Costs
+									</p>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown-footer">
+							<ul>
+								<li><a href="#"> Prohibited Items</a></li>
+								<li><a href="faq.html"> Frequently Asked Questions</a></li>
+								<li><a href="converter.html"> Exchange Rates</a></li>
+								<li><a href="#"> Blog</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--==========Header Section end==========-->
+
+		<!--========== Guidlines section ==========-->
+		<section id="converter">
+			<div class="converter-bg d-flex align-items-center text-center">
+				<div class="container">
+					<h3>Exchange Rate Converter</h3>
+				</div>
+			</div>
+			<div class="converter-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="converter-calculator">
+								<h3>Exchange rate converter</h3>
+								<form action="#">
+									<div class="row">
+										<div class="col-6">
+											<label for="input-amount">Amount</label>
+											<input type="number" id="input-amount" placeholder="0" />
+										</div>
+										<div class="col-6">
+											<select name="type" style="display: none;">
+												<option value="Select">US Dollar</option>
+												<option value="color">Color</option>
+												<option value="size two">Size</option>
+												<option value="style">Style</option>
+											</select>
+											<div class="nice-select" tabindex="0">
+												<span class="current">Select</span>
+												<ul class="list">
+													<li data-value="All" class="option selected">US Dollar</li>
+													<li data-value="color" class="option">Color</li>
+													<li data-value="size" class="option">Size</li>
+													<li data-value="style" class="option">Style</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-6">
+											<input type="number" id="output-amount" placeholder="0" />
+										</div>
+										<div class="col-6">
+											<select name="type" style="display: none;">
+												<option value="Select">Nigeria Naira</option>
+												<option value="color">Color</option>
+												<option value="size two">Size</option>
+												<option value="style">Style</option>
+											</select>
+											<div class="nice-select" tabindex="0">
+												<span class="current">Select</span>
+												<ul class="list">
+													<li data-value="All" class="option selected">Nigeria Naira</li>
+													<li data-value="color" class="option">Color</li>
+													<li data-value="size" class="option">Size</li>
+													<li data-value="style" class="option">Style</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+								<p class="converter-note">
+									Note that exchange rates <br />
+									change frequently..
+								</p>
+							</div>
+							<div class="converter-text">
+								<p>We advice you to check the price in naira before buying anything online, just so you know how much an item would costs you in naira.</p>
+
+								<p>Also use our shipping calculator to quickly get an estimate on how much it will cost you to ship your product to Nigeria.</p>
+							</div>
+						</div>
+						<div class="col-md-5 offset-md-1 col-xl-3 offset-xl-2 ">
+							<div class="converter-img text-center">
+								<img src="assets/img/converter-img.jpg" alt="converter-img">
+								<a href="#" class="favorite-store">Shop Your Favorite Store Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--========== Guidlines section end ==========-->
+
+		<!--========== Footer section start ==========-->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-12">
+						<div class="logo">
+							<a href="index.html">
+								<img src="assets/img/logo-white.png" alt="Logo" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget">
+							<div class="contact-info">
+								<h6>Phone</h6>
+								<p><span>USA:</span> +1-210-730-5433</p>
+								<p><span>NGA:</span> +234-8023115055</p>
+							</div>
+							<div class="contact-info">
+								<h6>Location</h6>
+								<p>Houston Texas USA <br />Ogudu Lagos, Nigeria</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<ul>
+								<li><a href="#">How It Works</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Frequently Asked Questions</a></li>
+								<li><a href="#">Exchange Rates</a></li>
+								<li><a href="#">What you cannot ship</a></li>
+								<li><a href="#">Shipping Calculator</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">States We Serve</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<h6 class="menu-title">Legal</h6>
+							<ul>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="social-links">
+							<h6 class="menu-title">Socialize with us</h6>
+							<ul>
+								<li>
+									<a href="#"><img src="assets/img/icons/instagram.jpg" alt="Instagram"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/facebook.jpg" alt="Facebook"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/twitter.jpg" alt="Twiiter"/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+			</div>
+		</footer>
+		<!--========== Footer section end ==========-->
+
+		<!--==========Jquery js==========-->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!--==========propper js==========-->
+		<script src="assets/js/propper-1.12.3.js"></script>
+
+		<!--==========nice select js==========-->
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+
+		<!--==========bootstrap js==========-->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--==========main js==========-->
+		<script src="assets/js/main.js"></script>
+
+		<script></script>
+	</body>
+</html>

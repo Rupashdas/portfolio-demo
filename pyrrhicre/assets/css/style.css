@@ -1,0 +1,419 @@
+/**
+ * Template Name: Holders
+ * Version: 1.0
+ * Author: 
+ * Author uri:
+ * Description: 
+ */
+
+/*
+Index of css 
+   1. Reset
+   2. Common
+   3. Header
+   4. Banner
+   5. Who we are
+   6. Services
+   7. Our Team
+   8. Contact us
+   9. Footer
+
+*/
+
+/**
+ * 1. Reset CSS
+ */
+
+/** Web Fonts  **/
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Poppins&display=swap");
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/TrajanPro-Bold.eot');
+    src: url('../fonts/TrajanPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TrajanPro-Bold.woff2') format('woff2'),
+        url('../fonts/TrajanPro-Bold.woff') format('woff'),
+        url('../fonts/TrajanPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body {
+	font-family: "Cabin", sans-serif;
+	font-weight: 400;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	transition: 0.4s;
+	color: #111;
+	display: inline-block;
+}
+a:hover {
+	text-decoration: none;
+}
+input:focus,
+textarea:focus,
+button:focus {
+	outline: 0;
+}
+/**
+ * 2. Common CSS
+ */
+
+.section-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.section-title img {
+	margin-bottom: 10px;
+}
+.section-title h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	font-family: TrajanPro;
+	font-weight: 700;
+}
+
+/**
+ * 3. Header CSS
+ */
+
+.logo-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav.main-menu ul {
+	display: flex;
+}
+nav.main-menu ul li a {
+	font-family: "TrajanPro";
+	font-size: 16px;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+}
+
+nav.main-menu ul li a:hover {
+	color: #027cb4;
+}
+.toggle-menu {
+	display: none;
+}
+/**
+ * 4. Banner Section
+ */
+#banner {
+	background: url(../img/hero-bg.png) no-repeat scroll center center / 100% 100%;
+	height: 105vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.banner-content {
+	padding: 50px 45px;
+	background: rgba(0, 0, 0, 0.55);
+	border-radius: 25px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -60px;
+}
+.banner-content p {
+	font-size: 33px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: TrajanPro;
+	color: #fff;
+	letter-spacing: 1.5px;
+	word-spacing: 3px;
+}
+
+/**
+ * 5. Who We Are
+ */
+
+section#who-we-are {
+	margin-top: 80px;
+	background: url(../img/who-we-are-transparent-bg.png) no-repeat scroll top left;
+}
+
+section#who-we-are p {
+}
+section#who-we-are p {
+	font-size: 20px;
+}
+.our-offering h4 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 30px;
+}
+.offering-item {
+	margin-bottom: 45px;
+}
+.offering-item ul {
+	padding-left: 40px;
+}
+.offering-item h5 {
+	color: #007dbb;
+	font-weight: 700;
+	background: url(../img/subtitle-icon.png) no-repeat scroll 0 0px;
+	padding-left: 35px;
+	background-size: 24px 21px;
+}
+.offering-item ul li {
+	position: relative;
+	margin-bottom: 8px;
+}
+.offering-item ul li:before {
+	content: "-";
+	position: absolute;
+	left: -10px;
+	top: 0;
+}
+
+/**
+ * 6. Services
+ */
+#services {
+	background: url(../img/services-bg.jpg) no-repeat scroll center center / 100% 100%;
+	padding: 100px 0;
+}
+.single-service {
+	background: #fff;
+	padding: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+	height: calc(100% - 30px);
+}
+.single-service img {
+	max-width: 80px;
+}
+.single-service h4 {
+	font-family: TrajanPro;
+	font-weight: 700;
+	color: #027cb4;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	margin: 12px 0;
+}
+
+/**
+ * 7. Our Team
+ */
+section#our-team {
+	padding: 100px 0;
+}
+#our-team .section-title + p {
+	font-size: 19px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+#our-team .our-members {
+	margin: auto;
+}
+#our-team .single-member {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2) inset;
+}
+#our-team .owl-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #027cb4;
+	width: 100%;
+}
+.our-members .owl-nav button.owl-prev,
+.our-members .owl-nav button.owl-next {
+	left: -140px;
+	font-size: 30px;
+	background: #e6ecf0;
+	width: 45px;
+	height: 45px;
+	line-height: 35px;
+	border-radius: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+}
+.our-members .owl-nav button.owl-next {
+	left: auto;
+	right: -140px;
+}
+.member-details h4 {
+	font-size: 25px;
+	color: #027cb4;
+	font-family: TrajanPro;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.member-details h4 span {
+	font-family: "Cabin", sans-serif;
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+}
+.member-details h4 span {
+	font-family: "Cabin", sans-serif;
+	display: block;
+	font-size: 19px;
+	text-transform: capitalize;
+	color: #222;
+	margin: 3px 0;
+	letter-spacing: 0;
+}
+.member-details {
+	padding: 12px;
+	padding-left: 35px;
+}
+.member-details a {
+	display: block;
+}
+.member-details a i.fa {
+	color: #027cb4;
+	margin-right: 8px;
+}
+
+/**
+ * 8. Contact us
+ */
+section#contact-us {
+	padding: 60px 0 100px;
+}
+#contact-us .section-title + p {
+	margin-bottom: 35px;
+	text-align: center;
+}
+.contact-form {
+	position: relative;
+}
+.contact-form:after {
+	position: absolute;
+	height: 100%;
+	border-left: 1px dashed #bbc1ca;
+	content: "";
+	top: 0;
+	left: -80px;
+}
+#contact-us .contact-form input,
+#contact-us .contact-form textarea {
+	width: 100%;
+	background: #eee;
+	border: 0;
+	padding: 11px 20px;
+	margin-bottom: 20px;
+	border-radius: 50px;
+	resize: none;
+}
+#contact-us .contact-form input,
+#contact-us .contact-form textarea {
+}
+
+#contact-us .contact-form input::-webkit-input-placeholder,
+#contact-us .contact-form textarea::-webkit-input-placeholder {
+	color: #000;
+}
+
+#contact-us .contact-form input:-ms-input-placeholder,
+#contact-us .contact-form textarea:-ms-input-placeholder {
+	color: #000;
+}
+#contact-us .contact-form input::placeholder,
+#contact-us .contact-form textarea::placeholder {
+	color: #000;
+}
+.contact-form button {
+	border: 0;
+	background: #027cb4;
+	color: #fff;
+	padding: 15px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	letter-spacing: 0.5px;
+	margin-top: 20px;
+}
+.contact-form button i.fa {
+	margin-right: 5px;
+}
+.address img {
+	max-width: 75px;
+}
+.address-content {
+	width: calc(100% - 75px);
+	padding-left: 15px;
+}
+.address-content h4 {
+	color: #027cb4;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+}
+.address-content p {
+	font-size: 22px;
+}
+.map iframe {
+    border: 0;
+    width: 90%;
+    margin-left: 5%;
+    min-height: 200px;
+}
+
+/**
+ * 9. Footer
+ */
+
+ footer {
+    background: url(../img/footer-bg.png);
+    text-align: center;
+    padding: 100px 0 15px;
+}
+nav.footer-menu {
+	margin: 20px 0;
+}
+nav.footer-menu ul {
+	display: flex;
+	justify-content: center;
+}
+.footer-menu ul li a {
+	font-family: TrajanPro;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 15px;
+}
+.footer-menu ul li:hover a {
+	color: #027cb4;
+}
+.social-icon {
+	margin-bottom: 60px;
+}
+.social-icon a {
+	width: 35px;
+	height: 35px;
+	background: #027cb4;
+	border-radius: 50%;
+	line-height: 35px;
+	color: #fff;
+	margin: 0 5px;
+}
+.copyright p {
+    color: #fff;
+    font-size: 13px;
+    padding: 15px 0 0;
+    border-top: 1px solid #027cb4;
+    margin-bottom: 0;
+}
+a.scroll-up {
+	position: fixed;
+	right: 51px;
+	bottom: 45px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+}

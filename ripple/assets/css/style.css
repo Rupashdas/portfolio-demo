@@ -1,0 +1,971 @@
+/* Base CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+input:focus,
+button:focus,
+a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    ;
+    outline: 0 solid
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #6600CD;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="submit"] {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000000
+}
+
+.section-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.border-b {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.pdt-0 {
+    padding-top: 0 !important;
+}
+
+
+/*
+================================
+1.1 Background images css
+================================
+*/
+
+.banner-img {
+    background-image: url('../img/background.svg');
+}
+
+.texture-1,
+.texture-2 {
+    background-image: url('../img/texture-1.svg');
+}
+
+.texture-3 {
+    background-image: url('../img/texture-2.svg');
+}
+
+.texture-4 {
+    background-image: url('../img/texture-3.svg');
+}
+
+.cta-section .section-title h1:before {
+    background-image: url('../img/header-texture-left-black.svg');
+}
+
+.cta-section .section-title h1:after {
+    background-image: url('../img/header-texture-right-black.svg');
+}
+
+.subscription-section .section-title h1:before {
+    background-image: url('../img/header-texture-left.svg');
+}
+
+.subscription-section .section-title h1:after {
+    background-image: url('../img/header-texture-right.svg');
+}
+
+.mission-section:after {
+    background-image: url('../img/mission-texture.svg');
+}
+
+.footer-section {
+    background-image: url('../img/footer-bg.svg');
+}
+
+
+/*
+================================
+1.2 Header css
+================================
+*/
+
+#mobileMenu,
+.menuButtonOpen {
+    display: none
+}
+
+.menuButtonOpen {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menuButtonOpen span {
+    display: block;
+    background-color: #000000;
+    height: 3px;
+    width: 20px;
+    margin: 5px 0;
+    transition: .3s;
+    transition-delay: .3s;
+}
+
+.menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#mobileMenu {
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #ffffff;
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    z-index: 9;
+    padding-top: 115px;
+    left: 0;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+#mobileMenu .navbar-nav .nav-link {
+    color: #fff;
+}
+
+#mobileMenu .navbar-nav .nav-link:hover {
+    opacity: .7;
+}
+
+#mobileMenu .navbar-nav .nav-link.ripple-btn {
+    background-color: #fff;
+    color: #5A00B4;
+    padding: 10px 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#mobileMenu .navbar-nav .nav-link.ripple-btn:after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/button-texture.svg);
+    top: -27px;
+    right: -24px;
+}
+
+.header-section .logo img {
+    max-width: 85px;
+}
+
+.header-section .logo-light,
+.header-section.active .logo-dark {
+    display: none;
+}
+
+.header-section.active .logo-light,
+.header-section .logo-dark {
+    display: inline-block;
+}
+
+.header-section.active #mobileMenu {
+    top: 0;
+    background-color: #5A00B4;
+}
+
+.header-section .header-wrapper {
+    position: relative;
+    z-index: 10;
+    padding: 20px 0;
+    background-color: #fff;
+    transition: .3s linear;
+}
+
+.header-section.active .header-wrapper {
+    background-color: #5A00B4;
+}
+
+.header-section.active .menuButtonOpen span {
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.header-section.active .menuButtonOpen span:last-child {
+    transform: rotate(-45deg);
+    margin-top: -8px;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    background-color: #6600CD;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #6600CD;
+}
+
+.navbar .navbar-nav .nav-link.ripple-btn,
+.ripple-btn {
+    color: #fff;
+    background-color: #6600CD;
+    border-radius: 32px;
+    font-size: 15px;
+    padding: 8px 28px;
+    border: 2px solid #6600CD;
+    display: inline-block
+}
+
+.navbar .navbar-nav .nav-link.ripple-btn:hover,
+.ripple-btn:hover {
+    background-color: transparent;
+    color: #6600CD;
+}
+
+.navbar .navbar-nav .nav-link.ripple-btn {
+    margin: 3px 0 3px 60px;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.header-section .logo {
+    padding: 3px 0;
+}
+
+.header-section {
+    top: -94px;
+}
+
+.header-section.active,
+.header-section.sticky {
+    position: fixed;
+    width: 100%;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    background-color: #ffffff;
+    z-index: 8;
+    top: 0;
+    -webkit-box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
+}
+
+.menu-header .logo img {
+    max-width: 75px;
+}
+
+
+/*
+================================
+1.3 Banner css
+================================
+*/
+
+.banner-section .box-wrap h1 {
+    font-size: 76px;
+}
+
+.box-wrap h1 {
+    letter-spacing: -0.6px;
+}
+
+.phone-wrap {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-img {
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.banner-section .box-wrap p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.button-wrap a {
+    display: inline-block;
+}
+
+.button-wrap a:first-child {
+    margin-right: 15px;
+}
+
+
+/*
+================================
+1.4 About css
+================================
+*/
+
+.section-title h6 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section-title h1 {
+    font-size: 56px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.about-wid h4 {
+    font-size: 22px;
+}
+
+.about-wid p {
+    color: #54565A;
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about-wid a {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.about-wid a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+================================
+1.5 features css
+================================
+*/
+
+.phone-wrap.texture-3 {
+    background-position: top left;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+.phone-wrap.texture-4 {
+    background-size: 100% auto;
+}
+
+.box-wrap .tagline,
+.tagline {
+    font-size: 22px;
+    color: #6600CD;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.box-wrap h1 {
+    font-size: 56px;
+}
+
+.box-wrap p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.features-section .box-wrap {
+    padding-right: 55px;
+}
+
+.features-section .flex-row-reverse .box-wrap {
+    padding-right: 0;
+    padding-left: 55px;
+    padding-top: 35px;
+}
+
+.features-section>.container>.row {
+    margin-bottom: 30px;
+}
+
+.features-section>.container>.row:last-child {
+    margin-bottom: 0;
+}
+
+
+/*
+================================
+1.6 Call to action css
+================================
+*/
+
+.cta-section .section-title {
+    margin-bottom: 0;
+}
+
+.section-title p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.subscribe-form input.ripple-btn,
+.cta-section .ripple-btn {
+    padding: 8px 45px;
+}
+
+.subscription-section .section-title h1,
+.cta-section .section-title h1 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.subscription-section .section-title h1:before,
+.subscription-section .section-title h1:after,
+.cta-section .section-title h1:before,
+.cta-section .section-title h1:after {
+    position: absolute;
+    height: 32px;
+    width: 36px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -7px;
+    left: -40px;
+    content: ""
+}
+
+.subscription-section .section-title h1:after,
+.cta-section .section-title h1:after {
+    right: -40px;
+    left: auto;
+}
+
+.submitted-table {
+    min-height: 635px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.submitted-wrapper {
+    display: none;
+}
+
+label.error {
+    color: #ff0000;
+}
+
+label.valid {
+    color: #6600CD;
+}
+
+
+/*
+================================
+1.7 Call to action css
+================================
+*/
+
+.faq-section {
+    background-color: #0D0337;
+}
+
+.faq-section .section-title h6,
+.faq-section .section-title h1,
+.faq-section .section-title p {
+    color: #fff;
+}
+
+.accordion>.card {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.faq-section .card-header button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 20px 20px 20px 50px;
+    border-radius: 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.faq-section .card-header h2 {
+    padding: 0;
+}
+
+.faq-section .card-header {
+    padding: 0;
+    background-color: #fff;
+    border: none;
+}
+
+.faq-section .card-header button:before {
+    position: absolute;
+    content: "\f067";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: fontAwesome;
+    left: 14px;
+    font-size: 22px;
+    color: #6600CD;
+}
+
+.faq-section .card-header button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.faq-section .card-header button[aria-expanded="true"]:before {
+    content: "\f068";
+}
+
+.faq-section .card-body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0 15px 30px 15px;
+}
+
+
+/*
+================================
+1.8 subscription css
+================================
+*/
+
+.subscription-section {
+    background-color: #EFDFFF;
+    padding: 120px 0;
+}
+
+.subscribe-form input.form-control {
+    border-radius: 0;
+    border: none;
+    padding: 22px 15px;
+}
+
+.subscribe-form input.form-control::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.subscribe-form input.form-control::-moz-placeholder {
+    color: #000000;
+}
+
+.subscribe-form input.form-control:-ms-input-placeholder {
+    color: #000000;
+}
+
+.subscribe-form input.form-control::-ms-input-placeholder {
+    color: #000000;
+}
+
+.subscribe-form input.form-control::placeholder {
+    color: #000000;
+}
+
+.subscribe-form input.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.subscribe-form label a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.subscribe-form label {
+    font-weight: 400;
+    margin: 0
+}
+
+.subscribe-form label a:hover {
+    color: #6600CD;
+    text-decoration: none;
+}
+
+.checkWrap {
+    display: inline-block;
+    position: relative;
+    padding-left: 33px;
+}
+
+.checkWrap input[type="checkbox"] {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmarkArrow {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: #fff;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+}
+
+.checkmarkArrow:after {
+    content: "\f00c";
+    color: #000000;
+    font-family: fontAwesome;
+    line-height: 20px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.checkWrap input:checked~.checkmarkArrow:after {
+    display: block;
+}
+
+.submitted-table .section-title {
+    margin: 0;
+}
+
+
+/*
+================================
+1.9 Testimonial css
+================================
+*/
+
+.single-testimonial {
+    background-color: #6600CD;
+    color: #fff;
+    padding: 30px;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.single-testimonial h3 {
+    color: #fff;
+    font-size: 28px;
+    min-height: 170px;
+}
+
+.stars {
+    color: #F4B614;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.single-testimonial blockquote {
+    font-size: 18px;
+    min-height: 110px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.author-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.author-wrap img {
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+}
+
+.author-info h6 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.single-testimonial:hover {
+    background-color: #37006e;
+}
+
+.testimonial-section.section-padding {
+    padding-bottom: 100px;
+}
+
+
+/*
+================================
+1.10 Mission section css
+================================
+*/
+
+.mission-section.section-padding {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 330px;
+}
+
+.mission-section .section-title p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.mission-section .section-title a {
+    font-weight: 700;
+}
+
+.mission-section .ripple-btn {
+    margin-top: 30px;
+}
+
+.mission-section .ripple-btn:hover {
+    text-decoration: none;
+}
+
+.mission-section a:hover {
+    text-decoration: underline;
+}
+
+.mission-section.section-padding {
+    padding-top: 50px;
+}
+
+.mission-section:after {
+    content: "";
+    height: 500px;
+    width: 400px;
+    background-size: auto 100%;
+    background-position: center;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+
+/*
+================================
+1.11 Footer section css
+================================
+*/
+
+.footer-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 175px;
+    margin-top: -71px;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+}
+
+.footer-section .logo {
+    margin-bottom: 35px;
+}
+
+.footer-section a {
+    color: #fff;
+}
+
+.subscribe-form p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.footer-section .subscribe-form label a {
+    color: #fff;
+}
+
+.footer-section input.ripple-btn {
+    background-color: #AA54FF;
+    border: 2px solid #AA54FF;
+    color: #fff;
+}
+
+.footer-section input.ripple-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.copyright-section {
+    font-size: 15px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.menu li a {
+    display: block;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.scrollTop {
+    display: inline-block;
+}
+
+.scrollTop i.fa {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #6600CD;
+    font-size: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+    line-height: 27px;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.scrollTop:hover i.fa {
+    color: #fff;
+    background-color: #AA54FF;
+}
+
+.footer-section a.scrollTop:hover {
+    text-decoration: none;
+}
+
+.footer-section .subscribe-form {
+    padding-top: 30px;
+}

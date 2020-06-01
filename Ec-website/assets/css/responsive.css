@@ -1,0 +1,350 @@
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  .single-banner-slide {
+    	min-height: auto;
+	    padding: 70px 0;
+	}
+
+	.banner-slider .owl-dots {
+	    bottom: 20px;
+	}
+	.featured-thumbnail img {
+	    max-width: 50px;
+	}
+
+	.header-section .navbar-nav li a ,.login, .signup {
+	    font-size: 14px;
+	}
+	.site-login-wrap .dropdown-menu {
+	    right: 113.8px;
+	    top: 53px;
+	}
+}
+
+/* Tablet & Mobile Layout: 991px. */
+@media only screen and (max-width: 991px) {
+	.header-top {
+	    text-align: center;
+	}
+		
+	.logo {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    padding-top: 20px;
+	}
+	.header-section .navbar-toggler-icon {
+	    position: relative;
+	    z-index: 1;
+	    height: 2px;
+	    width: 1.5em;
+	    background-color: #00a2d9;
+	}
+	.header-section .navbar-toggler-icon:before, .header-section .navbar-toggler-icon:after {
+	    position: absolute;
+	    content: "";
+	    height: 100%;
+	    width: 100%;
+	    background-color: #00a2d9;
+	    top: -6px;
+	    left: 0;
+	}
+
+	.site-login-wrap .dropdown-menu {
+	    right: 114px;
+	}
+	header-section .navbar-toggler-icon:after {
+	    top: auto;
+	    bottom: 4px;
+	}
+
+	.header-section .navbar-toggler-icon:after {
+	    top: auto;
+	    bottom: -6px;
+	}
+
+	.header-section .navbar {
+	    padding-bottom: 20px;
+	}
+
+	.header-section .navbar-collapse {
+	    position: absolute;
+	    z-index: 99;
+	    background-color: #fff;
+	    top: 130px;
+	    width: 100%;
+	    -webkit-box-shadow: 0 0 9px #ddd;
+	            box-shadow: 0 0 9px #ddd;
+	    border-radius: 8px;
+	}
+
+	.header-section .navbar-nav li a {
+	    display: block;
+	    padding: 10px 5px !important;
+	}
+
+	.header-section .navbar-nav li a:after {
+	    height: 1px;
+	}
+
+	.header-section .navbar-collapse ul {
+	    padding: 15px 0;
+	}
+    .single-banner-slide:after {
+	    content: "";
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+	    background: #e91290;
+	    background: -webkit-gradient(linear, left top, right top, from(#e91290),to(#69c8e9));
+	    background: -o-linear-gradient(left, #e91290 0%,#69c8e9 100%);
+	    background: linear-gradient(to right, #e91290 0%,#69c8e9 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91290', endColorstr='#69c8e9',GradientType=1 );
+	    opacity: .5;
+	}
+	.service-front, .service-front {
+	    padding: 20px;
+	}
+	.custom-form {
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+	.app-img img {
+	    position: static;
+	    margin-top: -60px;
+	}
+	.custom-form-section{
+		padding-top: 0
+	}
+	.single-banner-slide {
+	    position: relative;
+	    z-index: 1;
+	    min-height: auto;
+	    padding: 70px 0;
+	}
+	.banner-slider .owl-dots {
+	    bottom: 25px;
+	}
+	.app-details {
+	    margin: 0 auto 30px;
+	}
+	.featured-product {
+	    padding-top: 50px;
+	}
+	.section-padding {
+	    padding: 60px 0;
+	}
+	.section-padding.how-it-works {
+	    padding: 60px 0 90px;
+	}
+	.before-img {
+	    width: 100%;
+	    position: static;
+	    height: 400px;
+	}
+
+	.after-img {
+	    width: 100%;
+	    height: calc(100% - 400px);
+	    top: auto;
+	    bottom: 0;
+	}
+
+	.site-desc, .widget {
+	    margin-bottom: 20px;
+	}
+
+	.footer-section .logo {
+	    text-align: left;
+	}
+	.signup-form-wrap {
+	    padding: 30px 50px;
+	}
+
+	.signup-form-wrap .form-notice {
+	    padding: 0;
+	}
+	.service-nav .single-service-wrap.active .service-hover {
+	    padding: 45px 20px;
+	}
+	.contact-form {
+	    margin-top: 30px;
+	}
+	.who-we-are {
+	    padding-top: 0;
+	}
+	.who-we-are p {
+		margin: 20px 0 0;
+	}
+	.about-imgs{
+		margin-left: -30px;
+	}
+	.plan{
+		margin-bottom: 30px;
+	}
+
+	
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 	.site-login-wrap .dropdown-menu {
+	    top: 109px;
+	    right: 123.8px;
+	}
+	
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.section-title {
+	    padding-bottom: 30px;
+	}
+	.service-nav .single-service-wrap {
+	    margin-bottom: 90px;
+	}
+
+	.service-content-wrap {
+	    padding: 0;
+	}
+	.single-post {
+	    margin-bottom: 50px;
+	}
+	.single-service-wrap {
+	    margin-bottom: 50px;
+	}
+	.header-section .navbar-collapse {
+	    top: 104px;
+	}
+	.site-login-wrap .dropdown-menu {
+	    top: 110px;
+	    right: 123.8px;
+	}
+	.single-banner-slide h1, 
+	.section-title h1, 
+	.custom-form-desc h1, 
+	.app-information h1, 
+	.contact-address h1,
+	.blog-heading, 
+	.content-wrap h1,
+	.signup-form-wrap h1,
+	.cta-form-wrap h1 {
+
+	    font-size: 25px;
+	}
+	.service-info h2{
+		font-size: 20px;
+	}
+	.work-video iframe {
+	    height: 260px;
+	}
+	.before-img {
+	    height: 270px;
+	}
+
+	.after-img {
+	    height: calc(100% - 270px);
+	}
+
+	.cta-form-wrap {
+	    padding: 40px 0;
+	}
+	.team-popup .modal-content .single-member {
+	    padding: 110px 20px 20px;
+	}
+
+	.modal.team-popup .modal-dialog {
+	    margin-top: 110px;
+	}
+	.team-slider .owl-nav button {
+	    left: 0;
+	    top: 30px;
+	}
+
+	.team-slider .owl-nav button.owl-next {
+	    left: auto;
+	    right: 0;
+	}
+	form.plans-currency {
+	    float: none;
+	}
+
+	.plans-header p {
+	    line-height: 1.7;
+	    margin-bottom: 15px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) { 
+	.plan {
+	    padding: 60px 20px 45px;
+	}
+
+	.plan.popular {
+	    margin-top: 0;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 575px) {
+	.plan.popular {
+	    margin-top: 0;
+	}
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 480px) { 
+	.logo img {
+	    max-height: 40px;
+	}
+	.site-login-wrap .dropdown-menu {
+    	top: 100px;
+	    right: 0;
+	}
+	.content-wrap {
+	    padding: 30px 20px;
+	}
+
+	.content-wrap .form-control {
+	    width: 100%;
+	}
+	.signup-form-wrap {
+	    padding: 20px 30px;
+	}
+	.signup-form-wrap .bordered-btn{
+		margin-bottom: 15px
+	}
+	.single-banner-slide .bordered-btn{
+		font-size: 13px;
+	}
+	.app-information{
+		padding: 20px 0 50px
+	}
+	.about-img{
+		width: calc(50% - 15px);
+		margin-bottom: 15px;
+		margin-left: 15px;
+	}
+
+	.about-imgs{
+		margin-left: -15px;
+	}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 320px) { 
+	.site-login-wrap .dropdown-menu {
+	    top: 96px;
+	    width: 100%;
+	}
+	.signup-form-wrap {
+	    padding: 15px 25px;
+	}
+	.signup, .login {
+	    font-size: 14px;
+	}
+	.section-padding{
+		padding: 30px 0;
+	}
+}

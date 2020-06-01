@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Elder Care</title>
+		<link rel="icon" href="assets/img/favicon.ico" type="image/gif" sizes="16x16">
+		
+	    <!--bootstrap css-->
+	    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	    <!--fontawesome css-->
+	    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	    <!--owl carousel css-->
+	    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+
+	    <!-- Nice Select css-->
+	    <link href="assets/css/nice-select.css" rel="stylesheet">
+
+	    <!--style css-->
+	    <link href="assets/css/style.css" rel="stylesheet">
+
+	    <!--responsive css-->
+	    <link href="assets/css/responsive.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<!-- ========= preloader ========= -->
+		<div class="preloader">
+			<div class="dot-typing"></div>
+		</div>
+		<!-- ========= preloader end========= -->
+
+		<!-- ========= Signup popup ========= -->
+		<div class="modal signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content signup-form-wrap">
+					<h1 class="text-center">Sign up for Elder Care</h1>
+					<form action="thank-you.html">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="First & Middle Name*" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last Name*" required>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email Address*" required>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password* (Min 6 Characters)" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Confirm Password*" required>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<p class="form-notice">By clicking Sign Up. you agree to our Terms Data Policy and Cookie Policy. You may recieve SMS notifications from us and can opt out at any time</p>
+							</div>
+							<div class="col-md-12">
+								<div class="button-wrap text-center">
+									<input type="submit" class="bordered-btn" value="Sign up">
+									<a href="index.html" class="bordered-btn cancel" data-dismiss="modal">Cancel</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- ========= Signup popup End========= -->
+		
+		<!-- ========= Header section ========= -->
+		<header class="header-section">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<span class="contact-info">
+								<a href="mailto:hello@eldercare.international"><i class="fa fa-envelope"></i> hello@eldercare.international</a>
+							</span>
+							<span class="contact-info">
+								<a href="tel:1800000000"><i class="fa fa-phone"></i> 1800 000 000</a>
+							</span>
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+								<a href="#"><i class="fa fa-twitter-square"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-youtube-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav class="navbar navbar-expand-lg ">
+							<div class="logo">
+								<a href="#">
+									<img src="assets/img/logo.png" alt="Elder care">
+								</a>
+							</div>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elder-care-navbar" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="elder-care-navbar">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="services.html">Services</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="plans.html">Plans</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog.html">Blog</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="site-login-wrap">
+								<button class="login dropdown-toggle" id="lgoinDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</button>
+								<div class="dropdown-menu" aria-labelledby="lgoinDropDown">
+									<div class="login-form-wrap">
+										<form action="#" id="login-form">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Username">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Password">
+											</div>
+											<div class="d-flex form-meta">
+												<a href="forget-password.html" class="forget-password">Forget Password?</a>
+												<span class="remember-me">
+													<input type="checkbox" id="remember">
+													<label for="remember">Remember Me</label>
+												</span>
+											</div>
+											<div class="text-center">
+												<input type="submit" class="bordered-btn" value="Login">
+											</div>
+										</form>
+									</div>
+								</div>
+								<a href="#" class="signup"  data-toggle="modal" data-target=".signup-modal"><i class="fa fa-user-o"></i> Signup</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ========= Header section End ========= -->
+	
+		<!-- ========= Banner Slider ========= -->
+		<div class="banner-slider owl-carousel">
+			<div class="single-banner-slide slide-one">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<h1 class="text-uppercase">Parents Living Away?</h1>
+							<p>Using Technology and Touch, Elder Care aims to give you the peace of mind that your Elders are well supported back home.</p>
+							<a href="#" class="bordered-btn text-uppercase">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="single-banner-slide slide-two">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<h1 class="text-uppercase">Etiam at orci imperdiet</h1>
+							<p>Quisque cursus interdum ante vitae maximus. Mauris sodales leo massa, vel pharetra purus placerat eu dolor situm.</p>
+							<a href="#" class="bordered-btn text-uppercase">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="single-banner-slide slide-three">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<h1 class="text-uppercase">Mauris iaculis urna</h1>
+							<p>Nullam finibus mi lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque cursus lectus nec tellus iaculis.</p>
+							<a href="#" class="bordered-btn text-uppercase">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= Banner Slider End ========= -->
+
+		<!-- ========= Services Section ========= -->
+		<div class="section-padding">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="section-title text-center">
+							<h1>Elder Care Services</h1>
+							<p>Currently Elder Care services include Medical Emergency Support, Medical Record Access, Independent Living Assistance and Insurance. Fear of a medical emergency lurking around the corner or the support parents need like chaperoning for hospital visits or run errands are no longer a matter of worry with Elder Care on your side.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-service-wrap">
+							<div class="service-front">
+								<div class="service-icon">
+									<img src="assets/img/icons/service-1.png" alt="Icon">
+								</div>
+								<h6>Medical Emergency Support</h6>
+								<p>Our trained Elder Care Officers (ECOs)  personnel will visit them.</p>
+							</div>
+							<div class="service-hover">
+								<div class="service-icon">
+									<img src="assets/img/icons/active/service-active-1.png" alt="Icon">
+								</div>
+								<h6>Medical Emergency Support</h6>
+								<p>Our Elder Care Officers or ECOs will reach your Parent/Elder in the shortest possible time and ensure that your Parent/Elder reaches the best* medical care.</p>
+								<a href="#" class="text-uppecase">Learn more <img src="assets/img/icons/more.png" alt=">"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-service-wrap">
+							<div class="service-front">
+								<div class="service-icon">
+									<img src="assets/img/icons/service-2.png" alt="Icon">
+								</div>
+								<h6>Independent Living Assistance</h6>
+								<p>Our trained Elder Care Officers (ECOs)  personnel will visit them.</p>
+							</div>
+							<div class="service-hover">
+								<div class="service-icon">
+									<img src="assets/img/icons/active/service-active-2.png" alt="Icon">
+								</div>
+								<h6>Independent Living Assistance</h6>
+								<p>Our trained Elder Care Officers (ECOs)  personnel will visit them. Our trained Elder Care Officers (ECOs)  personnel will visit them.</p>
+								<a href="#" class="text-uppecase">Learn more <img src="assets/img/icons/more.png" alt=">"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-service-wrap">
+							<div class="service-front">
+								<div class="service-icon">
+									<img src="assets/img/icons/service-3.png" alt="Icon">
+								</div>
+								<h6>Medical Records Access</h6>
+								<p>Each time Elder goes for a medical check-up record will be sourced and digitised.</p>
+							</div>
+							<div class="service-hover">
+								<div class="service-icon">
+									<img src="assets/img/icons/active/service-active-3.png" alt="Icon">
+								</div>
+								<h6>Medical Records Access</h6>
+								<p>Each time Elder goes for a medical check-up record will be sourced and digitised. Each time Elder goes for a medical check-up record will be sourced and digitised.</p>
+								<a href="#" class="text-uppecase">Learn more <img src="assets/img/icons/more.png" alt=">"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= Services Section End ========= -->
+
+		<!-- ========= Custom form Section ========= -->
+		<div class="section-padding pdt-0 custom-form-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="custom-form">
+							<form action="#">
+								<p class="form-group">
+									<input type="text" class="form-control" placeholder="Your name*" required>
+								</p>
+								<p class="form-group">
+									<input type="email" class="form-control" placeholder="Your email*" required>
+								</p>
+								<p class="form-group">
+									<select name="CountryResidence" id="CountryResidence" class="wide">
+										<option value="1">Your Country of Residence*</option>
+										<option value="2">option 2</option>
+										<option value="3">option 3</option>
+										<option value="4">option 4</option>
+										<option value="5">option 5</option>
+										<option value="6">option 6</option>
+										<option value="7">option 7</option>
+										<option value="8">option 8</option>
+										<option value="9">option 9</option>
+										<option value="10">option 10</option>
+									</select>
+								</p>
+								<p class="form-group">
+									<select name="CityResidence" id="CityResidence" class="wide">
+										<option value="1">Your Country of Residence*</option>
+										<option value="2">option 2</option>
+										<option value="3">option 3</option>
+										<option value="4">option 4</option>
+										<option value="5">option 5</option>
+										<option value="6">option 6</option>
+										<option value="7">option 7</option>
+										<option value="8">option 8</option>
+										<option value="9">option 9</option>
+										<option value="10">option 10</option>
+									</select>
+								</p>
+								<p class="form-notice">* Required fields</p>
+								<p class="form-group text-center">
+									<input type="submit" value="Submit" class="bordered-btn">
+								</p>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="custom-form-desc">
+							<h1>Customer Form</h1>
+							<p>Please share some basic information. We will revert with details on our services and questions with regards to your Elders. Elder Care adheres to Singapore’s Personal Data Protection Act 2012 laws.</p>
+							<img src="assets/img/form-img.png" alt="form image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= Custom form Section End ========= -->
+
+		<!-- ========= App section ========= -->
+		<div class="app-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="app-img">
+							<img src="assets/img/phone-elder-care.png" alt="App">
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="app-information">
+							<h1>Elder Care App</h1>
+							<div class="row">
+								<div class="col-lg-3 col-md-4">
+									<div class="app-details">
+										<span class="number counter d-block">24</span>
+										<p>Hours a Day</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4">
+									<div class="app-details">
+										<span class="number counter d-block">7</span>
+										<p>Days a Week</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4">
+									<div class="app-details">
+										<span class="number counter d-block">365</span>
+										<p>Days a Year</p>
+									</div>
+								</div>
+							</div>
+							<p class="app-review">At the time of an emergency Elder Care app pinpoints the exact location* of your Elders. Enabling our team to arrive at the spot where immediate action is required.</p>
+							<p class="app-term">* Terms and Conditions apply.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= App section End========= -->
+
+		<!-- ========= How it works ========= -->
+		<div class="section-padding how-it-works">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="section-title text-center">
+							<h1>How Its Works</h1>
+							<p>Elder Care Technology platform tracks your parent with the help of an Elder Care smart app. When in need, they activate a call, triggering processes, which culminate with them getting professional medical help.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="work-video">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/utMo_MdsOgQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= How it works End ========= -->
+
+		
+		<!-- ========= Blog section ========= -->
+		<div class="section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="blog-heading">Latest Blog</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="single-post mb-0">
+							<a href="#" class="post-thumbnail d-block blog-thumbnail-1"></a>
+							<div class="post-content">
+								<h6><a href="#">Give yourself peaceof mind</a></h6>
+								<p>Elder Care Technology platform tracks your parent with the help of an Elder Care smart watch. When in need, they activate a call, </p>
+							</div>
+							<div class="date">JUN 02, 2019</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-post mb-0">
+							<a href="#" class="post-thumbnail d-block blog-thumbnail-2"></a>
+							<div class="post-content">
+								<h6><a href="#">Give yourself peaceof mind</a></h6>
+								<p>Elder Care Technology platform tracks your parent with the help of an Elder Care smart watch. When in need, they activate a call, </p>
+							</div>
+							<div class="date">JUN 02, 2019</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="featured-product">
+							<h5>Featured</h5>
+							<div class="featured-post-wrap">
+								<div class="single-featured-post">
+									<div class="featured-post-content">
+										<h6><a href="#">Give yourself peace of mind</a></h6>
+										<p class="date">JUN 02, 2019</p>
+									</div>
+									<div class="featured-thumbnail">
+										<a href="#"><img src="assets/img/blog-thumbnail.jpg" alt="Thumbnail"></a>
+									</div>
+								</div>
+								<div class="single-featured-post">
+									<div class="featured-post-content">
+										<h6><a href="#">Give yourself peace of mind</a></h6>
+										<p class="date">JUN 02, 2019</p>
+									</div>
+									<div class="featured-thumbnail">
+										<a href="#"><img src="assets/img/blog-thumbnail-2.jpg" alt="Thumbnail"></a>
+									</div>
+								</div>
+								<div class="single-featured-post">
+									<div class="featured-post-content">
+										<h6><a href="#">Give yourself peace of mind</a></h6>
+										<p class="date">JUN 02, 2019</p>
+									</div>
+									<div class="featured-thumbnail">
+										<a href="#"><img src="assets/img/blog-thumbnail-3.jpg" alt="Thumbnail"></a>
+									</div>
+								</div>
+								<div class="single-featured-post">
+									<div class="featured-post-content">
+										<h6><a href="#">Give yourself peace of mind</a></h6>
+										<p class="date">JUN 02, 2019</p>
+									</div>
+									<div class="featured-thumbnail">
+										<a href="#"><img src="assets/img/blog-thumbnail-4.jpg" alt="Thumbnail"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ========= Blog section End ========= -->
+
+		<!-- ========= Call to action ========= -->
+		<div class="cta-section">
+			<div class="before-img"></div>
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-lg-8">
+						<div class="cta-form-wrap">
+							<h1>Stay Connected</h1>
+							<p>In the heart of Elder Care service, is the commitment to you and a promise to your parents that we will be there for them. </p>
+							<div class="cta-form">
+								<form action="#">
+									<p>Give yourself peace of mind</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Your name*" required>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<input type="email" placeholder="Your email address*"  class="form-control" required>
+											</div>
+										</div>
+										<div class="col text-right">
+											<div class="form-group">
+												<input type="submit" value="submit" class="text-uppercase bordered-btn">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="after-img"></div>
+		</div>
+		<!-- ========= Call to action End========= -->
+
+		<!-- ========= Footer section ========= -->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="site-desc">
+							<div class="logo">
+								<a href="#">
+									<img src="assets/img/logo.png" alt="Elder Care">
+								</a>
+							</div>
+							<h6>ECI Services PTE LTD</h6>
+							<p>Elder Care is a Singapore headquartered company. Founded to handle a key concern of every Indian abroad, whose Elders are living back home in India. </p>
+							<div class="footer-social-links">
+								<a href="#"><i class="fa fa-facebook-square"></i></a>
+								<a href="#"><i class="fa fa-twitter-square"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-youtube-play"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1 col-md-4">
+						<div class="widget">
+							<h6>Quick Links</h6>
+							<ul class="footer-menu">
+								<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4  col-md-8">
+						<div class="widget">
+							<h6>Singapore</h6>
+							<address>1 Scotts Road, #24-10, Shaw Centre Singapore 228208.</address>
+						</div>
+						<div class="widget">
+							<h6>India</h6>
+							<address>620 Bestech Chambers, Sushant Lok Phase 1, Gurugram 122001 Haryana, India</address>
+						</div>
+						<div class="widget">
+							<p><b>Email:</b> <a href="mailto:hello@eldercare.international" class="d-inline">hello@eldercare.international</a></p>
+						</div>
+						<div class="widget">
+							<p><b>Phone: </b> <a href="tel:1800000000" class="d-inline">1800 000 000</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<p><a href="#">Elder Care</a> 2020. All RIghts Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ========= Footer section End========= -->
+	
+		
+	   
+		<!--Jquery js-->
+		<script src="assets/js/jquery.min.js"></script>
+
+	    <!--propper js-->
+	    <script src="assets/js/propper-1.12.3.js"></script>
+
+	    <!--owl carosel js-->
+	    <script src="assets/js/owl.carousel.min.js"></script>
+
+	    <!-- waypoints js-->
+	    <script src="assets/js/waypoints.min.js"></script>
+
+	    <!-- counter up js-->
+	    <script src="assets/js/jquery.counterup.min.js"></script>
+
+	    <!--nice select js-->
+	    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+	    <!--bootstrap js-->
+	    <script src="assets/js/bootstrap.min.js"></script>
+
+		
+	    <!--Masonry js-->
+	    <script src="assets/js/masonry.pkgd.min.js"></script>
+
+	    <!--main js-->
+	    <script src="assets/js/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,120 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .section-padding{
+        padding: 30px 0;
+    }   
+    .single-feature-item {
+        margin-top: 10px
+    }
+
+    .section-title {
+        padding-bottom: 1px;
+    }
+
+
+}
+/* Tablet & Mobile Layout: 991px. */
+@media only screen and (max-width: 991px) {
+
+    .overlay {
+        padding: 50px 24px 0;
+    }
+    .centered-box {
+        background-position: center center;
+    }
+    .feature-details {
+        margin-top: 146px;
+    }
+    .feature-details.right-side-text {
+        margin-top: 160px;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 480px) { 
+    .contact-form input[type="submit"] {
+        padding: 15px;
+    }
+    .hero-text-tablecell {
+        width: 100%;
+    }
+    .hero-text-tablecell h1 {
+        font-size: 20px;
+    }
+    .off-canvas-menu {
+        min-width: 200px;
+    }
+    .icon-bars.close-menu {
+        transform: translateX(-195px);
+    }
+    .social-icons i.fa::before {
+        line-height: 30px;
+    }
+    .social-icons i.fa {
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+    }
+    .off-canvas-menu .boxed-logo h3{
+        font-size: 20px;
+    }
+    .circle-progress-wrap canvas {
+        max-width: 140px;
+    }
+    .menu-social-icon h4 {
+        margin: 0;
+        padding: 0;
+    }
+    .menu-social-icon a {
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+
+
+}
+@media only screen and (max-width: 767px) {
+    .single-feature-item {
+        margin: 0;
+    }
+    .text-right .feature-details {
+        text-align: center;
+    }
+    .feature-details {
+        margin: 0;
+        padding: 0;
+    }
+    .feature-details p::before, .feature-details p::after , .centered-box{
+        display: none;
+    }
+    .feature-details.right-side-text{
+        margin: 0;
+        text-align: center;
+    }
+    .feature-box {
+        margin-left: 0;
+        padding: 150px 10px 400px;
+    }
+    .feature-img {
+        text-align: center;
+        width: 100%;
+    }
+    .feature-img img{
+        max-height: 350px;
+    }
+    .off-canvas-menu ul li {
+        padding: 2px;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+
+
+}

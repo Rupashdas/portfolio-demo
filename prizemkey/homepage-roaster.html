@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--====== title ======-->
+    <title>Chatroom</title>
+    <!--====== favicon ======-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+    <!--====== bootstrap css ======-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--====== font-awesome css ======-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--====== style css ======-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--====== responsive css ======-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+<body class="chatroom">
+<!--====== Header area started here ======-->
+<header class="header-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <a  href="#" class="logo">
+                    <img src="assets/img/Bitmap_14.png" alt="logo img">
+                    <span class="logo-text">
+                        <span class="small-text">private rooms</span>
+                        <i class="fa fa-angle-right"></i>
+                        <br>
+                        <span>User Experience Team</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <div class="header-right">
+                    <div class="header-right">
+                        <a  class="faq" href="#">
+                            <span class="icon-wrap">
+                           <img class="under" src="assets/img/faq-black.png" alt="bitmap img">
+                           <img class="upper" src="assets/img/faq-blue.png" alt="bitmap img">
+                       </span>
+                        </a>
+                        <a  class="notification" href="#">
+                            <span class="icon-wrap">
+                           <img class="under" src="assets/img/notification-black.png" alt="bitmap img">
+                           <img class="upper" src="assets/img/notification-blue.png" alt="bitmap img">
+                       </span>
+                        </a>
+                        <span class="user-wrap">
+                            <span class="icon-wrap">
+                           <img class="under" src="assets/img/user-icon-blue.png" alt="bitmap img">
+                           <img class="upper" src="assets/img/user-icon-white.png" alt="bitmap img">
+                       </span>
+                            <a href="#">Rakesh Sharma</a>
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--====== Header area end here ======-->
+
+<!--====== Team section started here ======-->
+<div class="wrapper">
+    <div class="side-tab">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tabOne">
+                    <span class="icon-wrap">
+                        <img class="under" src="assets/img/share-black.png" alt="">
+                        <img class="upper" src="assets/img/share-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Share</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabTwo" id="roaster">
+                   <span class="icon-wrap">
+                        <img class="under" src="assets/img/roast-black.png" alt="">
+                        <img class="upper" src="assets/img/roast-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Roaster</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabThree" id="chat">
+                     <span class="icon-wrap">
+                        <img class="under" src="assets/img/chat-black.png" alt="">
+                        <img class="upper" src="assets/img/chat-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Chat</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabFour">
+                    <span class="icon-wrap">
+                        <img class="under" src="assets/img/phone-black.png" alt="">
+                        <img class="upper" src="assets/img/phone-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Audio Call</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabFive">
+                    <span class="icon-wrap">
+                        <img class="under" src="assets/img/doc-black.png" alt="">
+                        <img class="upper" src="assets/img/doc-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Document</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabFive">
+                    <span class="icon-wrap">
+                        <img class="under" src="assets/img/log-out-black.png" alt="">
+                        <img class="upper" src="assets/img/logout-blue.png" alt="">
+                    </span>
+                    <span class="navigator-text">Exit</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="output">
+        <div class="tab-content">
+            <div class="tab-pane container show active" id="tabOne">
+                <div class="content-wrap-table">
+                    <div class="content-wrap">
+                        <a href="#" class="single-color-box">
+                            <img src="assets/img/pen.png" alt="pen img">
+                            <h2 class="action-navigator">Whiteboard</h2>
+                        </a>
+                        <a href="#" class="single-color-box">
+                            <img src="assets/img/screen-share-white.png" alt="pen img">
+                            <h2 class="action-navigator">Sreen Share</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-boxes">
+            <div class="single-chat-box perticipants-wrap">
+                <div class="perticipants-head">
+                    <h3 class="pop-head">Perticipants (<span class="count">19</span>)</h3>
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="perticipants">
+                    <ul class="perticipants-list">
+                        <li><a href="#">Rakesh Sharma</a></li>
+                        <li><a href="#">Dilli Prashad</a></li>
+                        <li><a href="#">Rajiv Krishan</a></li>
+                        <li><a href="#">Ravinra Reddy</a></li>
+                        <li><a href="#">Nitin KUmar</a></li>
+                        <li><a href="#">Ramesh Naidu</a></li>
+                        <li><a href="#">Aravind Kumar Reddy</a></li>
+                        <li><a href="#">Tilak Arani</a></li>
+                        <li><a href="#">Vivekananda Velluri</a></li>
+                        <li><a href="#">Harish Varma</a></li>
+                        <li><a href="#">Jitesh Kumar</a></li>
+                        <li><a href="#">Anamika Goel</a></li>
+                        <li><a href="#">Aravind Kumar Reddy</a></li>
+                        <li><a href="#">Amitav Mishra</a></li>
+                        <li><a href="#">Harshita Reddy</a></li>
+                        <li><a href="#">Harinath Kumar</a></li>
+                        <li><a href="#">Swetha Naidu</a></li>
+                        <li><a href="#">Swetha Naidu</a></li>
+                        <li><a href="#">Nitin Reddy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="single-chat-box chat">
+                <div class="perticipants-head">
+                    <h3 class="pop-head">Perticipants (<span class="count">19</span>)</h3>
+                    <i class="fa fa-close"></i>
+                    <i class="fa fa-minus"></i>
+                </div>
+                <div class="chat-box">
+
+                </div>
+                <div class="chat-footer">
+                    <a href="#" class="plus">+</a>
+                    <input type="text">
+                    <input type="submit" value="send">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== Team section end here ======-->
+
+
+<!--====== jQuery js ======-->
+<script src="assets/js/jquery.min.js"></script>
+<!--====== bootstrap js ======-->
+<script src="assets/js/bootstrap.min.js"></script>
+<!--====== Popper js ======-->
+<script src="assets/js/popper.min.js"></script>
+<!--====== nice scroll js ======-->
+<script src="assets/js/nicescroll.min.js"></script>
+<!--====== main js ======-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

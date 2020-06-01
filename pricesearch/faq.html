@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--========== Title =========-->
+        <title>FAQ</title>
+
+        <!--================== Bootstrap css ==================-->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--================== Font Awesome ==================-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!--================== fonts css ==================-->
+        <link href="assets/css/fonts.css" rel="stylesheet">
+
+        <!--================== animate css ==================-->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+
+        <!--================== tagify css ==================-->
+        <link href="assets/css/tagify.css" rel="stylesheet">
+
+        <!--================== owl-carousel css ==================-->
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+
+        <!--================== nice select css ==================-->
+        <link href="assets/css/nice-select.css" rel="stylesheet">
+
+        <!--================== Style css ==================-->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!--================== Resoonsive ==================-->
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- =========== Preloader css =========== -->
+        <div class="preloader-wrap">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- =========== Preloader css =========== -->
+        
+        <!-- =========== sign form popup =========== -->
+        <div class="modal fade signup-popup" id="signUpPopup" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="steps">
+                           <span class="step-ball"></span>
+                           <span class="step-ball"></span>
+                           <span class="step-ball grey"></span>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/close.png" alt="close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="popup-signup-wrap">
+                            <div class="section-title">
+                                <h2><img src="assets/img/bot.png" alt="icon"> Howdvy! We are setting up your account.</h2>
+                                <p>Please enter your e-mail to get access to your account. Once you’ve completed your sign-up, our bots will start searching for your competitors prices. </p>
+                            </div> 
+                            <div class="row justify-content-center">
+                                 <div class="col-md-8">
+                                     <div class="popup-signup-form">
+                                        <form action="" method="post" id="signup">
+                                            <div class="row">
+                                                <div class="col-md-9 col-sm-8">
+                                                    <input type="email" id="popupEmail" placeholder="Your e-mail address">
+                                                    <p class="status"></p>
+                                                </div>
+                                                <div class="col-sm-4 col-md-3">
+                                                    <button type="submit" id="priceCheckSubmit" class="btn boxed-btn">
+                                                        Start <i class="fa fa-angle-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                 </div>
+                             </div> 
+                        </div>
+                        <div class="signup-success">
+                            <h3>Whoo, you are all set!</h3>
+                            <p class="mt-5">Please check your inbox to verify your account. Happy monitoring! </p>
+                            <a href="index.html" class="mt-5 boxed-btn link">Go to login page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== sign form popup end =========== -->
+
+        <!-- =========== Header Section start =========== -->
+        <header class="header wow fadeIn" data-wow-delay="0s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="Pricesearch">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-8 text-right">
+                        <div class="header-right">
+                            <div class="main-menu">
+                                <nav class="navbar navbar-light navbar-expand-lg">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarToggler">
+                                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                            <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+                                            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                                            <li class="nav-item"><a href="text.html" class="nav-link">Story</a></li>
+                                            <li class="nav-item menu-item-has-children"><a href="#" class="nav-link">Resources</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="contact.html">Help Center</a></li>
+                                                    <li><a href="guides-archive.html">Guides</a></li>
+                                                    <li class="current-menu-item"><a href="faq.html">F.A.Q</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="colored-box-wrap">
+                            <button type="button" class="btn dropdown-toggle boxed-btn" id="coloredBoxDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Start <i class="fa fa-angle-down"></i></button>
+                            <div class="colored-box dropdown-menu color-white" aria-labelledby="coloredBoxDropdown">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-trial-box">
+                                            <h5>Free webinar</h5>
+                                            <p>Schedule a free live webinar to see if Pricesearch fit your needs. </p>
+                                            <a href="#" >Schedule webinar <img src="assets/img/arrow-left.png" alt="arrow"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-trial-box">
+                                            <h5>Free trial</h5>
+                                            <p>Try Pricesearch for free. 14 days of happiness. No creditcard required. </p>
+                                            <a href="#"  role="button" data-toggle="modal" data-target="#signUpPopup">Start free trial <img src="assets/img/arrow-left.png" alt="arrow"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-icon">
+                <a class="dropdown-toggle" href="#" role="button" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/globe-icon.png" alt="lang">
+                </a>
+                <div class="dropdown-menu lang-menu" aria-labelledby="lang">
+                    <a class="english" href="#">English</a>
+                    <a class="espanol" href="#">Español</a>
+                </div>
+            </div>
+        </header>
+        <!-- =========== Header Section End =========== -->
+        <!-- =========== faq section =========== -->
+        <div class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Categories</h5>
+                        <ul class="nav " id="faqTab" role="tablist">
+                            <li>
+                                <a class="active" id="subscriptionTab" data-toggle="tab" href="#subscription" role="tab" aria-controls="subscription" aria-selected="true">Subscription (12)</a>
+                            </li>
+                            <li>
+                                <a id="prcingStrategiesTab" data-toggle="tab" href="#prcingstrategy" role="tab" aria-controls="prcingstrategy" aria-selected="false">Pricing strategies (19)</a>
+                            </li>
+                            <li>
+                                <a id="settingsTab" data-toggle="tab" href="#siteSettings" role="tab" aria-controls="siteSettings" aria-selected="false">Settings (5)</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col-md-7">
+                        <!-- Settings Tab content -->
+                         <div class="tab-content" id="myTabContent">
+
+                            <!-- Settings Tab content -->
+                            <div class="tab-pane fade show active" id="subscription" role="tabpanel" aria-labelledby="subscriptionTab">
+                                <div id="subscriptionAccordion">
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-1" class="collapse show" aria-labelledby="collapse-1" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                     <!-- single faq end -->
+
+                                     <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-2" class="collapse" aria-labelledby="collapse-2" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-3" class="collapse" aria-labelledby="collapse-3" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-4" class="collapse" aria-labelledby="collapse-4" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-5" class="collapse" aria-labelledby="collapse-5" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-6" class="collapse" aria-labelledby="collapse-6" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-7" class="collapse" aria-labelledby="collapse-7" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-8" class="collapse" aria-labelledby="collapse-8" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-9" class="collapse" aria-labelledby="collapse-9" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-10" class="collapse" aria-labelledby="collapse-10" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-11" class="collapse" aria-labelledby="collapse-11" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="collapse-12" class="collapse" aria-labelledby="collapse-12" data-parent="#subscriptionAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                </div>
+                            </div>
+                            <!-- Settings Tab content end-->
+                            
+                            <!-- Pricing Strategy Tab content-->
+                            <div class="tab-pane fade" id="prcingstrategy" role="tabpanel" aria-labelledby="prcingStrategiesTab">
+                                <div id="pricingStrategiesAccordion">
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-1" aria-expanded="true" aria-controls="StrategicCollapse-1">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-1" class="collapse show" aria-labelledby="StrategicCollapse-1" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                     <!-- single faq end -->
+
+                                     <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-2" aria-expanded="false" aria-controls="StrategicCollapse-2">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-2" class="collapse" aria-labelledby="StrategicCollapse-2" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-3" aria-expanded="false" aria-controls="StrategicCollapse-3">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-3" class="collapse" aria-labelledby="StrategicCollapse-3" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-4" aria-expanded="false" aria-controls="StrategicCollapse-4">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-4" class="collapse" aria-labelledby="StrategicCollapse-4" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-5" aria-expanded="false" aria-controls="StrategicCollapse-5">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-5" class="collapse" aria-labelledby="StrategicCollapse-5" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-6" aria-expanded="false" aria-controls="StrategicCollapse-6">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-6" class="collapse" aria-labelledby="StrategicCollapse-6" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-7" aria-expanded="false" aria-controls="StrategicCollapse-7">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-7" class="collapse" aria-labelledby="StrategicCollapse-7" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-8" aria-expanded="false" aria-controls="StrategicCollapse-8">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-8" class="collapse" aria-labelledby="StrategicCollapse-8" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-9" aria-expanded="false" aria-controls="StrategicCollapse-9">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-9" class="collapse" aria-labelledby="StrategicCollapse-9" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-10" aria-expanded="false" aria-controls="StrategicCollapse-10">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-10" class="collapse" aria-labelledby="StrategicCollapse-10" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-11" aria-expanded="false" aria-controls="StrategicCollapse-11">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-11" class="collapse" aria-labelledby="StrategicCollapse-11" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-12" aria-expanded="false" aria-controls="StrategicCollapse-12">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-12" class="collapse" aria-labelledby="StrategicCollapse-12" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-13" aria-expanded="false" aria-controls="StrategicCollapse-13">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-13" class="collapse" aria-labelledby="StrategicCollapse-13" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-14" aria-expanded="false" aria-controls="StrategicCollapse-14">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-14" class="collapse" aria-labelledby="StrategicCollapse-14" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-15" aria-expanded="false" aria-controls="StrategicCollapse-15">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-15" class="collapse" aria-labelledby="StrategicCollapse-15" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-16" aria-expanded="false" aria-controls="StrategicCollapse-16">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-16" class="collapse" aria-labelledby="StrategicCollapse-16" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-17" aria-expanded="false" aria-controls="StrategicCollapse-17">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-17" class="collapse" aria-labelledby="StrategicCollapse-17" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-18" aria-expanded="false" aria-controls="StrategicCollapse-18">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-18" class="collapse" aria-labelledby="StrategicCollapse-18" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#StrategicCollapse-19" aria-expanded="false" aria-controls="StrategicCollapse-19">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="StrategicCollapse-19" class="collapse" aria-labelledby="StrategicCollapse-19" data-parent="#pricingStrategiesAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                    
+                                </div>
+                            </div>
+                            <!-- Pricing Strategy Tab content end-->
+                            
+                            <!--settings Tab content-->
+                            <div class="tab-pane fade" id="siteSettings" role="tabpanel" aria-labelledby="settingsTab">
+                                <div id="settingsAccordion">
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#settingCollapse-1" aria-expanded="true" aria-controls="settingCollapse-1">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="settingCollapse-1" class="collapse show" aria-labelledby="settingCollapse-1" data-parent="#settingsAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                     <!-- single faq end -->
+
+                                     <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#settingCollapse-2" aria-expanded="false" aria-controls="settingCollapse-2">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="settingCollapse-2" class="collapse" aria-labelledby="settingCollapse-2" data-parent="#settingsAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#settingCollapse-3" aria-expanded="false" aria-controls="settingCollapse-3">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="settingCollapse-3" class="collapse" aria-labelledby="settingCollapse-3" data-parent="#settingsAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#settingCollapse-4" aria-expanded="false" aria-controls="settingCollapse-4">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>
+                                        <div id="settingCollapse-4" class="collapse" aria-labelledby="settingCollapse-4" data-parent="#settingsAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+
+                                    <!-- single faq -->
+                                    <div class="single-faq wow fadeIn" data-wow-delay="0.3s">
+                                        <h6  data-toggle="collapse" data-target="#settingCollapse-5" aria-expanded="false" aria-controls="settingCollapse-5">How can I cancel my subscription? <span class="faq-arrow"><i class="fa fa-angle-down"></i></span>
+                                        </h6>                                  
+                                        <div id="settingCollapse-5" class="collapse" aria-labelledby="settingCollapse-5" data-parent="#settingsAccordion">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <!-- single faq end -->
+                                </div>
+                            </div>
+                            <!-- Settings Tab content-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== faq section end =========== -->
+        
+        
+        
+        <!-- =========== Footer section  =========== -->
+        <footer class="footer mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 wow zoomIn" data-wow-delay="0.4s">
+                        <div class="colored-signup-box color-white text-center">
+                            <h2>Start your free trial today.</h2>
+                            <div class="signup-form-wrap">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <div class="input-field"><input type="email" placeholder="Email address"></div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <button type="submit" class="btn boxed-btn white-bg">Start</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="signup-form-caption">No creditcard required.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Product</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="features.html">Features</a></li>
+                                            <li><a href="#">How it works</a></li>
+                                            <li><a href="#">Story</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="#">Integrations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Learn</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="Blog.html">Blog</a></li>
+                                            <li><a href="guides.html">Guides</a></li>
+                                            <li><a href="#">Knowledge base</a></li>
+                                            <li><a href="faq.html">F.A.Q.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <h5>Company</h5>
+                                    <div class="footer-menu">
+                                        <ul>
+                                            <li><a href="features.html">About us</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Terms & Privacy</a></li>
+                                            <li><a href="pricing.html">Partner program</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="widget-menu">
+                                    <div class="social-links">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <p>Proudly developed in the Netherlands <img src="assets/img/footer-icon.png" alt="icon"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- =========== Footer section End =========== -->
+
+        <!--================== Jquery js ==================-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--================== waypoints js ==================-->
+        <script src="assets/js/waypoints.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/popper.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!--================== waypoints js ==================-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+
+        <!--================== wow js ==================-->
+        <script src="assets/js/wow.min.js"></script>
+
+        <!--================== tagify js ==================-->
+        <script src="assets/js/jQuery.tagify.min.js"></script>
+
+        <!--================== nice select js ==================-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+
+        <!--================== bootstrap js ==================-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+        <!--================== Main js ==================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

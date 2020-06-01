@@ -1,0 +1,212 @@
+/*Calculator css*/
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+* {
+    box-sizing: border-box;
+    font: bold 14px Arial, sans-serif;
+}
+
+.main-div {
+    width: 290px;
+    margin: 0 auto;
+    background: #F6F7F8;
+    box-shadow: 0 0 26px #a9a8a8;
+    padding: 15px;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.screen-div,
+.number-div {
+    padding: 0;
+    margin: 0;
+}
+
+.screen {
+    list-style: none;
+    color: #000;
+    height: 72px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFC8F0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.screen p {
+    font-size: 25px;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+.number-div li {
+    list-style: none;
+    float: left;
+    width: 55px;
+    background: #AFC8F0;
+    margin: 5px;
+    color: #fff;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    height: 55px;
+    line-height: 55px;
+}
+
+.number-div li:hover {
+    background: #7693c1;
+    color: white;
+}
+.number-div  .operator{
+    background-color: #E1E9F6;
+    color: #38ADFD;
+}
+.number-div li.zero{
+    width: 120px;
+}
+.number-div{
+    overflow: hidden;
+}
+.clear-wrapper {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.clear, .continue {
+    height: 55px;
+    width: 55px;
+    display: inline-block;
+}
+
+.clear {
+    line-height: 55px;
+    background-color: #E44061;
+    text-align: center;
+    color: #F4B3C0;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+a.continue {
+    width: 186px;
+    margin: 5px;
+    background-color: #448AFF;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0;
+    transition: .3s;
+}
+
+.clear:hover {
+    background-color: #b1334c;
+    color: #fff;
+}
+
+a.continue:hover {background-color: #3168c3;}
+p.currency {
+    margin: 0;
+    color: #999;
+    text-align: center;
+    font-weight: 500;
+    padding: 7px 0;
+}
+
+p.currency b {
+    color: #000;
+}
+/* Login css*/
+
+.wrapper {
+    width: 300px;
+    background-color: #F6F7F8;
+    padding: 30px 15px;
+    margin: 50px auto 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.header h6 {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper.login .header h6 {
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.f-control input[type="submit"] {
+    background-color: #448AFF;
+    color: #fff;
+    border-color: #448AFF;
+    cursor: pointer;
+}
+.f-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AFC8F0;
+    color: #464646;
+    font-weight: normal;
+}
+
+.f-control input:focus {
+    outline: none;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+
+.f-control input[type="submit"]:hover {
+    background-color: #3269c3;
+}
+
+.login .footer {
+    text-align: center;
+    margin-top: 110px;
+}
+.login .footer a {
+    text-decoration: none;
+    color: #B0B0B0;
+    display: block;
+    transition: .3s;
+    font-weight: normal;
+}
+.login .footer a:hover{
+    color: #3269c3;
+
+}
+/* Payment css*/
+img{
+    max-width: 100%
+}
+.payment-img {
+    text-align: center;
+}
+
+.payment-img img {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 160px;
+}

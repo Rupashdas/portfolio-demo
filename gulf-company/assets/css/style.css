@@ -1,0 +1,107 @@
+
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    text-align: center;
+    padding: 40px 0;
+    color: #000000;
+}
+a:hover { text-decoration: none }
+
+.title, .title-2{
+    font-weight: 300;
+    font-size: 60px;
+}
+.header-title p {
+    font-size: 32px;
+}
+
+.cars {
+    padding: 60px 0;
+}
+
+.title-2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.single-item img {height: 100px;margin-bottom: 12px;}
+
+.single-item p {
+    font-size: 26px;
+}
+
+.address {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 78px;
+}
+
+.address p {
+    margin: 0;
+}
+
+.address p:first-child {
+    font-size: 25px;
+}
+
+.form-box {
+    text-align: right;
+}
+
+.form-box table {
+    width: 100%;
+}
+
+.form-box table input {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.form-box label {
+    font-weight: 700;
+    font-size: 24px;
+}
+.form-box table input[type="submit"] {
+    background-color: #ff5a5a;
+    padding: 7px;
+    border-radius: 10px;
+    width: 100px;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.form-box table td:first-child {width: 120px;text-align: left;}
+.form-box table input[type="submit"]:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #ff5a5a;
+    border-color: #ff5a5a;
+}

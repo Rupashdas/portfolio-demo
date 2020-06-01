@@ -1,0 +1,229 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	.main-menu ul li a {
+		padding: 11px 13px;
+	}
+	.img-style{
+		margin-left: 9px
+	}
+
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+	.hero-bg {
+		min-height: 400px;
+	}	
+	.slides-content {
+		padding-top: 300px;
+	}
+	.prize-carousel .owl-nav button {
+		left: 10px;
+	}
+
+	.prize-carousel .owl-nav button.owl-next {
+		left: auto;
+		right: 10px;
+	}
+	.main-menu ul li a {
+		padding: 11px 13px;
+	}
+	.ticket-counter h2 {
+		margin-top: 75px;
+		margin-bottom: 30px;
+	}
+	.sold-info-wrap {
+		margin-top: 50px;
+	}
+
+	.sold-info-wrap > span {
+		position: static;
+		-webkit-transform: none;
+		        transform: none;
+		margin: 15px auto;
+	}
+	.social-links a {
+		margin: 2px;
+	}
+
+	.ticket-counter .boxed-btn {position: static;margin-top: 40px;}
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	.single-slide-item {
+		min-height: 300px;
+	}
+	.slides-content {
+		padding-top: 200px;
+	}
+	.social-links{
+		text-align: center;
+	}
+	.single-prize-item {
+		width: 50%;
+	}
+	.first-prize {
+		min-height: 390px;
+		padding-top: 60px;
+	} 
+	.hero-bg {
+		min-height: 200px;
+	}
+	.prize-carousel .owl-nav button {
+		left: 10px;
+	}
+
+	.prize-carousel .owl-nav button.owl-next {
+		left: auto;
+		right: 10px;
+	}
+
+	.sold-info-wrap h2 {
+		text-align: center;
+	}
+
+	.sold-info-wrap > span {
+		position: static;
+		-webkit-transform: none;
+		        transform: none;
+		margin: 15px auto;
+	}
+	.ticket-box-wrap {
+		width: 100%;
+	}
+	.styled-title{
+		padding-top: 0;
+	}
+	.single-draw-details .video-wrap{
+		height: 350px;
+	}
+	.section-padding{
+		padding: 60px 0;
+	}
+	.single-draw-details .video-info{
+		width: 100%;
+		text-align: justify;
+	}
+	.draw-slider .owl-nav button, 
+	.last-month-winner .owl-nav button,
+	.testimonial-slider .owl-nav button, 
+	.winner-carousel .owl-nav button {
+		left: 0;
+	}
+	.last-month-winner .owl-nav button.owl-next,
+	.draw-slider .owl-nav button.owl-next, 
+	.testimonial-slider .owl-nav button.owl-next, 
+	.winner-carousel .owl-nav button.owl-next {
+		right: 0;
+	}
+	.copyright-area {
+		text-align: center;
+	}
+	.main-menu {
+		display: none;
+	}
+	#mobile-menu {
+		position: static;
+		display: block;
+		margin-top: 24px;
+	}
+	.header-section {
+		text-align: center;
+	}
+
+
+	.header-section #mobile-menu a i.fa{
+		display: none;
+	}
+	.section-title h2 {
+		text-align: center;
+	}
+
+
+	.section-title:after {
+		width: 71%;
+		bottom: -8px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		right: auto;
+		top: auto;
+	}
+
+	.styled-title h2:before {
+		display: none;
+	}
+
+	.styled-title h2:after {
+		bottom: -13px;
+		top: auto;
+		left: 0;
+		width: 100%;
+	}
+	.ticket-counter h2 {
+		margin-top: 75px;
+		margin-bottom: 30px;
+	}
+
+	.ticket-counter .boxed-btn {position: static;margin-top: 40px;}
+
+	img.gallary-container {
+		height: 260px;
+	}
+
+	.img-style {
+		margin-left: 7px;
+	}
+	.bordered-box label {
+		width: 100%;
+	}
+	.item-info {
+		padding: 0;
+	}
+
+	.single-cart-item {
+		text-align: center;
+	}
+
+	.single-cart-item img {
+		float: none;
+	}
+	.ticket-box-wrap.styled-question .bordered-box{
+		padding: 20px;
+	}
+	.ticket-counter table {
+		width: 100%;
+	}
+	.right-align{
+		text-align: center;
+	}
+	.double-buttons a {
+		margin-bottom: 22px;
+	}
+	.elite-welcome {
+		padding-bottom: 26px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 480px) { 
+	.double-buttons a, .winner-timer-wrap .cta-text .subscribe-btn {
+		min-width: auto;
+		margin: 0;
+		margin-bottom: 16px;
+		padding: 16px;
+	}
+	.ticket-box-wrap{
+		padding: 15px;
+	}
+	.img-style {
+		margin-left: 6px;
+	}
+	.single-prize-item {
+		width: 100%;
+	}
+}

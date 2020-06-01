@@ -1,0 +1,159 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-menu ul li a {
+        padding: 5px 10px;
+    }
+    .hero-area {
+        height: 650px;
+    }
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        text-align: center;
+    }
+    .main-menu {
+        text-align: center;
+        margin-top: 17px;
+    }
+    .hero-area {
+        height: 628px;
+    }
+    .hero-area h1 {
+        font-size: 40px;
+    }
+    body {
+        font-size: 16px;
+    }
+    .hero-area p {
+        font-size: 17px;
+    }
+    .title {
+        font-size: 30px;
+        padding: 0;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+    .about-info {
+        font-size: 20px;
+        margin-bottom: 43px;
+    }
+    .section-padding.approach {
+        padding-top: 246px;
+    }
+    .home-tab .nav-tabs {
+        padding-top: 25px;
+    }
+    img.half-width {
+        margin-top: 30px;
+    }
+    .project-img img {
+        position: static;
+    }
+    .footer-area {
+        margin-top: 36px;
+    }
+    .footer-area:after {
+        border-top: 80px solid #26A29D;
+    }
+    .contact-info {
+        padding-bottom: 0;
+    }
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .section-padding{
+        padding: 60px 0;
+    }
+
+aside.sidebar {
+    margin-top: 44px;
+}
+
+.row.section-padding.padding-top-0 {
+    padding-top: 0;
+}
+    .main-menu {
+        display: none;
+    }
+    #mobile-menu {
+        display: block;
+    }
+    .hero-area {
+        height: 475px;
+    }
+    .hero-table:after, .hero-table:before {
+        display: none;
+    }
+    .hero-area img {
+        display: none;
+    }
+    .hero-area:before {
+        display: none;
+    }
+    .hero-area:after {
+        height: 188px;
+    }
+    .title {
+        padding: 0;
+    }
+    .section-padding.approach {
+        padding-top: 28px;
+    }
+    .banner.absolute {
+        position: static;
+    }
+    .home-tab {
+        padding-top: 0;
+    }
+    img.half-width {
+        margin-top: 30px;
+    }
+    .footer-area:after {
+        left: 50%;
+        border-top: none;
+        border-top: 50px solid #37BD7A;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        bottom: -50px;
+        margin-left: -15px;
+    }
+    .footer-area {
+        margin-bottom: 48px;
+    }
+    .home-tab .nav-tabs {
+    padding-top: 50px;
+}
+
+.section-padding.home-tab {
+    padding-bottom: 0;
+}
+
+.gallary {
+    padding-top: 0;
+}
+
+.footer-area {
+    margin-top: 50px;
+}
+
+.title {
+    margin-top: 50px;
+}
+.company-care {
+    position: static;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.company-care img {
+    position: static;
+}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}

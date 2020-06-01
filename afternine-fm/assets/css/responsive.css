@@ -1,0 +1,66 @@
+@media (min-width: 1600px) {
+	.container{
+		max-width: 1400px;
+	}
+	.blob-container{
+		height: 553px;
+		width: 553px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+	
+}
+/* Tablet & Mobile Layout: 991px. */
+@media only screen and (max-width: 991px) {
+
+	.fullheight .header-section,
+	.fullheight .footer-section {
+	    position: static;
+	}
+	.player-container,
+	body.fullheight .player-wrapper {
+	    height: auto;
+	}
+	.header-section .datetime {
+	    display: none;
+	}
+	.footer-section .datetime {
+	    display: block;
+	}
+
+	.blob-container {
+	    margin: 50px 0;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.heading {
+	    font-size: 30px;
+	}
+    .logo a{
+    	font-size: 26px;
+    }
+    .live{
+    	font-size: 18px;
+    }
+	.footer-section .row .col-auto {
+	    flex-basis: 100%;
+	    text-align: center;
+	}
+	.blob-container{
+		min-height: 375px;
+	}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+	
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 576px) { 
+
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 345px) { 
+
+}

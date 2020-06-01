@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edutune</title>
+    <!--Bootstrap Css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--Modal popup Css-->
+    <link href="assets/css/modal-video.min.css" rel="stylesheet">
+    <!--Font awesome Css-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--main Css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--Responsive Css-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!--JQuery js-->
+    <script src="assets/js/jquery.min.js"></script>
+    <style>
+    body,html, .section-padding, .viewport{
+        height: 100%;
+    }
+    body{
+        background: #333;
+        position: relative;
+    }
+    .header_area{
+        background: rgba(255,  255, 255, .5);
+    }
+    .copyright{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .header_area, .copyright:after{
+        background: #44CCBD;
+        opacity: 1
+    }
+    .single-page.contact{background-image: url(https://screenshotscdn.firefoxusercontent.com/images/4f480722-eebf-4042-82b1-2cd9bcdd2202.png);}
+    .single-page.news{background-image: url(https://screenshotscdn.firefoxusercontent.com/images/d2f2fa6c-2d16-4b3c-912c-eb082cdcfe21.jpg);}
+    .single-page.single-news{background-image: url(https://screenshotscdn.firefoxusercontent.com/images/c5fc6f1d-1e41-4081-84ea-052ef757c3a8.png);}
+    .single-page.research{background-image: url(https://screenshotscdn.firefoxusercontent.com/images/6cc66452-da48-4796-afaa-8fc3786aeb9c.jpg);}
+    .single-page.error{background-image: url(https://screenshotscdn.firefoxusercontent.com/images/c78b55db-c0ac-4966-8c30-9df785c5c965.png);}
+    .single-page{
+        background-position: top center;
+        background-size: cover;
+        transition: .8s;
+        height: 250px;
+        display: block;
+        position: relative;
+        text-align: center;
+        background-color: #fff;
+        margin-top: 80px
+    }
+    .single-page h2 {
+        position: absolute;
+        color: #fff;
+        top: -20%;
+        transition: all .5s  linear .5s;
+        width: 100%;
+        z-index: 2
+    }
+    .single-page::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        content: '';
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s linear .8s;
+        z-index: 1;
+    }
+    .single-page:hover {
+        background-position: bottom center;
+    }
+    .single-page:hover:after{
+        visibility: visible;
+        opacity: .8;
+    }
+    .single-page:hover h2{
+        top: 50%;
+        color: #44CCBD;
+        transform: translateY(-50%);
+    }
+    .viewport {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .overlay{
+        transition: 2s;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: 99;
+    }
+    .overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+</style>
+</head>
+<body>
+    <section class="section-padding">
+        <div class="viewport ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="contact.html" class="single-page contact">
+                            <h2>Contact.html</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="news.html" class="single-page news">
+                            <h2>News.html</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="single-news.html" class="single-page single-news">
+                            <h2>single-News.html</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="research.html" class="single-page research">
+                            <h2>Reasearh.html</h2>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="error.html" class="single-page error">
+                            <h2>Error.html</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Area End here -->
+    <!--popper js-->
+    <script src="assets/js/popper-1.12.3.js"></script>
+    <!--Bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Modal Popup js-->
+    <script src="assets/js/jquery-modal-video.min.js"></script>
+    <!--Custom js-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

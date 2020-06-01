@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!--==========Title==========-->
+		<title>Address</title>
+
+		<!--==========bootstrap css==========-->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!--==========fontawesome css==========-->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+		<!--==========nice select css==========-->
+		<link href="assets/css/nice-select.css" rel="stylesheet" />
+
+		<!--==========style css==========-->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<!--==========responsive css==========-->
+		<link href="assets/css/responsive.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--==========Header Section==========-->
+		<header class="checkout-header">
+			<div class="container d-flex justify-content-between">
+				<div class="logo">
+					<a href="#">
+						<img src="assets/img/logo-white.png" alt="logo" />
+					</a>
+				</div>
+				<a href="#">checkout</a>
+				<div class="cart">
+					<i class="fa fa-shopping-cart"></i>
+					<span class="cart-count">2</span>
+				</div>
+			</div>
+		</header>
+		<!--==========Header Section end==========-->
+
+		<!--========== Address section ==========-->
+
+		<section id="address">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="address-form-title">
+							<h2>Enter Delivery Address</h2>
+							<span>Required field*</span>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<form class="address-form" action="#">
+							<div class="row">
+								<div class="col-sm-6">
+									<label for="first-name">First name <sub>*</sub></label>
+									<input type="text" name="first-name" id="first-name" />
+								</div>
+								<div class="col-sm-6">
+									<label for="user-address">Address <sub>*</sub></label>
+									<input type="text" name="user-address" id="user-address" />
+								</div>
+								<div class="col-sm-6">
+									<label for="user-surname">Surname <sub>*</sub></label>
+									<input type="text" name="surname" id="surname" />
+								</div>
+								<div class="col-sm-6">
+									<label for="apt-suite">Apt, suite, etc (optional)</label>
+									<input type="text" name="apt-suite" id="apt-suite" />
+								</div>
+								<div class="col-sm-6">
+									<label for="phone-number">Phone number <sub>*</sub> (ex: 234-80-5555-6666)</label>
+									<input type="text" name="phone-number" id="phone-number" />
+								</div>
+								<div class="col-sm-6">
+									<div class="user-city">
+										<label for="user-city">City <sub>*</sub></label>
+										<input type="text" name="user-city" id="user-city" />
+									</div>
+									<div class="user-state">
+										<label for="user-state">State <sub>*</sub></label>
+										<select name="type" style="display: none;">
+											<option value="state">State</option>
+											<option value="color">Color</option>
+											<option value="size two">Size</option>
+											<option value="style">Style</option>
+										</select>
+										<div class="nice-select" tabindex="0">
+											<span class="current">State</span>
+											<ul class="list">
+												<li data-value="All" class="option selected">state</li>
+												<li data-value="color" class="option">color</li>
+												<li data-value="size" class="option">size</li>
+												<li data-value="style" class="option">style</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="email-address">Email Addres <sub>*</sub>(for order notification)</label>
+									<input type="text" name="email-address" id="email-address" />
+								</div>
+								<div class="col-sm-6">
+									<label for="postal-code">Postal code</label>
+									<input type="text" name="postal-code" id="postal-code" />
+									<button class="address-submit">Continue</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-4 col-xl-3 offset-xl-1">
+						<div class="order-summery">
+							<h3>Order Summary</h3>
+							<ul>
+								<li>Subtotal <span>$138.0</span></li>
+								<li><span class="border-bottom">Est. taxes & fees <i class="fa fa-question-circle-o"></i></span> <span>$20.00</span></li>
+								<li>US shipping <span>Free</span></li>
+								<li>Intl. shipping <span>$40.00</span></li>
+								<li>Service fee <span>$20.00</span></li>
+								<hr />
+								<li>Est. total <span>$198.07</span></li>
+							</ul>
+							<div class="checkout-form">
+								<form action="index.html">
+									<select name="type" style="display: none;">
+										<option value="state">State</option>
+										<option value="color">Color</option>
+										<option value="size two">Size</option>
+										<option value="style">Style</option>
+									</select>
+									<div class="nice-select" tabindex="0">
+										<span class="current">State</span>
+										<ul class="list">
+											<li data-value="All" class="option selected">state</li>
+											<li data-value="color" class="option">color</li>
+											<li data-value="size" class="option">size</li>
+											<li data-value="style" class="option">style</li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========== Address section end ==========-->
+
+		<!--========== Footer section start ==========-->
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-12">
+						<div class="logo">
+							<a href="index.html">
+								<img src="assets/img/logo-white.png" alt="Logo" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+				<div class="row">
+					<!--Row Start-->
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget">
+							<div class="contact-info">
+								<h6>Phone</h6>
+								<p><span>USA:</span> +1-210-730-5433</p>
+								<p><span>NGA:</span> +234-8023115055</p>
+							</div>
+							<div class="contact-info">
+								<h6>Location</h6>
+								<p>Houston Texas USA <br />Ogudu Lagos, Nigeria</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<ul>
+								<li><a href="#">How It Works</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Frequently Asked Questions</a></li>
+								<li><a href="#">Exchange Rates</a></li>
+								<li><a href="#">What you cannot ship</a></li>
+								<li><a href="#">Shipping Calculator</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">States We Serve</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-pages">
+							<h6 class="menu-title">Legal</h6>
+							<ul>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="social-links">
+							<h6 class="menu-title">Socialize with us</h6>
+							<ul>
+								<li>
+									<a href="#"><img src="assets/img/icons/instagram.jpg" alt="Instagram"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/facebook.jpg" alt="Facebook"/></a>
+								</li>
+								<li>
+									<a href="#"><img src="assets/img/icons/twitter.jpg" alt="Twiiter"/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--Row End-->
+			</div>
+		</footer>
+		<!--========== Footer section end ==========-->
+
+		<!--==========Jquery js==========-->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!--==========propper js==========-->
+		<script src="assets/js/propper-1.12.3.js"></script>
+
+		<!--==========nice select js==========-->
+		<script src="assets/js/jquery.nice-select.min.js"></script>
+
+		<!--==========bootstrap js==========-->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--==========main js==========-->
+		<script src="assets/js/main.js"></script>
+
+		<script></script>
+	</body>
+</html>

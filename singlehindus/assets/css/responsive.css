@@ -1,0 +1,70 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-menu li a {
+        padding: 10px 4px;
+    }
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-menu li a{
+        padding: 18px 10px;
+    }
+    .about-indus h3 {
+        text-align: center;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .join-us{
+        right: 10px;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .blog-center {
+        border: 1px solid #EFEFEF;
+        border-top: none;
+    }
+    .join-us{
+        right: 10px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .feature-img {
+        position: static;
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .blog-center {
+        margin: 0;
+    }
+    .single-wid {
+        margin-bottom: 30px;
+    }
+    .social-links {
+        margin-top: 15px;
+    }
+    .copyright-left, .social-links {
+        text-align: center;
+    }
+    .main-menu li a {
+        padding: 8px;
+    }
+
+    .main-menu {
+        margin-bottom: 15px;
+    }
+    .about-indus h3 {
+        text-align: center;
+    }
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
